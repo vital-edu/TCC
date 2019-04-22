@@ -6,17 +6,22 @@
 
 ### Objetivo geral
 
-Apresentação do objetivo geral.
+O presente trabalho tem como objetivo descrever o funcionamento da tecnologia *blockchain* e como a mesma pode ser utilizada para o desenvolvimento de aplicações decentralizadas e baseadas em contratos inteligentes.
 
 ### Objetivos específicos
 
-- objetivo 1
-- objetivo 2
-- objetivo 3
+- Estudar o funcionamento do protocolo *blockchain*;
+- Estudar o que é um contrato inteligente;
+- Estudar as *blockchains* compatíveis com contratos inteligentes;
+- Comparar diferentes implementações da tecnologia *blockcahin* que suportam contratos inteligentes;
+- Comparar as Estudar como contratos inteligentes são desenvolvidos através da tecnologia *blockcahin*;
+- Estudar as vantagens e desvantagens de aplicações decentralizadas;
+- Estudar o funcionamento de aplicações decentralizadas utilizando a tecnologia *blockchain*;
+- Implementar uma aplicação decentralizada baseada em contratos digitais utilizando a tecnologia *blockchain*.
 
-<!-- 
-Isto é um comentário, mesma sintaxe do HTML. Para conhecer a sintaxe 
-do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe 
+<!--
+Isto é um comentário, mesma sintaxe do HTML. Para conhecer a sintaxe
+do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 -->
 
 # Como utilizar recursos do limarka
@@ -47,7 +52,7 @@ conteúdos.
 
 ## Como inserir imagens
 
-Por exemplo, a Figura \ref{passaro} mostra um pássaro que possui as cores da bandeira do Brasil. 
+Por exemplo, a Figura \ref{passaro} mostra um pássaro que possui as cores da bandeira do Brasil.
 
 <!--
 Para referenciar essa figura no texto utilize: Figura \ref{passaro} ou \autoref{passaro}
