@@ -33,16 +33,17 @@ Este capítulo explica o que é *blockchain*, contrato inteligente, e aplicaçõ
 
 ## Blockchain
 
-Em 2018, Satoshi Nakamoto descreveu pela primeira vez um protocolo\cite{nakamoto2008bitcoin} capaz de registrar dados de maneira confiável e sem a necessidade de um agente central de confiança, apenas através de comunicação *p2p* (*peer to peer* - ponto-a-ponto) e utilizando um algoritmo baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
+Em \citeyear{nakamoto2008bitcoin}, \citeauthoronline{nakamoto2008bitcoin} descreveu pela primeira vez um protocolo capaz de registrar dados de maneira confiável e sem a necessidade de um agente central de confiança, utilizando comunicação *p2p* (*peer to peer* - ponto-a-ponto) e um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
 
 \begin{figure}[htbp]
 \caption{\label{fig:privacy-model}Modelo de privacidade: centralizado x decentralizado.}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{imagens/privacy-model.png}
 \end{center}
-\legend{Fonte: Autor.}
+\legend{Fonte: \citeauthoronline{nakamoto2008bitcoin}}
 \end{figure}
 
+Como ilustrado na figura \ref{fig:privacy-model}, o modelo de privacidade tradicional para o registro de transações depende de um agente centralizador de informação
 
 ## Contratos Inteligentes
 
