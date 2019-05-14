@@ -31,16 +31,28 @@ do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 
 Este capítulo explica o que é *blockchain*, contrato inteligente, e aplicações decentralizadas. Além de definir esses termos, é explicado quais problemas cada uma dessas tecnologias pretende resolver, suas características, vantagens, e desvantagens.
 
-## Blockchain
+## *Blockchain*
 
-Em \citeyear{nakamoto2008bitcoin}, \citeauthoronline{nakamoto2008bitcoin} descreveu pela primeira vez um protocolo capaz de registrar dados de maneira confiável e sem a necessidade de um agente central de confiança, utilizando comunicação *p2p* (*peer to peer* - ponto-a-ponto) e um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
+*Blockchain* é uma lista distribuída e simplesmente encadeamento de blocos de dados em que o bloco subsequente da lista contém o código *hash* do conteúdo do bloco anterior, garantindo que não haja adulteração de qualquer um dos blocos da lista sem que seja percebido a adulteração \ref{fig:blockchain}.
+
+\begin{figure}[htbp]
+\caption{\label{fig:blockchain}Arquitetura da \emph{Blockchain}}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{imagens/blockchain.png}
+\end{center}
+\legend{Fonte: \citeauthoronline{zheng2017overview}.}
+\end{figure}
+
+A primeira proposta de utilização de uma rede encadeada de dados utilizando conceitos de criptografia e rede distribuída de dados foi formalizada em \citeyear{haber1990time} por \citeauthoronline{haber1990time} para resolver o problema de certificar que um documento foi criado ou teve sua última modificação em determinada data.
+
+Em \citeyear{nakamoto2008bitcoin}, \citeauthoronline{nakamoto2008bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{haber1990time} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
 
 \begin{figure}[htbp]
 \caption{\label{fig:privacy-model}Modelo de privacidade: centralizado x decentralizado.}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{imagens/privacy-model.png}
 \end{center}
-\legend{Fonte: \citeauthoronline{nakamoto2008bitcoin}}
+\legend{Fonte: \citeauthoronline{nakamoto2008bitcoin}.}
 \end{figure}
 
 Como ilustrado na figura \ref{fig:privacy-model}, o modelo de privacidade tradicional para o registro de transações depende de um agente centralizador de informação
