@@ -4,6 +4,8 @@
 FROM limarka/limarka:latest
 
 # Adicione os pacotes que precisa instalar nessa imagem customizada:
-RUN tlmgr update --self
+RUN apt install wget
+RUN wget http://linorg.usp.br/CTAN/systems/texlive/tlnet/update-tlmgr-latest.sh \
+  && chmod +x update-tlmgr-latest.sh \
+  && /bin/sh update-tlmgr-latest.sh
 RUN tlmgr install subfig
-
