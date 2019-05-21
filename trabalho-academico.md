@@ -1,6 +1,11 @@
 
 # Introdução
 
+A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não respeitam barreiras geopolíticas e que conseguem realizar processos complexos em milissegundos.
+
+Dentre as inúmeras transformações digitais, o comércio eletrônico tem se destacado pela sua crescente adoção pelos consumidores e pelo seu crescimento em sua participação econômica. Segundo \apudonline{webshoppers2019}{emarketer}
+o comércio eletrônico teve um crescimento de 24% no mundo todo em 2008, movimentando 2,9 trilhões de dólares em vendas.
+
 ## Motivação
 
 ## Objetivos
