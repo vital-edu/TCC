@@ -1,10 +1,22 @@
 
 # Introdução
 
-A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não respeitam barreiras geopolíticas e que conseguem realizar processos complexos em milissegundos.
+A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não se limitam a fronteiras físicas e que conseguem realizar processos complexos em milissegundos.
 
-Dentre as inúmeras transformações digitais, o comércio eletrônico tem se destacado pela sua crescente adoção pelos consumidores e pelo seu crescimento em sua participação econômica. Segundo \apudonline{webshoppers2019}{emarketer}
-o comércio eletrônico teve um crescimento de 24% no mundo todo em 2008, movimentando 2,9 trilhões de dólares em vendas.
+Em menos de cinquenta anos, a transformação digital tem trazido revoluções na forma como trocamos informações, nos comunicamos e realizamos tarefas cotidianas e dentre essas inúmeras transformações digitais, o comércio eletrônico tem se destacado pela seu crescimento e por sua participação cada vez maior na econômica. Segundo \apudonline{webshoppers2019}{emarketer}
+o comércio eletrônico teve um crescimento de 24% no mundo todo em 2018, movimentando 2,9 trilhões de dólares em vendas. Esse crescimento tem acontecido ano após ano, em escala global, e o que em seu primórdio se restringia apenas a industria do entretenimento, passou a embarcar setores de turismo e prestação de serviços, posteriormente o setor de bens duráveis e não-duráveis, e está finalmente começando a incluir o comércio de bens perecíveis.
+
+Essa nova forma de consumir e oferecer produtos e serviços, barateia e facilita a vida de compradores e vendedores, permitindo inclusive que consumidores de um país tenham acesso a produtos de outros países. Porém, o comércio eletrônico, assim como o comércio tradicional, sofre de regulamentações e taxações que dificultam que o livre comércio ocorra, sendo um meio mais fácil de controle, principalmente por dificultar as vendas informais devido a opção de pagamento predominantemente ser o cartão de crédito ou outros meios eletrônicos facilmente controlados e fiscalizados por governos.
+
+Somado a isso, há o problema inerente da inflação da moeda provocado pelo controle dos preços e as políticas de expansão monetária, que faz com que a cada ano, uma unidade de moeda perca um pouco do seu valor de troca. Essa situação é mais crítica em países como a venezuela, que sofre com alta inflação, tendo experienciado segundo o \citeauthoronline{fmireport2019} uma inflação de mais de 929 mil porcento em 2018 e uma inflação projetada para alcançar 10 milhões no ano de 2019.
+
+Em situações como essa, em que há uma alta insegurança econômica, e em que não há mais a confiança em nenhum agente central, aqui tratado como o governo, surge a expectativa de que tecnologias decentralizadas como a *blockchain* e contratos inteligentes, bem como criptomoedas como Bitcoin, possam propiciar um ambiente seguro e confiável onde as atividades econômicas possam continuar existindo paralelo ao forte controle estatal.
+
+Casos como o da Venezuela, deixam evidente como o mercado tradicional é diretamente afetado por agentes centrais através da desvalorização constante e abrupta da moeda, que torna impossível a reserva de valor, fazendo com que o dinheiro capaz de comprar a comida de hoje, não valha mais nada no dia seguinte.
+
+Em países desenvolvidos, como os Estados Unidos da América, os danos causado pelos agentes centrais no dia a dia das pessoas não é tão evidente, porém, como Juvenal, poeta romano do final do Século I e início do Século II escreveu em uma de suas sátiras "*Quis custodiet ipsos custodes?*" \cite{juvenal} (Quem irá vigiar os próprios vigilantes?).
+
+O comércio eletrônico ao tornar-se cada vez mais cotidiano na vida das pessoas, precisa usar de meios que previnam a interferência, seja ela em maior ou menor grau, de um agente central em trocas mutualmente benéficas e voluntárias entre indivíduos. Somente assim, poderá-se-á criar um verdadeiro mercado livre, que ultrapassa fronteiras, gerações e jurisdições arbitrárias.
 
 ## Motivação
 
