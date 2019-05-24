@@ -1,6 +1,8 @@
 
 # Introdução
 
+## Contexto
+
 A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não se limitam a fronteiras físicas e que conseguem realizar processos complexos em milissegundos.
 
 Em menos de cinquenta anos, a transformação digital tem trazido revoluções na forma como trocamos informações, nos comunicamos e realizamos tarefas cotidianas e dentre essas inúmeras transformações digitais, o comércio eletrônico tem se destacado pela seu crescimento e por sua participação cada vez maior na econômica. Segundo \apudonline{webshoppers2019}{emarketer}
@@ -17,6 +19,22 @@ Casos como o da Venezuela, deixam evidente como o mercado tradicional é diretam
 Em países desenvolvidos, como os Estados Unidos da América, os danos causado pelos agentes centrais no dia a dia das pessoas não é tão evidente, porém, como Juvenal, poeta romano do final do Século I e início do Século II escreveu em uma de suas sátiras "*Quis custodiet ipsos custodes?*" \cite{juvenal} (Quem irá vigiar os próprios vigilantes?).
 
 O comércio eletrônico ao tornar-se cada vez mais cotidiano na vida das pessoas, precisa usar de meios que previnam a interferência, seja ela em maior ou menor grau, de um agente central em trocas mutualmente benéficas e voluntárias entre indivíduos. Somente assim, poderá-se-á criar um verdadeiro mercado livre, que ultrapassa fronteiras, gerações e jurisdições arbitrárias.
+
+## Justificativa
+
+Para conseguir criar um mercado eletrônico livre de agentes centrais é preciso resolver quatro problemas: **[CARECE DE FONTES]**
+-estabelecer confiança entre comprador e vendedor;
+-realizar pagamento pelo produto ou serviço sem interferência de agentes centrais;
+-definir as expectativas de comprador e vendedor sobre o que está sendo negociado de forma bilateral e que não envolvam terceiros indesejáveis;
+-resolver disputas entre usuários de forma decentralizada, impessoal, e justa.
+
+Para que se consiga estabelecer confiança entre os usuários da plataforma **[CARECE DE FONTES]**, é estudado modelos de avaliação e ranqueamento de usuários.
+
+Para realizar o pagamento pelo produto ou serviço, é avaliado os principais meios de pagamento para decidir qual deles possui as características que previnam a interferência de agentes centrais no preço do produto ou serviço.
+
+Para definir as expectativas entre compradores e vendedores sobre o produto ou serviço sendo negociado, é estudado quais são os meios pelos quais se pode descrever de forma objetiva as características do bem a ser negociado e quais são as expectativas relacionadas a transação entre o comprador e o vendedor.
+
+Para resolver as eventuais disputas entre usuários de forma impessoal, justa e impessoal serão analisados os sistemas de arbitragem exigentes e suas características.
 
 ## Motivação
 
