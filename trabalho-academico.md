@@ -3,18 +3,49 @@
 
 ## Contexto com Justificativa (Planejamento)
 
+
+
+>>>>>>>>>   Commerce and Government Considered in their Mutual Relationship p 85
+ "it is false that in exchanges one gives equal value for equal value. On the
+contrary, each of the contracting parties always gives a lesser value for a greater
+value. "
+
+>>>>>>>>>
+
+
+>>>>>>>>>>  Frederic Bastiat (Harmonies) p 61
+O homem ao viver em sociedade, tem suas capacidades produtivas excedendo suas necessidades. E suas necessidades elementares gradualmente dão lugar a desejos de ordem superior, tendendo sempre e continuamente a um estado mais próximo de uma condição perfeita.
+
+>>>>>>>>> p. 65
+Se nossas necessidades ultrapassasem nossa capacidade produtiva seriamos irremediavelmente creaturas retrógradas. Se nossas necessidades se igualassem a nossa capacidade produtiva, seriamos irremediavelmente estáticas
+>>>>>>>>>>>>>>>.
+O estudo da economia só faz sentido a partir do momento que se define a escassez
+
+Para que o ser humano possa alcançar
+
+A partir do momento que um ser
+
+
+Desejo, esforço e recompensa
+
+O ser humano, vivendo em solidão, não precisa de outros
+
 A economia de livre mercado é importante por causa de ...
 
 Mercado livre é definido como ...
 
+>>>>>>>>> Bastiat (A Lei)
+
 Qualquer interferência de um terceiro em uma transação voluntária entre duas partes, sem o consentimento delas, é desnecessária ou prejudicial.
+
+<<<<<<<<<
 
 É natural o surgimento de moedas, bens que possuem um valor de troca maior do que de consumo, dentro de um mercado livre pois isso facilita as transações.
 
 As moedas quando são controladas por agentes centrais perdem suas características essenciais
 
 As características que definem uma moeda são ...
-
+em
 Criptomoedas podem ser consideradas moedas por conta de ... embora ...
 
 Quando a complexidade das transações aumenta surge a necessidade de criar mecanismos que tragam segurança .
@@ -92,7 +123,39 @@ do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 
 # Referencial Teórico (Planejamento)
 
-## Mercado Livre
+## Livre Mercado
+
+Para entender o que é o livre mercado é preciso entender a natureza humana e um pouco sobre o estudo da economia. Ludwig von Mises usa da praxeologia, o estudo das ações humanas, para construir os princípios que regem a economia \cite[pp. 11--12]{mises}. Mises define a ação humana como o uso dos meios para se realizar um fim \cite[pp. 13]{mises}. Porém, é importante ressaltar que os motivos das ações humanas não pertencem ao campo da praxeologia e sim ao campo da psicologia e psicanalise. Apenas as consequências práticos das ações são do interesse da praxeologia.
+
+Para que haja a ação humana é preciso haver um descontentamento, uma inquietude em relação ao estado atual do indivíduo, caso contrário nada precisaria ser feito, já que se estaria em um estado de perfeição que jamais precisaria ser alterado.
+
+A inquietude com o estado atual acarreta em um desejo por mudança, uma idealização de algo que possa ser feito para alterar o estado atual. Essa idealização, em outras palavras, nada mais é do que o pensamento, as ideias, o raciocínio, a cognição sendo utilizadas para construir um plano de ação.
+
+Mas apenas a inquietude e o pensamento de mudança não seriam suficientes para gerar uma ação, afinal, para que se aja é necessário um terceiro ingrediente, a expectativa de que a ação traga um mínimo de alívio ou diminuição da inquietação do indíviduo. Apenas havendo esses três elementos, a ação humana se torna factível.
+
+Embora a palavra ação possa ser entendida como uma atitude ativa é importante salientar que ela também pode ser uma atitude passiva, ou seja, a decisão de não agir. A ação passiva portanto ocorre quando o indíviduo, conscientemente e diante das informações que possui, decide que ao fazer nada obterá o resultado que lhe trará a maior satisfação dentre todos os resultados que ele considerou.
+
+A partir da definição da ação humana entende-se que um indíviduo sempre buscará um estado de melhor satisfação ou menor inquietude, porém, isso não significa que suas ações se concretizarão da forma que foi esperada, já que pode haver informações desconhecidas ao indivíduo, fatores externos a seu controle, ou alterações significativas no ambiente que o faça avaliar o passado de forma diferente.
+
+Caso não houvesse o desconhecido, ou a possibilidade de erro nas ações tomadas pelo índividuo, poderia-se concluir que não haveria escolhas a serem feitas, já que uma escolha implica em uma tomada de risco, em uma balanceamento entre vantagens e desvantagens.
+
+
+
+o futuro já seria conhecido *a priori*. não houvesse a poss
+
+\citeonline{mises} deixa claro que a economia não se
+
+
+porque as trocas são necessárias para que uma sociedade evolua. Para demonstrar essa necessidade de realizar trocas, \citeonline{mises} parte do príncipio que todo ser humano
+
+ benefício da trocas, e para isso é inevitável que questionemos o que são bens.
+
+que o ser humano é um ser social e que é apenas através da convivência em sociedade que podemos sobreviver e evoluir.
+
+Mas mesmo um homem sozinho, ao se deparar com suas necessidades
+
+ quais são as vantagens de realizar trocas.  o que compõe
+
 
 A ideia de Mercado Livre surgiu em ... por ... baseado em ...
 
@@ -140,7 +203,7 @@ O Bitcoin pode ser definido como uma moeda por se enquadrar nas seguintes caract
 
 ## Contratos Inteligentes
 
-Contrato inteligente foi um termo definido por ... e é baseado na ideia dos contratos.
+Contrato inteligente foi um termo cunhado por \citeonline{nick} em \citeyear{nick} e é definido como uma forma de contrato que é incorporada a um *hardware* ou *software* de forma a criar um contrato
 
 Contratos são definidos por ...
 
