@@ -125,7 +125,7 @@ do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 
 ## Livre Mercado
 
-Para entender o que é o livre mercado é preciso entender a natureza humana e um pouco sobre o estudo da economia. Ludwig von Mises usa da praxeologia, o estudo das ações humanas, para construir os princípios que regem a economia \cite[pp. 11--12]{mises}. Mises define a ação humana como o uso dos meios para se realizar um fim \cite[pp. 13]{mises}. Porém, é importante ressaltar que os motivos das ações humanas não pertencem ao campo da praxeologia e sim ao campo da psicologia e psicanalise. Apenas as consequências práticos das ações são do interesse da praxeologia.
+Para entender o que é o livre mercado é preciso entender a natureza humana e um pouco sobre o estudo da economia. Ludwig von Mises usa da praxeologia, o estudo das ações humanas, para construir os princípios que regem a economia \cite[pp. 11--12]{mises}. Mises define a ação humana como o uso dos meios para se realizar um fim \cite[pp. 13]{mises}. Porém, é importante ressaltar que os motivos das ações humanas não pertencem ao campo da praxeologia e sim ao campo da psicologia e psicanalise sendo do interesse da praxeologia apenas as consequências práticos das ações.
 
 Para que haja a ação humana é preciso haver um descontentamento, uma inquietude em relação ao estado atual do indivíduo, caso contrário nada precisaria ser feito, já que se estaria em um estado de perfeição que jamais precisaria ser alterado.
 
@@ -135,7 +135,7 @@ Mas apenas a inquietude e o pensamento de mudança não seriam suficientes para 
 
 Embora a palavra ação possa ser entendida como uma atitude ativa é importante salientar que ela também pode ser uma atitude passiva, ou seja, a decisão de não agir. A ação passiva portanto ocorre quando o indíviduo, conscientemente e diante das informações que possui, decide que ao fazer nada obterá o resultado que lhe trará a maior satisfação dentre todos os resultados que ele considerou.
 
-A partir da definição da ação humana entende-se que um indíviduo sempre buscará um estado de melhor satisfação ou menor inquietude, porém, isso não significa que suas ações se concretizarão da forma que foi esperada, já que pode haver informações desconhecidas ao indivíduo, fatores externos a seu controle, ou alterações significativas no ambiente que o faça avaliar o passado de forma diferente.
+A partir da definição da ação humana entende-se que um indíviduo sempre buscará um estado de melhor satisfação ou menor inquietude, porém, isso não significa que suas ações se concretizarão da forma que foi esperada, já que pode haver informações desconhecidas ao indivíduo, fatores externos a seu controle, ou alterações significativas no ambiente que o faça avaliar as ações realizadas de forma diferente, o que pode lhe provocar arrependimento.
 
 Caso não houvesse o desconhecido, ou a possibilidade de erro nas ações tomadas pelo índividuo, poderia-se concluir que não haveria escolhas a serem feitas, já que uma escolha implica em uma tomada de risco, em uma balanceamento entre vantagens e desvantagens.
 
