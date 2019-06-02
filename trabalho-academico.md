@@ -139,6 +139,26 @@ A partir da definição da ação humana entende-se que um indíviduo sempre bus
 
 Caso não houvesse o desconhecido, ou a possibilidade de erro nas ações tomadas pelo índividuo, poderia-se concluir que não haveria escolhas a serem feitas, já que uma escolha implica em uma tomada de risco, em uma balanceamento entre vantagens e desvantagens.
 
+Todas as coisas que estão casualmente conectadas com a satisfação das necessidades humanas são definidas como *coisa útil*, e quando essas coisas são utilizadas para satisfazerem as necessidades humanas as chamamos de *bens* \cite[pp. 52]{menger}. Segundo \citeauthoronline{menger} para uma coisa adquirir as características de um bem deve-se ser preenchido simultaneamente os seguintes pré-requisitos:
+
+1. haver uma necessidade humana;
+2. haver propriedades que tornem a coisa capaz de ser empenhada em uma conexão causal com a satisfação dessa necessidade;
+3. haver o conhecimento humano dessa causalidade;
+4. haver controle suficiente sobre a coisa para usa-la para a satisfação dessa necessidade.
+
+Os bens que podem ser utilizados para satisfazer diretamente as necessidades humanas, como por exemplo uma pizza pronta para ser devorada, são classificados de *bem de primeira ordem* ou *bens de consumo*, já os bens que apenas servirão para consumo em algum ponto do futuro são classificados como *bens de ordem superior*, *fatores de produção* ou *bens de produção* \cite[pp. 73]{rothbard}.
+
+Pelo fato de os bens de consumo serem escassos (se não o fossem, não seriam objetos da ação humana), é necessário que o indivíduo rearranje os elementos disponíveis em seu ambiente para produzir os bens de consumo que deseja. Esse processo de utilização de meios indiretos em cooperação com fatores de produção para gerar um bem de consumo que alcance o fim desejado pelo indíviduo é definido como *produção* \cite[pp. 74]{rothbard}.
+
+
+
+
+De posse do entendimento sobre o que é a ação humana, pode-se questionar quais seriam os objetivos pretendidos quando um indíviduo deseja se empenhar em uma troca com outro indivíduo. Mas antes é necessário definir o que são objeto das trocas.
+
+Dentro da teoria econômica toda e qualquer coisa que satisfaça alguma necessidades humanas
+ material aquilo
+Para entender porque surge de forma natural o desejo em realizar trocas, deve-se entender porque acumulamos bens. Partindo do princípio que um indi
+
 
 
 o futuro já seria conhecido *a priori*. não houvesse a poss
