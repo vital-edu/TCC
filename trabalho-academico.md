@@ -164,16 +164,36 @@ Pelo fato de toda ação humana ser uma tentativa de troca de um estado de menor
 
 Como o tempo é um bem escasso, sempre que um indivíduo escolher uma ação, ele necessariamente estará abrindo mão de qualquer outra ação que poderia ser executada naquele mesmo tempo. Devido a isso, pode-se concluir que cada unidade de de um meio, seja ele direto ou indireto, e que é incorporado a ação humana é valorizado separadamente. \cite[pp. 21]{rothbard}.
 
+Uma importante constatação é que o valor ou utilidade de um bem não pode ser medido, e portanto não pode ser aplicado as operações de soma, subtração, multiplicação ou divisão. Em outras palavras qualquer bem tem seu valor estimado de forma subjetiva por cada indivíduo.
 
+As ações humanas usam meios escassos para satisfazerem a mais urgente das necessidades que ainda não foi satisfeita. \cite[pp. 24]{rothbard}. Como exemplo, se um indivíduo suscetivamente encontra um cavalo, e então um segundo e um terceiro, mesmo que os cavalos sejam idênticos e intercambiáveis entre si, o primeiro será utilizado para satisfazer a mais urgente das necessidades, o segundo será utilizado para a mais urgente das necessidades remanescentes, e assim suscetivamente.
 
+Assim, o primeiro cavalo terá um valor maior que o segundo, que terá um valor maior que o terceiro. Ou seja, para todas as ações humanas, conforme a quantidade de suprimento de um mesmo bem aumenta, a utilidade (ou valor) de cada unidade adicionada diminui.
 
+Por mais que seja impossível dizer o quão mais valorosa uma unidade de um mesmo bem é perante outra unidade do mesmo bem, ainda assim há uma relação ordinal entre cada unidade, o que pode ser ilustrado em um diagrama de escala de valores \ref{fig:value-scale-diagram}, em que o eixo X representa um item de um mesmo bem, e o eixo Y mostra a ordem de importância de um fim ao qual esse bem é empregado.
+
+Quando analisamos o estoque (definido com a quantidade de um mesmo bem quando um item pode ser intercambiável com outro item do mesmo bem) de um bem X com o estoque de um bem Y, podemos novamente criar uma escala de valores \ref{fig:value-scale-rank}, sendo que a regra se mantem: a necessidade mais urgente será satisfeita com determinada unidade de um bem, e suscetivamente as necessidade mais urgente remanescentes serão satisfeitas de acordo com as unidades recentes de cada bem, conforme eles satisfaçam essa necessidade.
+
+\begin{figure}[h!]
+  \centering
+  \caption{\label{fig:value-scale-diagrams}Diagramas de escala de valores.}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \caption{\label{fig:value-scale-diagram}Diagrama de escala de valores.}
+    \includegraphics[height=\linewidth]{imagens/value-scale-diagram.png}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \centering
+    \caption{\label{fig:value-scale-rank}Escala de Valor aplicada a estoques dos bens X e Y.}
+    \includegraphics[height=\linewidth]{imagens/value-scale-rank.png}
+  \end{subfigure}
+  \legend{Fonte: \citeauthoronline{rothbard} \cite[pp. 26 e 32]{rothbard}.}
+\end{figure}
 
 De posse do entendimento sobre o que é a ação humana, pode-se questionar quais seriam os objetivos pretendidos quando um indíviduo deseja se empenhar em uma troca com outro indivíduo. Mas antes é necessário definir o que são objeto das trocas.
 
 Dentro da teoria econômica toda e qualquer coisa que satisfaça alguma necessidade humana
  material aquilo
 Para entender porque surge de forma natural o desejo em realizar trocas, deve-se entender porque acumulamos bens. Partindo do princípio que um indi
-
 
 
 o futuro já seria conhecido *a priori*. não houvesse a poss
