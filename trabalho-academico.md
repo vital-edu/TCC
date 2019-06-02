@@ -160,6 +160,14 @@ Todo o processo de produção necessita de tempo (um bem escasso) e fatores de p
 Ao unir esses fatores de produção é possível produzir bens de maior ordem, ou seja, de maior valor agregado. E como
 \citeauthoronline{bastiat} já havia observado, o homem, ao viver em sociedade, tem suas necessidades superadas pelas capacidades produtivas e suas necessidades elementares gradualmente dão lugar a desejos de ordem superior, levando sempre a um estado mais próximo da condição perfeita. Se isso não fosse verdade, ou seríamos criaturas retrógradas, ou seríamos irremediavelmente estáticas \cite[pp. 61--65]{bastiat}.
 
+Pelo fato de toda ação humana ser uma tentativa de troca de um estado de menor satisfação para um estado de maior satisfação, fica evidente que as coisas são valorizadas como meios de acordo com a sua capacidade de contribuir para um fim desejado, sendo esse fim desejado, mais ou menos urgente de acordo com a preferência temporal do indíviduo.
+
+Como o tempo é um bem escasso, sempre que um indivíduo escolher uma ação, ele necessariamente estará abrindo mão de qualquer outra ação que poderia ser executada naquele mesmo tempo. Devido a isso, pode-se concluir que cada unidade de de um meio, seja ele direto ou indireto, e que é incorporado a ação humana é valorizado separadamente. \cite[pp. 21]{rothbard}.
+
+
+
+
+
 De posse do entendimento sobre o que é a ação humana, pode-se questionar quais seriam os objetivos pretendidos quando um indíviduo deseja se empenhar em uma troca com outro indivíduo. Mas antes é necessário definir o que são objeto das trocas.
 
 Dentro da teoria econômica toda e qualquer coisa que satisfaça alguma necessidade humana
