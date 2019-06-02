@@ -146,16 +146,23 @@ Todas as coisas que estão casualmente conectadas com a satisfação das necessi
 3. haver o conhecimento humano dessa causalidade;
 4. haver controle suficiente sobre a coisa para usa-la para a satisfação dessa necessidade.
 
-Os bens que podem ser utilizados para satisfazer diretamente as necessidades humanas, como por exemplo uma pizza pronta para ser devorada, são classificados de *bem de primeira ordem* ou *bens de consumo*, já os bens que apenas servirão para consumo em algum ponto do futuro são classificados como *bens de ordem superior*, *fatores de produção* ou *bens de produção* \cite[pp. 73]{rothbard}.
+Os bens que podem ser utilizados para satisfazer diretamente as necessidades humanas, como por exemplo uma pizza pronta para ser devorada, são classificados de *bem de primeira ordem* ou *bens de consumo*, já os bens que apenas servirão para consumo em algum ponto do futuro são classificados como *bens de ordem superior*, *fatores de produção* ou *bens de produção* \cite[pp. 8]{rothbard}.
 
-Pelo fato de os bens de consumo serem escassos (se não o fossem, não seriam objetos da ação humana), é necessário que o indivíduo rearranje os elementos disponíveis em seu ambiente para produzir os bens de consumo que deseja. Esse processo de utilização de meios indiretos em cooperação com fatores de produção para gerar um bem de consumo que alcance o fim desejado pelo indíviduo é definido como *produção* \cite[pp. 74]{rothbard}.
+Pelo fato de os bens de consumo serem escassos (se não o fossem, não seriam objetos da ação humana), é necessário que o indivíduo rearranje os elementos disponíveis em seu ambiente para produzir os bens de consumo que deseja. Esse processo de utilização de meios indiretos em cooperação com fatores de produção para gerar um bem de consumo que alcance o fim desejado pelo indíviduo é definido como *produção* \cite[pp. 9]{rothbard}.
 
+Todo o processo de produção necessita de tempo (um bem escasso) e fatores de produção que podem ser divididos em duas categorias
 
+1. *fatores de produção originais*: bens prontamente disponíveis na natureza;
+   - *trabalho*: o gasto de energia humana;
+   - *terra*: elementos providos pela natureza.
+2. *fatores de produção produzidos* ou *capital*
 
+Ao unir esses fatores de produção é possível produzir bens de maior ordem, ou seja, de maior valor agregado. E como
+\citeauthoronline{bastiat} já havia observado, o homem, ao viver em sociedade, tem suas necessidades superadas pelas capacidades produtivas e suas necessidades elementares gradualmente dão lugar a desejos de ordem superior, levando sempre a um estado mais próximo da condição perfeita. Se isso não fosse verdade, ou seríamos criaturas retrógradas, ou seríamos irremediavelmente estáticas \cite[pp. 61--65]{bastiat}.
 
 De posse do entendimento sobre o que é a ação humana, pode-se questionar quais seriam os objetivos pretendidos quando um indíviduo deseja se empenhar em uma troca com outro indivíduo. Mas antes é necessário definir o que são objeto das trocas.
 
-Dentro da teoria econômica toda e qualquer coisa que satisfaça alguma necessidades humanas
+Dentro da teoria econômica toda e qualquer coisa que satisfaça alguma necessidade humana
  material aquilo
 Para entender porque surge de forma natural o desejo em realizar trocas, deve-se entender porque acumulamos bens. Partindo do princípio que um indi
 
