@@ -3,22 +3,6 @@
 
 ## Contexto com Justificativa (Planejamento)
 
-
-
->>>>>>>>>   Commerce and Government Considered in their Mutual Relationship p 85
- "it is false that in exchanges one gives equal value for equal value. On the
-contrary, each of the contracting parties always gives a lesser value for a greater
-value. "
-
->>>>>>>>>
-
-
->>>>>>>>>>  Frederic Bastiat (Harmonies) p 61
-O homem ao viver em sociedade, tem suas capacidades produtivas excedendo suas necessidades. E suas necessidades elementares gradualmente dão lugar a desejos de ordem superior, tendendo sempre e continuamente a um estado mais próximo de uma condição perfeita.
-
->>>>>>>>> p. 65
-Se nossas necessidades ultrapassasem nossa capacidade produtiva seriamos irremediavelmente creaturas retrógradas. Se nossas necessidades se igualassem a nossa capacidade produtiva, seriamos irremediavelmente estáticas
->>>>>>>>>>>>>>>.
 O estudo da economia só faz sentido a partir do momento que se define a escassez
 
 Para que o ser humano possa alcançar
@@ -188,6 +172,21 @@ Quando analisamos o estoque (definido com a quantidade de um mesmo bem quando um
   \end{subfigure}
   \legend{Fonte: \citeauthoronline{rothbard} \cite[pp. 26 e 32]{rothbard}.}
 \end{figure}
+
+Em uma escala de valores, a unidade de bem que está na última posição da escala é denominada *unidade marginal*, e o fim a qual essa unidade é empenhada denomina-se de *utilidade da unidade marginal*. Em termos gerais, quanto maior for o suprimento de um bem, menor será a utilidade marginal e em contrapartida, quanto menor for o suprimento de um bem, maior será a utilidade marginal. Esse fato praxeológico é conhecido como *lei de utilidade marginal*.
+
+A escala de valores pode ser aplicada a quantos bens forem necessários, sendo o item em última posição o bem a qual o usuário irá abrir mão primeiro caso seja necessário. Porém é importante salientar que essa escala não é estática e representa apenas uma fotografia da preferência temporal de um indivíduo sobre determinadas condições.
+
+Assim que as condições, as necessidades, os desejos, ou a percepção do indivíduo forem alterados, a escala também poderá será alterada. E é a partir desse entendimento que passamos a compreender como um indivíduo decide o que irá trocar em uma transação comercial.
+
+E observando a lei da utilidade marginal chegamos a mesma conclusão que \citeauthoronline{condillac} \cite[pp. 85]{condillac} que disse que é falsa a afirmação de que em uma transação comercial um ator troca um bem por outro de igual valor, pelo contrário, cada um dos envolvidos na transação comercial troca um bem de menor valor por outro bem de maior valor. Se os bens possuíssem o mesmo valor, não haveria necessidade de realizar a troca, e uma troca de um bem de maior valor por um de menor valor é injustificável quando feita de forma voluntária.
+
+Mesmo quando um bem é dado gratuitamente ocorre uma troca de valores em que o individuo que abre mão daquele bem se sente em uma situação de maior satisfação do que se tivesse mantido o bem para si. Isso novamente explicita o cárater subjetivo e individual do valor de cada bem. Os mesmos bens podem ser posicionados em ordens diferentes por dois atores, já que cada um dos atores empregará os bens conforme seus objetivos individuais.
+
+
+
+
+
 
 De posse do entendimento sobre o que é a ação humana, pode-se questionar quais seriam os objetivos pretendidos quando um indíviduo deseja se empenhar em uma troca com outro indivíduo. Mas antes é necessário definir o que são objeto das trocas.
 
