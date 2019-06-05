@@ -197,52 +197,22 @@ Essas diferenças colaboram para que seja criado uma *divisão do trabalho* em q
 
 Se pelo contrário, a natureza fosse de tal forma que as condições para a produção fossem as mesmas para cada ponto da terra e que todo ser humano fosse igual a qualquer outro ser humano, então somente neste caso, a divisão do trabalho não ofereceria nenhuma vantagem para a ação humana \cite[157]{mises}.
 
-É essa especialização de produção que os indivíduos adquirem sejam por condições naturais, ou por preferências individuais, junto com o desejo de se adquirir bens que não possua, que criar o interesse de realizar uma troca comercial.
+É essa especialização de produção que os indivíduos adquirem sejam por condições naturais, ou por preferências individuais, junto com o desejo de se adquirir bens que não possua, que criam o interesse de se envolver em uma troca comercial.
 
-Porém, vale destacar que o desejo por se ter o que não tem pode resultar também no emprego da violência para se adquirir a força e sem o consentimento do proprietário original do bem. À isso podemos chamar de roubo, e embora seja uma alternativa plausível de ocorrer, ela traz desvantagens.
+Porém, vale destacar que o desejo por se ter o que não tem pode resultar também no emprego da violência para se adquirir a força o bem de outrem. O roubo bem como a escravidão são as duas formas em que essa violência para obter o bem de outro pode ocorrer. O roubo é esporádico, enquanto que a escravidão é constante e trata o escravizado como um fator de produção.
 
+O trabalho sob regime de coerção (escravidão) é denominado *trabalho compulsório* e é qualitativamente diferente do *trabalho voluntário*. Além das razões éticas que demonstram que o emprego da violência é errado existem ainda as consequências a longo prazo que superam os ganhos econômicos de curto prazo do emprego da violência para obter bens \cite[pp. 81]{rothbard}.
 
-# A
+Sendo assim, a troca é a única forma ética de se obter bens de outrem e além disso permite que um indivíduo obtenha um bem ao qual não tinha acesso ou ao qual não valia o seu esforço de produzí-lo. A troca potencializa as capacidades de cada indivíduo deixando-lhe concentrar suas ações no que lhe trará maior contentamento e ainda lhe dando a oportunidade de adquirir o que não consegue ou não deseja produzir.
 
+As trocas comerciais podem ocorrer de forma direta, através do escambo, ou de forma indireta através do emprego de dinheiro, porém esse assunto será abordado na próxima seção.
 
-De posse do entendimento sobre o que é a ação humana, pode-se questionar quais seriam os objetivos pretendidos quando um indíviduo deseja se empenhar em uma troca com outro indivíduo. Mas antes é necessário definir o que são objeto das trocas.
+Qualquer intrusão ou força física agressiva em trocas voluntárias é caracterizado com uma *intervenção* e causa a substituição de ações voluntárias por forças coercitivas, o que vai de encontro ao livre mercado \cite[877]{rothbard}.
+As transações econômicas que ocorrem sem intervenção, constituem portanto um *livre mercado*. Em outras palavras, *livre mercado* é a liberdade de transacionar com outros indivíduos de forma voluntária e pacífica, sem a interferência de terceiros que não sejam bem-vindos.
 
-Dentro da teoria econômica toda e qualquer coisa que satisfaça alguma necessidade humana
- material aquilo
-Para entender porque surge de forma natural o desejo em realizar trocas, deve-se entender porque acumulamos bens. Partindo do princípio que um indi
+A intervenção usa da força para provocar uma ação que não ocorreria de outra forma, e é portanto uma ação que fere as liberdades individuais das pessoas, impedindo-as de empregar seus esforços no que elas consideram ter maior valor para elas.
 
-
-o futuro já seria conhecido *a priori*. não houvesse a poss
-
-\citeonline{mises} deixa claro que a economia não se
-
-
-porque as trocas são necessárias para que uma sociedade evolua. Para demonstrar essa necessidade de realizar trocas, \citeonline{mises} parte do príncipio que todo ser humano
-
- benefício da trocas, e para isso é inevitável que questionemos o que são bens.
-
-que o ser humano é um ser social e que é apenas através da convivência em sociedade que podemos sobreviver e evoluir.
-
-Mas mesmo um homem sozinho, ao se deparar com suas necessidades
-
- quais são as vantagens de realizar trocas.  o que compõe
-
-
-A ideia de Mercado Livre surgiu em ... por ... baseado em ...
-
-Autor tal define como ...
-
-Existe tais críticas a economia de livre mercado ...
-
-A escola austríaca de economia, definida como ... e tendo como principais expoentes Ludwig von Mises, Murray Rothbard, Friedrich Hayek (nobel de economia em ...), e Carl Menger nas obras... se opõem a visão das demais escolas de economia por colocar o empreendedor, definido como ... , com um papel central nas relações econômicas, e através do Ação Humana escrito por Ludwig von Mises, demonstra que o planejamento central é impossível e que as ações humanas não são quantificáveis.
-
-A teoria dos ciclos econômicos definido por ... reforçado por ... demonstra que crises ocorrem por causa de ...
-
-Essa teoria explica as crises de 1929, 2008 e ... através de ...
-
-A interferência na economia continuará a criar crises cada vez maiores e que necessitem de cada vez mais intervenções.
-
-Para exemplificar, em 2008 as medidas ... foram feitas pelos governos ... Como pode-se ver através de dados ... existe uma possibilidade razoável de estarmos próximos a uma nova crise.
+Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um estado de menor conforto aos indivíduos que sofrem a coerção, caso contrário, não seria necessária o emprego da força. Portanto, é importante garantir meios que impeçam a intervenção de terceiros e garantam que trocas comerciais ocorram somente através da livre associação e de forma voluntária. e que consequentemente beneficie os participantes.
 
 ## Criptomoeda
 
