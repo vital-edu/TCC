@@ -105,7 +105,7 @@ Isto é um comentário, mesma sintaxe do HTML. Para conhecer a sintaxe
 do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 -->
 
-# Referencial Teórico (Planejamento)
+# Referencial Teórico
 
 ## Livre Mercado
 
@@ -181,11 +181,28 @@ Assim que as condições, as necessidades, os desejos, ou a percepção do indiv
 
 E observando a lei da utilidade marginal chegamos a mesma conclusão que \citeauthoronline{condillac} \cite[pp. 85]{condillac} que disse que é falsa a afirmação de que em uma transação comercial um ator troca um bem por outro de igual valor, pelo contrário, cada um dos envolvidos na transação comercial troca um bem de menor valor por outro bem de maior valor. Se os bens possuíssem o mesmo valor, não haveria necessidade de realizar a troca, e uma troca de um bem de maior valor por um de menor valor é injustificável quando feita de forma voluntária.
 
-Mesmo quando um bem é dado gratuitamente ocorre uma troca de valores em que o individuo que abre mão daquele bem se sente em uma situação de maior satisfação do que se tivesse mantido o bem para si. Isso novamente explicita o cárater subjetivo e individual do valor de cada bem. Os mesmos bens podem ser posicionados em ordens diferentes por dois atores, já que cada um dos atores empregará os bens conforme seus objetivos individuais.
+Mesmo quando um bem é dado gratuitamente ocorre uma troca de valores em que o individuo que abre mão daquele bem se sente em uma situação de maior satisfação do que se tivesse mantido o bem para si. Isso novamente explicita o caráter subjetivo e individual do valor de cada bem. Os mesmos bens podem ser posicionados em ordens diferentes por dois atores, já que cada um dos atores empregará os bens conforme seus objetivos individuais.
+
+Mas por que indivíduos se empenham em uma troca comercial?
+
+Caso o ser humano vivesse isoladamente, ele estaria limitado a usufruir apenas dos bens naturais que ele encontrasse e dos bens que ele fosse capaz de produzir. Como o indíviduo sempre vai procurar satisfazer o máximo de fins possíveis no mínimo de tempo possível \cite[pp. 42]{rothbard}, torna-se fundamental que o indivíduo colabore com outros indivíduos que possam lhe oferecer bens que ele não teria ou que ele teria que empregar mais tempo, trabalho e fatores de produção para produzir.
+
+E para que haja o interesse de realizar uma troca, cada um dos indivíduos deve possuir um bem ao qual o outro não possua e deseja. Segundo \citeauthoronline{rothbard} \cite[95]{rothbard} há três diferentes razões para que um indivíduo possua bens diferentes de outro indíviduo:
+
+1. diferenças na adequação e rendimento dos fatores providos pela natureza;
+2. diferenças de capital e de bens de consumo duráveis;
+3. diferenças na habilidade e no desejo de realizar diferentes tipos de trabalho.
+
+Essas diferenças colaboram para que seja criado uma *divisão do trabalho* em que cada indivíduo se especialize mais em um tipo de produção, empregando fatores de produção, capital e receitas (processos produtivos) diversos. Isso ocorre sobretudo por conta da individualidade de cada ser humano, que possui características e interesses únicos, bem como a diversidade da própria natureza e dos bens naturais que ela provê.
+
+Se pelo contrário, a natureza fosse de tal forma que as condições para a produção fossem as mesmas para cada ponto da terra e que todo ser humano fosse igual a qualquer outro ser humano, então somente neste caso, a divisão do trabalho não ofereceria nenhuma vantagem para a ação humana \cite[157]{mises}.
+
+É essa especialização de produção que os indivíduos adquirem sejam por condições naturais, ou por preferências individuais, junto com o desejo de se adquirir bens que não possua, que criar o interesse de realizar uma troca comercial.
+
+Porém, vale destacar que o desejo por se ter o que não tem pode resultar também no emprego da violência para se adquirir a força e sem o consentimento do proprietário original do bem. À isso podemos chamar de roubo, e embora seja uma alternativa plausível de ocorrer, ela traz desvantagens.
 
 
-
-
+# A
 
 
 De posse do entendimento sobre o que é a ação humana, pode-se questionar quais seriam os objetivos pretendidos quando um indíviduo deseja se empenhar em uma troca com outro indivíduo. Mas antes é necessário definir o que são objeto das trocas.
