@@ -187,7 +187,7 @@ Mas por que indivíduos se empenham em uma troca comercial?
 
 Caso o ser humano vivesse isoladamente, ele estaria limitado a usufruir apenas dos bens naturais que ele encontrasse e dos bens que ele fosse capaz de produzir. Como o indíviduo sempre vai procurar satisfazer o máximo de fins possíveis no mínimo de tempo possível \cite[pp. 42]{rothbard}, torna-se fundamental que o indivíduo colabore com outros indivíduos que possam lhe oferecer bens que ele não teria ou que ele teria que empregar mais tempo, trabalho e fatores de produção para produzir.
 
-E para que haja o interesse de realizar uma troca, cada um dos indivíduos deve possuir um bem ao qual o outro não possua e deseja. Segundo \citeauthoronline{rothbard} \cite[95]{rothbard} há três diferentes razões para que um indivíduo possua bens diferentes de outro indíviduo:
+E para que haja o interesse de realizar uma troca, cada um dos indivíduos deve possuir um bem ao qual o outro não possua e deseja. Segundo \citeauthoronline{rothbard} \cite[pp. 95]{rothbard} há três diferentes razões para que um indivíduo possua bens diferentes de outro indíviduo:
 
 1. diferenças na adequação e rendimento dos fatores providos pela natureza;
 2. diferenças de capital e de bens de consumo duráveis;
@@ -195,7 +195,7 @@ E para que haja o interesse de realizar uma troca, cada um dos indivíduos deve 
 
 Essas diferenças colaboram para que seja criado uma *divisão do trabalho* em que cada indivíduo se especialize mais em um tipo de produção, empregando fatores de produção, capital e receitas (processos produtivos) diversos. Isso ocorre sobretudo por conta da individualidade de cada ser humano, que possui características e interesses únicos, bem como a diversidade da própria natureza e dos bens naturais que ela provê.
 
-Se pelo contrário, a natureza fosse de tal forma que as condições para a produção fossem as mesmas para cada ponto da terra e que todo ser humano fosse igual a qualquer outro ser humano, então somente neste caso, a divisão do trabalho não ofereceria nenhuma vantagem para a ação humana \cite[157]{mises}.
+Se pelo contrário, a natureza fosse de tal forma que as condições para a produção fossem as mesmas para cada ponto da terra e que todo ser humano fosse igual a qualquer outro ser humano, então somente neste caso, a divisão do trabalho não ofereceria nenhuma vantagem para a ação humana \cite[pp. 157]{mises}.
 
 É essa especialização de produção que os indivíduos adquirem sejam por condições naturais, ou por preferências individuais, junto com o desejo de se adquirir bens que não possua, que criam o interesse de se envolver em uma troca comercial.
 
@@ -207,14 +207,25 @@ Sendo assim, a troca é a única forma ética de se obter bens de outrem e além
 
 As trocas comerciais podem ocorrer de forma direta, através do escambo, ou de forma indireta através do emprego de dinheiro, porém esse assunto será abordado na próxima seção.
 
-Qualquer intrusão ou força física agressiva em trocas voluntárias é caracterizado com uma *intervenção* e causa a substituição de ações voluntárias por forças coercitivas, o que vai de encontro ao livre mercado \cite[877]{rothbard}.
+Qualquer intrusão ou força física agressiva em trocas voluntárias é caracterizado com uma *intervenção* e causa a substituição de ações voluntárias por forças coercitivas, o que vai de encontro ao livre mercado \cite[pp. 877]{rothbard}.
 As transações econômicas que ocorrem sem intervenção, constituem portanto um *livre mercado*. Em outras palavras, *livre mercado* é a liberdade de transacionar com outros indivíduos de forma voluntária e pacífica, sem a interferência de terceiros que não sejam bem-vindos.
 
 A intervenção usa da força para provocar uma ação que não ocorreria de outra forma, e é portanto uma ação que fere as liberdades individuais das pessoas, impedindo-as de empregar seus esforços no que elas consideram ter maior valor para elas.
 
 Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um estado de menor conforto aos indivíduos que sofrem a coerção, caso contrário, não seria necessária o emprego da força. Portanto, é importante garantir meios que impeçam a intervenção de terceiros e garantam que trocas comerciais ocorram somente através da livre associação e de forma voluntária. e que consequentemente beneficie os participantes.
 
-## Criptomoeda
+## Criptomoedas
+
+Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
+
+Este grupo se auto nomeou *cypherpunks* e em 1993 lançou seu manifesto em que declara sua preocupação com a regulação da criptografia
+e cita sua intenção em criar uma moeda digital:
+
+\begin{displayquote}[\citeauthor{cyphermanifesto} - tradução do autor]
+
+Nõs, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. Nós estamos defendendo nossa privacidade através da criptografia, com sistemas de encaminhamento de e-mails anônimos, com assinaturas digitais, e com dinheiro digital.
+
+\end{displayquote}
 
 Os Cypherpunks, grupo de criptólogos e ... definido como ... e formado pelos pensadores ... a partir do ano ... preocupados  com as questões ... se reuniram para criar tecnologias capazes de proteger o indivíduo de agentes centrais, que segundo eles, provocam os malefícios ...
 
