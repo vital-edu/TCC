@@ -218,14 +218,64 @@ Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um est
 
 Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
 
-Este grupo se auto nomeou *cypherpunks* e em 1993 lançou seu manifesto em que declara sua preocupação com a regulação da criptografia
-e cita sua intenção em criar uma moeda digital:
+Este grupo se auto nomeou *Cypherpunks* e em 1993 lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
 
 \begin{displayquote}[\citeauthor{cyphermanifesto} - tradução do autor]
 
 Nõs, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. Nós estamos defendendo nossa privacidade através da criptografia, com sistemas de encaminhamento de e-mails anônimos, com assinaturas digitais, e com dinheiro digital.
 
 \end{displayquote}
+
+\authoronline{blindsignature} em 1998 descreveu as características de um novo tipo de criptografia que permitiria a criação de um sistema automatizado de pagamento com as seguintes características:
+
+1. Impossibilidade de terceiros determinarem o recebedor do pagamento, a data e hora que o pagamento foi realizado bem como a quantia que foi paga pelo indivíduo;
+
+2. Capacidade dos indivíduos provarem que um pagamento foi efetuado ou determinar a identidade do beneficiário do pagamento sob circunstâncias excepcionais;
+
+3. Capacidade de se negar o uso de meios de pagamentos reportados como roubados.
+
+O sistema proposto baseava-se na utilização de assinaturas digitais e funcionaria da seguinte forma:
+
+1. Um indivíduo, aqui chamado de Alice, utilizaria uma chave privada escolhida randomicamente e assinaria um documento digital;
+2. Cada documento digital representa uma unidade de valor monetário;
+3. Alice enviaria o documento digital assinado para um banco, aqui descrito como Bob;
+4. Bob assinaria o documento recebido com sua chave privada e o devolveria a Alice;
+5. Alice, com sua chave privada conseguiria verificar que o conteúdo do documento não foi alterado e que foi assinado por Bob. Caso fosse constatado uma fraude o processo seria interrompido;
+6. Alice então teria um documento validado por Bob e poderia dar o documento posteriormente para o beneficiário do pagamento;
+7. O beneficiário, aqui descrito como Carlos, enviaria o documento a Bob, que conseguiria verificar que a nota foi assinada com sua assinatura digital;
+8. Bob então registraria que a nota foi utilizada e depositaria uma unidade de valor para o beneficiário. Caso a nota já tivesse sido marcada como utilizada, a operação seria interrompida, por ser uma fraude;
+
+Com essa solução, Bob não conseguiria saber que Alice fez um pagamento para Carlos, já que o documento que Carlos apresentou a Bob poderia ter sido assinado por qualquer outra pessoa.
+
+A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento em alto nível e a figura \ref{fig:blind-signature-rsa} ilustra o processo utilizando o algorítmo Rivest–Shamir–Adleman (RSA).
+
+\begin{figure}[htbp]
+  \centering
+  \caption{\label{fig:blind-signature}Exemplo de uso de assinatura cega em alto nível.}
+  \includegraphics[width=1.0\textwidth]{imagens/blind-signature.jpg}
+  \legend{Fonte: \citeauthoronline{blindsignaturewiki}.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algorítmo Rivest\–Shamir\–Adleman (RSA).}
+  \includegraphics[width=1.0\textwidth]{imagens/blind-signature-rsa.jpg}
+  \legend{Fonte: \citeauthoronline{blindsignaturewiki}.}
+\end{figure}
+
+Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) de registro das operações de entrada e saída de valor e apenas serve para complementar o sistema bancário vigente, garantindo a fungibilidade das operações virtuais.
+
+
+
+
+
+
+
+
+
+
+
+
 
 Os Cypherpunks, grupo de criptólogos e ... definido como ... e formado pelos pensadores ... a partir do ano ... preocupados  com as questões ... se reuniram para criar tecnologias capazes de proteger o indivíduo de agentes centrais, que segundo eles, provocam os malefícios ...
 
