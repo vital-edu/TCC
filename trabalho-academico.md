@@ -216,9 +216,9 @@ Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um est
 
 ## Criptomoedas
 
-Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
+Em 1982, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
 
-Este grupo se auto nomeou *Cypherpunks* e em 1993 lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
+Este grupo se auto nomeou *Cypherpunks* e em 1983 lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
 
 \begin{displayquote}[\citeauthor{cyphermanifesto} - tradução do autor]
 
@@ -226,12 +226,10 @@ Nõs, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. N
 
 \end{displayquote}
 
-\authoronline{blindsignature} em 1998 descreveu as características de um novo tipo de criptografia que permitiria a criação de um sistema automatizado de pagamento com as seguintes características:
+\citeauthoronline{blindsignature} em 1983 descreveu as características de um novo tipo de criptografia que permitiria a criação de um sistema automatizado de pagamento com as seguintes características:
 
 1. Impossibilidade de terceiros determinarem o recebedor do pagamento, a data e hora que o pagamento foi realizado bem como a quantia que foi paga pelo indivíduo;
-
 2. Capacidade dos indivíduos provarem que um pagamento foi efetuado ou determinar a identidade do beneficiário do pagamento sob circunstâncias excepcionais;
-
 3. Capacidade de se negar o uso de meios de pagamentos reportados como roubados.
 
 O sistema proposto baseava-se na utilização de assinaturas digitais e funcionaria da seguinte forma:
@@ -258,14 +256,16 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
 
 \begin{figure}[htbp]
   \centering
-  \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algorítmo Rivest\–Shamir\–Adleman (RSA).}
+  \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algorítmo Rivest--Shamir--Adleman (RSA).}
   \includegraphics[width=1.0\textwidth]{imagens/blind-signature-rsa.jpg}
   \legend{Fonte: \citeauthoronline{blindsignaturewiki}.}
 \end{figure}
 
-Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) de registro das operações de entrada e saída de valor e apenas serve para complementar o sistema bancário vigente, garantindo a fungibilidade das operações virtuais.
+Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) de registro das operações de entrada e saída de valor e apenas serve para complementar o sistema bancário vigente, garantindo o anonimato das operações virtuais.
 
+Em 1993, \citeauthoronline{junkmail}\cite{junkmail} propôs uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
 
+\citeauthoronline{junkmail} chamou essa função de *função de precificação* e a criou como uma alternativa as soluções que estavam sendo propostas na época, que incluíam a criação de uma lei que caracterizava o envío de e-mails não autorizados como contravenção penal; e a cobrança de impostos para cada e-mail enviado ou a partir de certo número de e-mails enviados por dia.
 
 
 
