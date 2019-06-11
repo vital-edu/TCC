@@ -263,10 +263,15 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
 
 Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) de registro das operações de entrada e saída de valor e apenas serve para complementar o sistema bancário vigente, garantindo o anonimato das operações virtuais.
 
-Em 1993, \citeauthoronline{junkmail}\cite{junkmail} propôs uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
+Em 1993, \citeauthoronline{junkmail}\cite{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
 
-\citeauthoronline{junkmail} chamou essa função de *função de precificação* e a criou como uma alternativa as soluções que estavam sendo propostas na época, que incluíam a criação de uma lei que caracterizava o envío de e-mails não autorizados como contravenção penal; e a cobrança de impostos para cada e-mail enviado ou a partir de certo número de e-mails enviados por dia.
+\citeauthoronline{junkmail} chamaram essa função de *função de precificação*, e foi apresentada como uma alternativa as soluções que estavam sendo propostas na época, que incluíam a criação de uma lei que caracterizava o envío de e-mails não autorizados como contravenção penal; e a cobrança de impostos para cada e-mail enviado ou a partir de certo número de e-mails enviados por dia.
 
+\citeauthoronline{hashcash}\cite{hashcash} propôs uma solução semelhante, e segundo o autor, sem ter o conhecimento do trabalho de \citeauthoronline{junkmail}. Essa solução foi denominada *Hashcash* e também foi idealizada para reduzir o número de SPAMs, além de ser uma forma de prevenir ataques DDoS (*Distributed Denial of Service* -  Ataque Distribuído de Negação de Serviço).
+
+Para \citeauthoronline{hashcash}, as funções de custo deveriam ser eficientemente verificáveis e nâo proverem vantagem para o servidor responsável por criar os desafios, já que caso contrário, o servidor teria um conflito de interesses e teria a possibilidade de utilizar essa vantagem para ganhos próprios.
+
+Alguns dos diferenciais da função de custo *Hashcash* eram as alterações dos desafios a cada intervalo de tempo, o que evitaria a pré-computação de respostas; e o ajuste do custo computacional necessário para decifrar o desafio, o que permitiria a adaptação do nível do desafio de acordo com a demanda de requisições que o servidor enfrentava.
 
 
 
