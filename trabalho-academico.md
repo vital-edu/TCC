@@ -269,11 +269,15 @@ Em 1993, \citeauthoronline{junkmail}\cite{junkmail} propuseram uma técnica que 
 
 \citeauthoronline{hashcash}\cite{hashcash} propôs uma solução semelhante, e segundo o autor, sem ter o conhecimento do trabalho de \citeauthoronline{junkmail}. Essa solução foi denominada *Hashcash* e também foi idealizada para reduzir o número de SPAMs, além de ser uma forma de prevenir ataques DDoS (*Distributed Denial of Service* -  Ataque Distribuído de Negação de Serviço).
 
-Para \citeauthoronline{hashcash}, as funções de custo deveriam ser eficientemente verificáveis e nâo proverem vantagem para o servidor responsável por criar os desafios, já que caso contrário, o servidor teria um conflito de interesses e teria a possibilidade de utilizar essa vantagem para ganhos próprios.
+Para \citeauthoronline{hashcash}, as funções de custo deveriam ser eficientemente verificáveis e não proverem vantagem para o servidor responsável por criar os desafios, já que caso contrário, o servidor teria um conflito de interesses e teria a possibilidade de utilizar essa vantagem para ganhos próprios.
 
 Alguns dos diferenciais da função de custo *Hashcash* eram as alterações dos desafios a cada intervalo de tempo, o que evitaria a pré-computação de respostas; e o ajuste do custo computacional necessário para decifrar o desafio, o que permitiria a adaptação do nível do desafio de acordo com a demanda de requisições que o servidor enfrentava.
 
+O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthoronline{rpow}\cite{rpow} em 2004.
 
+O algorítmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token* RPOW poderia ser utilizado apenas uma vez e gerava um novo token.
+
+Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algorítmos criptograficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
 
 
 
