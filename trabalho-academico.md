@@ -299,6 +299,23 @@ O Bit Gold funcionaria da seguinte forma:
 
 Como cada registro de *Bit Gold* estã ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros (a partir de agora, chamado de *blockchain*), é inaduterável.
 
+A ideia de utilizar *marcação de tempo* (*timestamp*) e um algorítmo de encadeamento de dados em que o elemento seguinte é baseado no elemento anterior, e de um registro decentralizado para garantir a confiança dos dados, foi proposta por \citeauthoronline{haber1990time} e veio a ser conhecida como *blockchain*.
+
+\citeauthor{haber1990time} queria criar uma maneira de registrar documentos eletrônicos de forma a garantir sua autenticidade, data de registro bem como a imutabilidade de seu conteúdo, e que não pudesse ser adulterada por quem armazenasse essas informações sem que deixasse rastros.
+
+Para que um documento digital pudesse ser armazenado independente do seu tamanho ou formato, \citeauthoronline{haber1990time} propôs o uso de uma família de funções criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (\ref{fig:hash}).
+
+A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente. Com isso arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
+
+Para garantir a data de registro do documento, \citeauthoronline{haber1990time} propôs o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:hash}Exemplo de função hash.}
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{imagens/hash.png}
+  \end{center}
+  \legend{Fonte: \citeauthoronline{hashimage}.}
+\end{figure}
 
 
 
