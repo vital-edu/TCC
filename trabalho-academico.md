@@ -243,13 +243,13 @@ O sistema proposto baseava-se na utilização de assinaturas digitais e funciona
 7. O beneficiário, aqui descrito como Carlos, enviaria o documento a Bob, que conseguiria verificar que a nota foi assinada com sua assinatura digital;
 8. Bob então registraria que a nota foi utilizada e depositaria uma unidade de valor para o beneficiário. Caso a nota já tivesse sido marcada como utilizada, a operação seria interrompida, por ser uma fraude;
 
-Com essa solução, Bob não conseguiria saber que Alice fez um pagamento para Carlos, já que o documento que Carlos apresentou a Bob poderia ter sido assinado por qualquer outra pessoa.
+Com essa solução, Bob não conseguiria saber que Alice fez um pagamento para Carlos, já que o documento que Carlos apresentou a Bob poderia ter sido assinado por qualquer outra pessoa, e tampouco conseguiria saber a data do pagamento, já que Alice poderia demorar um tempo indefinido entre os passos 6 e 7.
 
 A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento em alto nível e a figura \ref{fig:blind-signature-rsa} ilustra o processo utilizando o algorítmo Rivest–Shamir–Adleman (RSA).
 
 \begin{figure}[htbp]
   \centering
-  \caption{\label{fig:blind-signature}Exemplo de uso de assinatura cega em alto nível.}
+  \caption{\label{fig:blind-signature}Exemplo em alto nível de uso de assinatura cega.}
   \includegraphics[width=1.0\textwidth]{imagens/blind-signature.jpg}
   \legend{Fonte: \citeauthoronline{blindsignaturewiki}.}
 \end{figure}
@@ -275,11 +275,29 @@ Alguns dos diferenciais da função de custo *Hashcash* eram as alterações dos
 
 O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthoronline{rpow}\cite{rpow} em 2004.
 
-O algorítmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token* RPOW poderia ser utilizado apenas uma vez e gerava um novo token.
+O algorítmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo token.
 
 Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algorítmos criptograficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
 
+Em 2005, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como caracteísticas: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas proprieddades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
 
+O Bit Gold funcionaria da seguinte forma:
+
+1. Um *conjunto de bits*, denominado *desafio criptográfico* seria criado;
+
+2. Alice, em seu computador, geraria uma *prova de trabalho* a partir do *desafio criptográfico* utilizando uma função criptográfica de referência;
+
+3. A *prova de trabalho* contém uma *marcação temporal* de quando foi produzida. Essa *marcação temporal* seria registrada por qualquer ou mesmo vários serviços de *marcação temporal* que comprovariam a confiabilidade da data de criação da *prova de trabalho*.
+
+4. Alice registraria a *prova de trabalho* junto com a *marcação temporal* em um serviço computacionalmente distribuído compatível com o *Bit Gold*. A partir de então, esse seria oficialmente um registro *Bit Gold*;
+
+5. O último registro de *Bit Gold* provê o *desafio criptográfico* que servirá como insumo para a próxima *prova de trabalho*, que gerará o próximo registro de *Bit Gold*;
+
+6. Para verificar que Alice é a proprietaŕia de um registro de *Bit Gold*, Bob checaria a cadeia de registros de *Bit Gold* em qualquer serviço de registro de *Bit Gold*;
+
+7. Para averiguar o valor do registro de *Bit Gold*, Bob checaria e verificaria o *desafio criptográfico*, a *prova de trabalho* e a *marcação temporal* do registro.
+
+Como cada registro de *Bit Gold* estã ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros (a partir de agora, chamado de *blockchain*), é inaduterável.
 
 
 
