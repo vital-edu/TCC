@@ -216,9 +216,9 @@ Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um est
 
 ## Criptomoedas
 
-Em 1982, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
+Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
 
-Este grupo se auto nomeou *Cypherpunks* e em 1983 lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
+Este grupo se auto nomeou *Cypherpunks* e em \citeyear{cyphermanifesto} lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
 
 \begin{displayquote}[\citeauthor{cyphermanifesto} - tradução do autor]
 
@@ -226,7 +226,7 @@ Nõs, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. N
 
 \end{displayquote}
 
-\citeauthoronline{blindsignature} em 1983 descreveu as características de um novo tipo de criptografia que permitiria a criação de um sistema automatizado de pagamento com as seguintes características:
+\citeauthoronline{blindsignature} em \citeyear{blindsignature} descreveu as características de um novo tipo de criptografia que permitiria a criação de um sistema automatizado de pagamento com as seguintes características:
 
 1. Impossibilidade de terceiros determinarem o recebedor do pagamento, a data e hora que o pagamento foi realizado bem como a quantia que foi paga pelo indivíduo;
 2. Capacidade dos indivíduos provarem que um pagamento foi efetuado ou determinar a identidade do beneficiário do pagamento sob circunstâncias excepcionais;
@@ -263,7 +263,7 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
 
 Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) que registre as operações de entrada e saída de valor e garanta o valor monetário do documento, e por isso pode apenas ser considerado como uma camada de privacidade que complementa o sistema bancário vigente, trazendo o anonimato das operações transacionadas através de dinheiro em espécie para o mundo das transações virtuais.
 
-Em 1990, \citeauthor{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criou uma maneira de registrar documentos eletrônicos de forma a garantir sua autenticidade, data de registro bem como a imutabilidade de seu conteúdo, e que não pudesse ser adulterada por quem armazenasse essas informações.
+Em \citeyear{haber1990time}, \citeauthor{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criou uma maneira de registrar documentos eletrônicos de forma a garantir sua autenticidade, data de registro bem como a imutabilidade de seu conteúdo, e que não pudesse ser adulterada por quem armazenasse essas informações.
 
 Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algorítmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma decentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
 
@@ -283,7 +283,7 @@ Para garantir a data de registro do documento, \citeauthoronline{haber1990time} 
 
 
 
-Em 1993, \citeauthor{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
+Em \citeyear{junkmail}, \citeauthor{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
 
 \citeauthoronline{junkmail} chamaram essa função de *função de precificação*, e foi apresentada como uma alternativa as soluções que estavam sendo propostas na época, que incluíam a criação de uma lei que caracterizava o envío de e-mails não autorizados como contravenção penal; e a cobrança de impostos para cada e-mail enviado ou a partir de certo número de e-mails enviados por dia.
 
@@ -293,13 +293,13 @@ Para \citeauthoronline{hashcash}, as funções de custo deveriam ser eficienteme
 
 Alguns dos diferenciais da função de custo *Hashcash* eram as alterações dos desafios a cada intervalo de tempo, o que evitaria a pré-computação de respostas; e o ajuste do custo computacional necessário para decifrar o desafio, o que permitiria a adaptação do nível do desafio de acordo com a demanda de requisições que o servidor enfrentava.
 
-O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthor{rpow} em 2004.
+O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthor{rpow} em \citeyear{rpow}.
 
 O algorítmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo token.
 
 Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algorítmos criptograficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
 
-Em 2005, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como caracteísticas: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas proprieddades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
+Em \citeyear{bitgold}, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como caracteísticas: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas proprieddades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
 
 O Bit Gold funcionaria da seguinte forma:
 
