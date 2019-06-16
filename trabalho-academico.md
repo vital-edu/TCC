@@ -261,7 +261,27 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
   \legend{Fonte: \citeauthoronline{blindsignaturewiki}.}
 \end{figure}
 
-Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) de registro das operações de entrada e saída de valor e apenas serve para complementar o sistema bancário vigente, garantindo o anonimato das operações virtuais.
+Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) que registre as operações de entrada e saída de valor e garanta o valor monetário do documento, e por isso pode apenas ser considerado como uma camada de privacidade que complementa o sistema bancário vigente, trazendo o anonimato das operações transacionadas através de dinheiro em espécie para o mundo das transações virtuais.
+
+Em 1990, \citeauthoronline{haber1990time}\cite{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criou uma maneira de registrar documentos eletrônicos de forma a garantir sua autenticidade, data de registro bem como a imutabilidade de seu conteúdo, e que não pudesse ser adulterada por quem armazenasse essas informações.
+
+Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algorítmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma decentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
+
+A solução de \citeauthoronline{haber1990time} foi concebida para funcionar com qualquer documento digital, independente do formato ou tamanho, e para garantir isso ele propôs o uso de uma família de funçôes criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (\ref{fig:hash}).
+
+\begin{figure}[htbp]
+  \caption{\label{fig:hash}Exemplo de função hash.}
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{imagens/hash.png}
+  \end{center}
+  \legend{Fonte: \citeauthoronline{hashimage}.}
+\end{figure}
+
+A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente para ser desprezada. Com isso arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
+
+Para garantir a data de registro do documento, \citeauthoronline{haber1990time} propôs o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
+
+
 
 Em 1993, \citeauthoronline{junkmail}\cite{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
 
@@ -297,25 +317,8 @@ O Bit Gold funcionaria da seguinte forma:
 
 7. Para averiguar o valor do registro de *Bit Gold*, Bob checaria e verificaria o *desafio criptográfico*, a *prova de trabalho* e a *marcação temporal* do registro.
 
-Como cada registro de *Bit Gold* estã ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros (a partir de agora, chamado de *blockchain*), é inaduterável.
+Como cada registro de *Bit Gold* está ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros (a partir de agora, chamado de *blockchain*) é inalterável.
 
-A ideia de utilizar *marcação de tempo* (*timestamp*) e um algorítmo de encadeamento de dados em que o elemento seguinte é baseado no elemento anterior, e de um registro decentralizado para garantir a confiança dos dados, foi proposta por \citeauthoronline{haber1990time} e veio a ser conhecida como *blockchain*.
-
-\citeauthor{haber1990time} queria criar uma maneira de registrar documentos eletrônicos de forma a garantir sua autenticidade, data de registro bem como a imutabilidade de seu conteúdo, e que não pudesse ser adulterada por quem armazenasse essas informações sem que deixasse rastros.
-
-Para que um documento digital pudesse ser armazenado independente do seu tamanho ou formato, \citeauthoronline{haber1990time} propôs o uso de uma família de funções criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (\ref{fig:hash}).
-
-A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente. Com isso arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
-
-Para garantir a data de registro do documento, \citeauthoronline{haber1990time} propôs o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
-
-\begin{figure}[htbp]
-  \caption{\label{fig:hash}Exemplo de função hash.}
-  \begin{center}
-    \includegraphics[width=1.0\textwidth]{imagens/hash.png}
-  \end{center}
-  \legend{Fonte: \citeauthoronline{hashimage}.}
-\end{figure}
 
 
 
