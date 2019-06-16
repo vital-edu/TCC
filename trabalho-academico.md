@@ -216,17 +216,13 @@ Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um est
 
 ## Criptomoedas
 
-Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
+As criptomoedas, um dinheiro virtual que utiliza conceitos e algorítmos oriundos da criptografia, teve sua história moldada por pequenos e progressivos avanços na área da criptografia. Portanto, é importante entender a contribuição de diferentes autores que culminaram no advento do Bitcoin, a principal criptomoeda em circulação atualmente.
 
-Este grupo se auto nomeou *Cypherpunks* e em \citeyear{cyphermanifesto} lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
+Embora já houvessem soluções de pagamento envolvendo dinheiro virtual em \citeyear{blindsignature}, \citeauthoronline{blindsignature} preocupou-se com uma importante característica das transações no mundo real que não estava presente nas transações virtuais: a privacidade.
 
-\begin{displayquote}[\citeauthor{cyphermanifesto} - tradução do autor]
+No mundo real, o dinheiro pode ser passado de Alice para Carlos sem que Bob ou qualquer outro agente saiba disso. Embora isso permita a utilização do dinheiro para fins ilícitos, essa característica também permite que os indivíduos possam realizar transações que caso fossem descobertas por terceiros lhe causariam constrangimento, humilhação, retaliação, e em último causo poderia servir como meio de coerção, repressão, censura e controle político por governos ou instituições privadas que tivessem o interesse de impedir a livre manifestação de opiniões e o direito a livre associação.
 
-Nõs, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. Nós estamos defendendo nossa privacidade através da criptografia, com sistemas de encaminhamento de e-mails anônimos, com assinaturas digitais, e com dinheiro digital.
-
-\end{displayquote}
-
-\citeauthoronline{blindsignature} em \citeyear{blindsignature} descreveu as características de um novo tipo de criptografia que permitiria a criação de um sistema automatizado de pagamento com as seguintes características:
+Com essa preocupação, \citeauthor{blindsignature} descreveu as características que um sistema automatizado de pagamento virtual deveria ter:
 
 1. Impossibilidade de terceiros determinarem o recebedor do pagamento, a data e hora que o pagamento foi realizado bem como a quantia que foi paga pelo indivíduo;
 2. Capacidade dos indivíduos provarem que um pagamento foi efetuado ou determinar a identidade do beneficiário do pagamento sob circunstâncias excepcionais;
@@ -261,9 +257,9 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
   \legend{Fonte: \citeauthor{blindsignaturewiki}.}
 \end{figure}
 
-Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) que registre as operações de entrada e saída de valor e garanta o valor monetário do documento, e por isso pode apenas ser considerado como uma camada de privacidade que complementa o sistema bancário vigente, trazendo o anonimato das operações transacionadas através de dinheiro em espécie para o mundo das transações virtuais.
+Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda requer que um agente central (Bob) registre as operações de entrada e saída de valor e garanta o valor monetário do documento, e por isso pode apenas ser considerado como uma camada de privacidade que complementa o sistema bancário vigente, trazendo o anonimato das operações transacionadas através de dinheiro em espécie para o mundo das transações virtuais.
 
-Em \citeyear{haber1990time}, \citeauthor{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criaram uma maneira de registrar documentos eletrônicos de forma a garantir a autenticidade, a data de registro, bem como a imutabilidade de seu conteúdo, e impossibilitando a adulteração dessas informações por quem os armazenassem.
+Foi apenas em \citeyear{haber1990time} que surgiu uma solução com potencial de resolver o problema da dependência de um agente central para registro de informações importantes. \citeauthor{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criaram uma maneira de registrar documentos eletrônicos de forma a garantir a autenticidade, a data de registro, bem como a imutabilidade de seu conteúdo, e impossibilitando a adulteração dessas informações por quem os armazenassem.
 
 Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algorítmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma decentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
 
@@ -277,11 +273,19 @@ A solução de \citeauthoronline{haber1990time} foi concebida para funcionar com
   \legend{Fonte: \citeauthor{hashimage}.}
 \end{figure}
 
-A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente para ser desprezada. Com isso arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
+A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente para ser desprezada. Com isso, arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
 
-Para garantir a data de registro do documento, \citeauthoronline{haber1990time} propôs o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
+Para garantir a data de registro do documento, \citeauthoronline{haber1990time} propuseram o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
 
+Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
 
+Este grupo se auto nomeou *Cypherpunks* e em \citeyear{cyphermanifesto} lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
+
+\begin{displayquote}[\citeauthor{cyphermanifesto} - tradução do autor]
+
+Nõs, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. Nós estamos defendendo nossa privacidade através da criptografia, com sistemas de encaminhamento de e-mails anônimos, com assinaturas digitais, e com dinheiro digital.
+
+\end{displayquote}
 
 Em \citeyear{junkmail}, \citeauthor{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
 
