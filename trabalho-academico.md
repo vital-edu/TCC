@@ -251,19 +251,19 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
   \centering
   \caption{\label{fig:blind-signature}Exemplo em alto nível de uso de assinatura cega.}
   \includegraphics[width=1.0\textwidth]{imagens/blind-signature.jpg}
-  \legend{Fonte: \citeauthoronline{blindsignaturewiki}.}
+  \legend{Fonte: \citeauthor{blindsignaturewiki}.}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algorítmo Rivest--Shamir--Adleman (RSA).}
   \includegraphics[width=1.0\textwidth]{imagens/blind-signature-rsa.jpg}
-  \legend{Fonte: \citeauthoronline{blindsignaturewiki}.}
+  \legend{Fonte: \citeauthor{blindsignaturewiki}.}
 \end{figure}
 
 Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda depende de um agente central (Bob) que registre as operações de entrada e saída de valor e garanta o valor monetário do documento, e por isso pode apenas ser considerado como uma camada de privacidade que complementa o sistema bancário vigente, trazendo o anonimato das operações transacionadas através de dinheiro em espécie para o mundo das transações virtuais.
 
-Em 1990, \citeauthoronline{haber1990time}\cite{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criou uma maneira de registrar documentos eletrônicos de forma a garantir sua autenticidade, data de registro bem como a imutabilidade de seu conteúdo, e que não pudesse ser adulterada por quem armazenasse essas informações.
+Em 1990, \citeauthor{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criou uma maneira de registrar documentos eletrônicos de forma a garantir sua autenticidade, data de registro bem como a imutabilidade de seu conteúdo, e que não pudesse ser adulterada por quem armazenasse essas informações.
 
 Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algorítmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma decentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
 
@@ -272,9 +272,9 @@ A solução de \citeauthoronline{haber1990time} foi concebida para funcionar com
 \begin{figure}[htbp]
   \caption{\label{fig:hash}Exemplo de função hash.}
   \begin{center}
-    \includegraphics[width=1.0\textwidth]{imagens/hash.png}
+    \includegraphics[width=0.45\textwidth]{imagens/hash.png}
   \end{center}
-  \legend{Fonte: \citeauthoronline{hashimage}.}
+  \legend{Fonte: \citeauthor{hashimage}.}
 \end{figure}
 
 A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente para ser desprezada. Com isso arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
@@ -283,17 +283,17 @@ Para garantir a data de registro do documento, \citeauthoronline{haber1990time} 
 
 
 
-Em 1993, \citeauthoronline{junkmail}\cite{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
+Em 1993, \citeauthor{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
 
 \citeauthoronline{junkmail} chamaram essa função de *função de precificação*, e foi apresentada como uma alternativa as soluções que estavam sendo propostas na época, que incluíam a criação de uma lei que caracterizava o envío de e-mails não autorizados como contravenção penal; e a cobrança de impostos para cada e-mail enviado ou a partir de certo número de e-mails enviados por dia.
 
-\citeauthoronline{hashcash}\cite{hashcash} propôs uma solução semelhante, e segundo o autor, sem ter o conhecimento do trabalho de \citeauthoronline{junkmail}. Essa solução foi denominada *Hashcash* e também foi idealizada para reduzir o número de SPAMs, além de ser uma forma de prevenir ataques DDoS (*Distributed Denial of Service* -  Ataque Distribuído de Negação de Serviço).
+\citeauthor{hashcash} propôs uma solução semelhante, e segundo o autor, sem ter o conhecimento do trabalho de \citeauthoronline{junkmail}. Essa solução foi denominada *Hashcash* e também foi idealizada para reduzir o número de SPAMs, além de ser uma forma de prevenir ataques DDoS (*Distributed Denial of Service* -  Ataque Distribuído de Negação de Serviço).
 
 Para \citeauthoronline{hashcash}, as funções de custo deveriam ser eficientemente verificáveis e não proverem vantagem para o servidor responsável por criar os desafios, já que caso contrário, o servidor teria um conflito de interesses e teria a possibilidade de utilizar essa vantagem para ganhos próprios.
 
 Alguns dos diferenciais da função de custo *Hashcash* eram as alterações dos desafios a cada intervalo de tempo, o que evitaria a pré-computação de respostas; e o ajuste do custo computacional necessário para decifrar o desafio, o que permitiria a adaptação do nível do desafio de acordo com a demanda de requisições que o servidor enfrentava.
 
-O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthoronline{rpow}\cite{rpow} em 2004.
+O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthor{rpow} em 2004.
 
 O algorítmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo token.
 
