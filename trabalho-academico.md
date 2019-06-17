@@ -259,23 +259,46 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
 
 Embora o processo descrito garanta que Bob não conheça o conteúdo do documento e por isso não consiga saber quem emitiu originalmente o documento, ele ainda requer que um agente central (Bob) registre as operações de entrada e saída de valor e garanta o valor monetário do documento, e por isso pode apenas ser considerado como uma camada de privacidade que complementa o sistema bancário vigente, trazendo o anonimato das operações transacionadas através de dinheiro em espécie para o mundo das transações virtuais.
 
-Foi apenas em \citeyear{haber1990time} que surgiu uma solução com potencial de resolver o problema da dependência de um agente central para registro de informações importantes. \citeauthor{haber1990time} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criaram uma maneira de registrar documentos eletrônicos de forma a garantir a autenticidade, a data de registro, bem como a imutabilidade de seu conteúdo, e impossibilitando a adulteração dessas informações por quem os armazenassem.
+Foi apenas em \citeyear{timestamp} que surgiu uma solução com potencial de resolver o problema da dependência de um agente central para registro de informações importantes. \citeauthor{timestamp} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criaram uma maneira de registrar documentos eletrônicos de forma a garantir a autenticidade, a data de registro, bem como a imutabilidade de seu conteúdo, e impossibilitando a adulteração dessas informações por quem os armazenassem.
 
 Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algorítmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma decentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
 
-A solução de \citeauthoronline{haber1990time} foi concebida para funcionar com qualquer documento digital, independente do formato ou tamanho, e para garantir isso ele propôs o uso de uma família de funçôes criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (\ref{fig:hash}).
+A solução de \citeauthoronline{timestamp} foi concebida para funcionar com qualquer documento digital, independente do formato ou tamanho, e para garantir isso ele propôs o uso de uma família de funções criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (\ref{fig:hash}).
 
 \begin{figure}[htbp]
   \caption{\label{fig:hash}Exemplo de função hash.}
   \begin{center}
-    \includegraphics[width=0.45\textwidth]{imagens/hash.png}
+    \includegraphics[width=0.35\textwidth]{imagens/hash.png}
   \end{center}
   \legend{Fonte: \citeauthor{hashimage}.}
 \end{figure}
 
 A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente para ser desprezada. Com isso, arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
 
-Para garantir a data de registro do documento, \citeauthoronline{haber1990time} propuseram o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
+Para garantir a data de registro do documento, \citeauthoronline{timestamp} propuseram o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
+
+Já para garantir a propriedade do documento, \citeauthoronline{timestamp} incorporaram o uso de assinaturas digitais em sua proposta.
+
+Uma assinatura digital é equivalente a uma assinatura escrita, provendo uma maneira de produzir um documento digital cuja autenticidade pode ser verificada por qualquer um mas que não possa ser produzido por ninguém além do autor original.
+
+A assinatura digital é possível através da utilização de um par de chaves *E* e *D* que possa ser utilizada em qualquer mensagem/documento *M*, possuindo as seguintes propriedades \cite{encdenc}:
+
+1. *E* é uma função inversa de *D*;
+2. Para cada mensagem *M*, *E(M)* e *D(M)* são fáceis de serem computados;
+3. *E* é computacionalmente inviável de ser descoberto a partir de *D*;
+4. *E* e *D* são computacionalmente fáceis de serem gerados a partir de uma chave *K*.
+
+A propriedade 3 permite que a chave *D* possa ser exposta em meios públicos e acessíveis sem comprometer a chave *E*.
+
+Através do uso do par de chaves *E* e *D*, \citeauthoronline{encdenc} propôs que se Alice desejar enviar uma mensagem *M* para Carlos, ela deveria 'decriptar' a mensagem *M* usando a chave secreta *D\textsubscript{Alice}*, enviando para Carlos a mensagem *D\textsubscript{Alice}(M)*. Quando Carlos receber a mensagem *D\textsubscript{Alice}(M)*, ele poderá 'encriptá-la' utilizando a chave pública de Alice (E\textsubscript{Alice}) e ler o conteúdo original *M*.
+
+A mensagem *D\textsubscript{A}(M)* deverá ser guardada para servir como prova de que Alice foi a autora da mensagem, já que qualquer pessoa que desconfie da autoria da mensagem apenas teria que usar a chave pública de Alice (*E\textsubscript{Alice}*) para produzir a mensagem *M*. Qualquer outra chave pública utilizada em *D\textsubscript{A}(M)* resultaria em um resultado completamente diferente de *M*.
+
+Utilizando essa técnica consegue-se averiguar a qualquer momento se um indivíduo assinou ou não um documento digital.
+
+
+
+
 
 Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
 
@@ -413,9 +436,9 @@ Este capítulo explica o que é *blockchain*, contrato inteligente, e aplicaçõ
 \legend{Fonte: \citeauthoronline{zheng2017overview}.}
 \end{figure}
 
-A primeira proposta de utilização de uma rede encadeada de dados utilizando conceitos de criptografia e rede distribuída de dados foi formalizada em \citeyear{haber1990time} por \citeauthoronline{haber1990time} para resolver o problema de certificar que um documento foi criado ou teve sua última modificação em determinada data.
+A primeira proposta de utilização de uma rede encadeada de dados utilizando conceitos de criptografia e rede distribuída de dados foi formalizada em \citeyear{timestamp} por \citeauthoronline{timestamp} para resolver o problema de certificar que um documento foi criado ou teve sua última modificação em determinada data.
 
-Em \citeyear{nakamoto2008bitcoin}, \citeauthoronline{nakamoto2008bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{haber1990time} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
+Em \citeyear{nakamoto2008bitcoin}, \citeauthoronline{nakamoto2008bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{timestamp} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
 
 \begin{figure}[htbp]
 \caption{\label{fig:privacy-model}Modelo de privacidade: centralizado x descentralizado.}
