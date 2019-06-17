@@ -252,7 +252,7 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
 
 \begin{figure}[htbp]
   \centering
-  \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algorítmo Rivest--Shamir--Adleman (RSA).}
+  \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algorítmo RSA.}
   \includegraphics[width=1.0\textwidth]{imagens/blind-signature-rsa.jpg}
   \legend{Fonte: \citeauthor{blindsignaturewiki}.}
 \end{figure}
@@ -266,18 +266,20 @@ Essa solução, que viria a ser conhecida como *blockchain*, consistia de um alg
 A solução de \citeauthoronline{timestamp} foi concebida para funcionar com qualquer documento digital, independente do formato ou tamanho, e para garantir isso ele propôs o uso de uma família de funções criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (\ref{fig:hash}).
 
 \begin{figure}[htbp]
-  \caption{\label{fig:hash}Exemplo de função hash.}
+  \caption{\label{fig:hash}Exemplo de \emph{função hash}.}
   \begin{center}
     \includegraphics[width=0.35\textwidth]{imagens/hash.png}
   \end{center}
   \legend{Fonte: \citeauthor{hashimage}.}
 \end{figure}
 
-A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo conjunto de caracteres seja baixa o suficiente para ser desprezada. Com isso, arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
+A *função hash* garante que um arquivo de mesmo conteúdo, sempre gere um mesmo conjunto de caracteres (chamado de *hash do arquivo*, ou simplesmente *hash*) e que a probabilidade de dois ou mais arquivos diferentes produzirem o mesmo *hash* seja baixa o suficiente para ser desprezada. Com isso, arquivos gigantes podem ser reduzidos a poucos caracteres, facilmente armazenáveis e probabilisticamente únicos.
 
-Para garantir a data de registro do documento, \citeauthoronline{timestamp} propuseram o uso de assinaturas digitais para assinar o *hash* do documento concatenado com a data e tempo atual em que o documento foi requisitado para ser registrado.
+Qualquer adulteração de um documento gera um *hash* diferente, evidenciando uma tentativa de fraude do mesmo. Assim, se Alice pode registrar um documento *X* com Bob apenas aplicando uma *função hash F* conhecida no documento *X*, que geraria um *hash* *h* que deveria então ser armazenado por Bob.
 
-Já para garantir a propriedade do documento, \citeauthoronline{timestamp} incorporaram o uso de assinaturas digitais em sua proposta.
+Se Carlos, por exemplo, vier a suspeitar de que o arquivo *X* foi adulterado, bastaria ele usar a mesma *função hash f* no arquivo X e verificar se o *hash* produzido é o mesmo armazenado por Bob.
+
+Porém, para garantir que a propriedade do documento X seja realmente de Alice, \citeauthoronline{timestamp} sugeriram o uso de assinaturas digitais.
 
 Uma assinatura digital é equivalente a uma assinatura escrita, provendo uma maneira de produzir um documento digital cuja autenticidade pode ser verificada por qualquer um mas que não possa ser produzido por ninguém além do autor original.
 
@@ -290,15 +292,35 @@ A assinatura digital é possível através da utilização de um par de chaves *
 
 A propriedade 3 permite que a chave *D* possa ser exposta em meios públicos e acessíveis sem comprometer a chave *E*.
 
-Através do uso do par de chaves *E* e *D*, \citeauthoronline{encdenc} propôs que se Alice desejar enviar uma mensagem *M* para Carlos, ela deveria 'decriptar' a mensagem *M* usando a chave secreta *D\textsubscript{Alice}*, enviando para Carlos a mensagem *D\textsubscript{Alice}(M)*. Quando Carlos receber a mensagem *D\textsubscript{Alice}(M)*, ele poderá 'encriptá-la' utilizando a chave pública de Alice (E\textsubscript{Alice}) e ler o conteúdo original *M*.
+Através do uso do par de chaves *E* e *D*, \citeauthoronline{encdenc} propôs que se Alice desejar enviar uma mensagem *M* para Carlos, ela deveria 'decriptar' a mensagem *M* usando a chave secreta *D\textsubscript{Alice}*, enviando para Carlos a mensagem *D\textsubscript{Alice}(M)*. Quando Carlos receber a mensagem *D\textsubscript{Alice}(M)*, ele poderá 'encriptá-la' utilizando a chave pública de Alice (*E\textsubscript{Alice}*) e ler o conteúdo original *M*.
 
 A mensagem *D\textsubscript{A}(M)* deverá ser guardada para servir como prova de que Alice foi a autora da mensagem, já que qualquer pessoa que desconfie da autoria da mensagem apenas teria que usar a chave pública de Alice (*E\textsubscript{Alice}*) para produzir a mensagem *M*. Qualquer outra chave pública utilizada em *D\textsubscript{A}(M)* resultaria em um resultado completamente diferente de *M*.
 
 Utilizando essa técnica consegue-se averiguar a qualquer momento se um indivíduo assinou ou não um documento digital.
 
+Além de identificar a autoria do documento também é importante armazenar a data e horário de criação ou modificação do documento, e \citeauthoronline{timestamp} para resolver esse problema sugeriram que o *hash* do arquivo deveria ser concatenado com o horário e data do registro e só então ser assinado com a chave *D* do autor do registro. Com isso, apenas com um *hash* pequeno poderia se registrar um documento com as informações de quando ele foi criado ou modificado e quem é o autor do documento.
 
+Ainda assim, é necessário confiar em um agente central (Bob), que poderia facilmente ser corrompido por Carlos sem que Alice conseguisse provar a fraude. \citeauthoronline{timestamp} propuseram uma solução denominada *confiança distribuída*.
 
+Nessa solução, haveria um gerador pseudoaleatório\footnote{\emph{gerador pseudoaleatório} é um algorítmo que usa \emph{bits} verdadeiramente aleatórios para gerar de forma determinística uma longa sequência de \emph{bits} \cite{pseudo}.} *G* disponível para todos os indivíduos que desejassem registrar documentos. Quando Alice desejasse registrar um documento, ela deveria gerar um *hash y* do documento, e usá-lo como *seed*\footnote{\emph{seed} (semente) é o nome que se dá a sequência de bits verdadeiramente aleatória utilizada no gerador pseudoalaorio.} para o gerador *G*, o que produzirá uma sequência de *bits* que podem ser agrupadas de maneira a forma um número *k* de *IDs*, conforme mostrado na equação \ref{eqn:g} \cite{timestamp}.
 
+\begin{equation}
+\label{eqn:g}
+G(y) = (ID_{1}, ID_{2}, ..., ID_{k})
+\end{equation}
+
+Cada *ID* gerado corresponde a um identificador de um cliente (usuário desse sistema distribúido) e Alice deveria portanto enviar para cada um desses clientes uma requisição composta de seu próprio *ID* junto com o *hash y*. Cada cliente que recebesse essa requisição de Alice, deveria assinar a mensagem incluíndo o tempo *t* do ínicio do processamento, conforme a equação \ref{eqn:s} e enviar o resultado de volta para Alice \cite{timestamp}.
+
+\begin{equation}
+\label{eqn:s}
+s_{j} = \sigma_{j}(t, ID, y)
+\end{equation}
+
+O único requisito para essa arquitetura funcionar é haver uma lista pública de clientes disponíveis de maneira a ser possível interpretar o resultado de *G(y)* como um conjunto de *k* clientes prontos para serem requisitados.
+
+Para resolver o possível problema de indisponibilidade de clientes \citeauthoronline{timestamp} afirmaram que bastaria a função *G* gerar um número suficientemente grande de *k* clientes de forma a garantir que haverá a disponiblidade de $k' < k$ clientes, sendo *k'* um número suficientemente grande de forma a garantir que seja improvável que a maioria dos clientes estejam ávidos por falsificar o *timestamp* do documento.
+
+Com essa solução, \citeauthoronline{timestamp} elaboraram uma solução que embora tenha sido concebida para o registro de documentos digitais, poderia ser utilizada para criar um sistema de transações financeiras digitais que não estivesse livre de agentes centrais.
 
 Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
 
