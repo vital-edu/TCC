@@ -366,9 +366,13 @@ O Bit Gold funcionaria da seguinte forma:
 
 7. Para averiguar o valor do registro de *Bit Gold*, Bob checaria e verificaria o *desafio criptográfico*, a *prova de trabalho* e a *marcação temporal* do registro.
 
-Como cada registro de *Bit Gold* está ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros (a partir de agora, chamado de *blockchain*) é inalterável.
+Como cada registro de *Bit Gold* está ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros, a *blockchain*, é inalterável.
 
+\citeauthoronline{bitgold} destaca que todos os tipos de dinheiro já utilizados tem alguma forma de insegurança, desde falsificação à facilidade de roubo, mas que provavelemente a pior insegurança que um dinheiro possa ter é a inflação. E o *Bit Gold* seria uma solução de moeda que apresentaria em sua arquitetura essa segurança contra a inflação.
 
+E em \citeyear{bitcoin}, \citeauthoronline{bitcoin}, um pseudonimo pertencete um ou vários indivíduos até hoje desconhecidos, a partir ereuniram propriedades, ideias, características e
+
+um indivíduo ou grupo de indivíduos, até hoje
 
 
 
@@ -460,14 +464,14 @@ Este capítulo explica o que é *blockchain*, contrato inteligente, e aplicaçõ
 
 A primeira proposta de utilização de uma rede encadeada de dados utilizando conceitos de criptografia e rede distribuída de dados foi formalizada em \citeyear{timestamp} por \citeauthoronline{timestamp} para resolver o problema de certificar que um documento foi criado ou teve sua última modificação em determinada data.
 
-Em \citeyear{nakamoto2008bitcoin}, \citeauthoronline{nakamoto2008bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{timestamp} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
+Em \citeyear{bitcoin}, \citeauthoronline{bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{timestamp} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
 
 \begin{figure}[htbp]
 \caption{\label{fig:privacy-model}Modelo de privacidade: centralizado x descentralizado.}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{imagens/privacy-model.png}
 \end{center}
-\legend{Fonte: \citeauthoronline{nakamoto2008bitcoin}.}
+\legend{Fonte: \citeauthoronline{bitcoin}.}
 \end{figure}
 
 Como ilustrado na figura \ref{fig:privacy-model}, o modelo de privacidade tradicional para o registro de transações depende de um agente centralizador de informação
