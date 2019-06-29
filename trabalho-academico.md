@@ -389,28 +389,30 @@ Além do simples registro da transação, informando valor, pagador e recebedor,
 
 Mas a partir do momento que se dá a uma entidade ou indivíduo o poder de manipular transações, problemas de confiança surgem: será que o agente central não está usando esse poder para benefício próprio? Será que o agente central é capaz de garantir a segurança das informações que ele detém?
 
-A criação de um livro-razão público resolveria o problema de gasto duplo sem a necessidade de um agente central, já que qualquer um poderia verificar se uma transação já foi feita antes de aceitar uma nova, porém seria necessário exigir a realização de uma prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, a fim de resolver conflitos ou problemas de confiança entre os indivíduos que operam o livro-razão.
+A criação de um livro-razão público resolveria o problema de gasto duplo sem a necessidade de um agente central, já que qualquer um poderia verificar se uma transação já foi feita antes de aceitar uma nova, porém a capacidade de qualquer agente poder registrar uma transação no livro-razão cria o *Problema dos Generais Bizantinos*.
 
-\citeauthoronline{byzantine} formalizou em \citeyear{byzantine} o *Problema dos Generais Bizantinos*. Esse problema é apresentado por uma história fictícia de um exército bizantino acampado ao redor de uma cidade inimiga. O exército é composto por diversas divisões, cada uma comandada por um general, e a comunicação entre os generais só pode ocorrer por meio de troca de mensagens entre si.
+\citeauthoronline{byzantine} formalizaram em \citeyear{byzantine} o *Problema dos Generais Bizantinos*. Esse problema é apresentado por uma história fictícia de um exército bizantino acampado ao redor de uma cidade inimiga. O exército é composto por diversas divisões, cada uma comandada por um general, e a comunicação entre os generais só pode ocorrer por meio de troca de mensagens entre si.
 
-O exército deve decidir por usar um plano de ação único, porém deve-se considerar que dentre os generais, pode haver traidores. Assim, o problema é caracterizado por \cite{byzantine}:
+O exército deve decidir por usar um plano de ação único, porém deve-se considerar que dentre os generais pode haver traidores. Assim, o problema é caracterizado por \cite{byzantine}:
 
-i. Todos os generais leais decidem adotar um mesmo plano de ação;
-ii. Um grupo pequeno de traidores não podem fazer com que os generais leais adotem um plano de ação ruim.
+i. Todos os generais leais devem adotar um mesmo plano de ação;
+ii. Um grupo pequeno de traidores não podem conseguir que os generais leais adotem um plano de ação ruim.
 
 Nesse problema teórico computacional, todos os generais leais farão o que o algorítmo implementado disser, porém os traidores utilizarão qualquer outro algorítmo com o objetivo de chegar a uma ação considerada ruim para os interesses do exército.
 
 Como \citeauthoronline{byzantine} explicitam, o algorítmo utilizado pelos generais leais devem garantir a condição (i) independente do que os traídores fizerem, e os generais leais não apenas devem chegar a um acordo sobre o que fazer, como também devem chegar a um acordo sobre um plano de ação razoável, ou em outras palavras, benéfico para o exército bizantino.
 
+Para resolver o *Problema dos Generais Bizantinos* no contexto de registro de transações em um livro-razão público, é necessário considerar as seguintes características desse livro-razão:
 
+1. O livro-razão pode ser escrito por qualquer um, ou seja, não existe um agente central que define quem pode escrever no livro-razão;
+2. O livro-razão deve impedir o gasto duplo;
+3. Todos os participantes não-fraudadores devem concordar que o conteúdo do livro-razão é o correto e único aceito;
 
- que fictício,
+A terceira característica remete ao *Problema dos Generais Bizantinos*. A primeira característica se opõe a qualquer tipo de regulação centralizada, enquanto que a segunda característica garante que esse livro-razão possa ser utilizado como um sistema de transações financeiras confiável.
 
- é caracterizado por \cite{byzantine}:
+Para garantir a terceira característica, a simples votação entre os participantes, solução tradicional proposta por \citeauthoronline{byzantine}, não seria suficiente pois não há como impedir que novos participantes entrem no sistema, o que tornaria fácil a multiplicação artificial de agentes fraudadores, que invariavelmente conseguiriam se tornar a maioria e consequentemente fraudariam o livro-razão.
 
-1. Todos os generais leais decidem
-
-Para exemplificar a necessidade de uma prova de trabalho em um sistema decentralizado de informação,
+Por isso \citeauthoronline{bitcoin} propôs a utilização de um algorítmo de prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, inspirado pelo trabalho de \citeauthoronline{hashcash}. A prova de trabalho funcionaria da seguinte maneira:
 
 
 
