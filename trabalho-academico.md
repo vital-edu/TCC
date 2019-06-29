@@ -49,7 +49,7 @@ Contratos inteligentes proveem a segurança necessária para que uma economia de
 
 A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não se limitam a fronteiras físicas e que conseguem realizar processos complexos em milissegundos.
 
-Em menos de cinquenta anos, a transformação digital tem trazido revoluções na forma como trocamos informações, nos comunicamos e realizamos tarefas cotidianas e dentre essas inúmeras transformações digitais, o comércio eletrônico tem se destacado pela seu crescimento e por sua participação cada vez maior na econômica. Segundo \apudonline{webshoppers2019}{emarketer}
+Em menos de cinquenta anos, a transformação digital tem trazido revoluções na forma como trocamos informações, nos comunicamos e realizamos tarefas cotidianas e dentre essas inúmeras transformações digitais, o comércio eletrônico tem se destacado pela seu crescimento e por sua participação cada vez maior na econômica. Segundo \apudonline[pp. 9]{emarketer}{webshoppers2019}
 o comércio eletrônico teve um crescimento de 24% no mundo todo em 2018, movimentando 2,9 trilhões de dólares em vendas. Esse crescimento tem acontecido ano após ano, em escala global, e o que em seu primórdio se restringia apenas a industria do entretenimento, passou a embarcar setores de turismo e prestação de serviços, posteriormente o setor de bens duráveis e não-duráveis, e está finalmente começando a incluir o comércio de bens perecíveis.
 
 Essa nova forma de consumir e oferecer produtos e serviços, barateia e facilita a vida de compradores e vendedores, permitindo inclusive que consumidores de um país tenham acesso a produtos de outros países. Porém, o comércio eletrônico, assim como o comércio tradicional, sofre de regulamentações e taxações que dificultam que o livre comércio ocorra, sendo um meio mais fácil de controle, principalmente por dificultar as vendas informais devido a opção de pagamento predominantemente ser o cartão de crédito ou outros meios eletrônicos facilmente controlados e fiscalizados por governos.
@@ -155,9 +155,9 @@ As ações humanas usam meios escassos para satisfazerem a mais urgente das nece
 
 Assim, o primeiro cavalo terá um valor maior que o segundo, que terá um valor maior que o terceiro. Ou seja, para todas as ações humanas, conforme a quantidade de suprimento de um mesmo bem aumenta, a utilidade (ou valor) de cada unidade adicionada diminui.
 
-Por mais que seja impossível dizer o quão mais valorosa uma unidade de um mesmo bem é perante outra unidade do mesmo bem, ainda assim há uma relação ordinal entre cada unidade, o que pode ser ilustrado em um diagrama de escala de valores \ref{fig:value-scale-diagram}, em que o eixo X representa um item de um mesmo bem, e o eixo Y mostra a ordem de importância de um fim ao qual esse bem é empregado.
+Por mais que seja impossível dizer o quão mais valorosa uma unidade de um mesmo bem é perante outra unidade do mesmo bem, ainda assim há uma relação ordinal entre cada unidade, o que pode ser ilustrado em um diagrama de escala de valores (fig \ref{fig:value-scale-diagram}), em que o eixo X representa um item de um mesmo bem, e o eixo Y mostra a ordem de importância de um fim ao qual esse bem é empregado.
 
-Quando analisamos o estoque (definido com a quantidade de um mesmo bem quando um item pode ser intercambiável com outro item do mesmo bem) de um bem X com o estoque de um bem Y, podemos novamente criar uma escala de valores \ref{fig:value-scale-rank}, sendo que a regra se mantem: a necessidade mais urgente será satisfeita com determinada unidade de um bem, e suscetivamente as necessidade mais urgente remanescentes serão satisfeitas de acordo com as unidades recentes de cada bem, conforme eles satisfaçam essa necessidade.
+Quando analisamos o estoque (definido com a quantidade de um mesmo bem quando um item pode ser intercambiável com outro item do mesmo bem) de um bem X com o estoque de um bem Y, podemos novamente criar uma escala de valores (fig. \ref{fig:value-scale-rank}), sendo que a regra se mantem: a necessidade mais urgente será satisfeita com determinada unidade de um bem, e suscetivamente as necessidade mais urgente remanescentes serão satisfeitas de acordo com as unidades recentes de cada bem, conforme eles satisfaçam essa necessidade.
 
 \begin{figure}[h!]
   \centering
@@ -264,7 +264,7 @@ Foi apenas em \citeyear{timestamp} que surgiu uma solução com potencial de res
 
 Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algorítmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma decentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
 
-A solução de \citeauthoronline{timestamp} foi concebida para funcionar com qualquer documento digital, independente do formato ou tamanho, e para garantir isso ele propôs o uso de uma família de funções criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (\ref{fig:hash}).
+A solução de \citeauthoronline{timestamp} foi concebida para funcionar com qualquer documento digital, independente do formato ou tamanho, e para garantir isso ele propôs o uso de uma família de funções criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (fig. \ref{fig:hash}).
 
 \begin{figure}[htbp]
   \caption{\label{fig:hash}Exemplo de \emph{função hash}.}
@@ -369,7 +369,7 @@ E em \citeyear{bitcoin}, \citeauthoronline{bitcoin}, um pseudônimo pertencente 
 
 Embora tenha sido inspirado na ideia de *blockchain* concebida por \citeauthoronline{timestamp} e nas moedas *b-cash*, *Hascash* e provavelmente na moeda *Bit Gold*, o *Bitcoin* apresentou com mais detalhes como uma *blockchain* poderia ser utilizada para criar um sistema eletrônico de registro de transações que nâo dependesse de nenhum agente central e que conseguisse garantir as características necessárias para tornar-se uma moeda *de facto*.
 
-\citeauthoronline{bitcoin} definiu o termo *moeda eletrônica* como sendo uma cadeia de assinaturas digitais \cite{bitcoin}, em que Alice transferiria uma quantia de dinheiro para Carlos assinando digitalmente o *hash* da última transação registrada junto com a chave pública de Carlos \ref{fig:transaction}.
+\citeauthoronline{bitcoin} definiu o termo *moeda eletrônica* como sendo uma cadeia de assinaturas digitais \cite{bitcoin}, em que Alice transferiria uma quantia de dinheiro para Carlos assinando digitalmente o *hash* da última transação registrada junto com a chave pública de Carlos (fig. \ref{fig:transaction}).
 
 \begin{figure}[htbp]
 \caption{\label{fig:transaction}Registro de transação em uma cadeia de assinaturas digitais.}
@@ -410,7 +410,7 @@ Por isso \citeauthoronline{bitcoin} propôs a utilização de um algorítmo de p
 
 Além do trabalho despendido para escrever uma transação no livro-razão, seja ela uma transação fraudulenta ou não, os agentes não-fraudulentos apenas confiarão no livro-razão mais extenso, ou seja, a única forma de enganar os participantes não-fraudulentos seria os fraudadores possuírem mais poder de processamento do que todos os participantes não-fraudulentos juntos. Quanto mais participantes não-fraudulentos entram neste processo de escrita concorrente, mais improvável de ocorrer torna-se uma fraude, e mais caro torna-se tentar fraudar o livro-razão.
 
-Para que o livro-razão fosse público, distribuído, decentralizado e digital, \citeauthoronline{bitcoin} descreveu um sistema *peer-to-peer*\footnote{\emph{peer-to-peer} (p2p - ponto-a-ponto) é o nome que se dá a uma arquitetura de rede distribuída em que os participantes compartilham parte de seus recursos de \emph{hardware} (poder de processamento, capacidade de armazenamento, etc) para outros \emph{peers} (pontos) diretamente, sem passar por entidades intermediárias. Esses recursos compartilhados são necessários para prover o serviço e/ou conteúdo oferecido pela rede, e cada participante dessa rede é ao mesmo tempo provedor e consumidor de recursos \apud{p2p}{kellerer}.} em que as transações seriam registradas em blocos, e em que cada novo bloco dependeria do bloco anteriormente registrado \ref{fig:blockchain}, criando uma *blockchain*. Esse sistema teria as seguintes características:
+Para que o livro-razão fosse público, distribuído, decentralizado e digital, \citeauthoronline{bitcoin} descreveu um sistema *peer-to-peer*\footnote{\emph{peer-to-peer} (p2p - ponto-a-ponto) é o nome que se dá a uma arquitetura de rede distribuída em que os participantes compartilham parte de seus recursos de \emph{hardware} (poder de processamento, capacidade de armazenamento, etc) para outros \emph{peers} (pontos) diretamente, sem passar por entidades intermediárias. Esses recursos compartilhados são necessários para prover o serviço e/ou conteúdo oferecido pela rede, e cada participante dessa rede é ao mesmo tempo provedor e consumidor de recursos \apud{kellerer}{p2p}.} em que as transações seriam registradas em blocos, e em que cada novo bloco dependeria do bloco anteriormente registrado (fig. \ref{fig:blockchain}), criando uma *blockchain*. Esse sistema teria as seguintes características:
 
 \begin{figure}[htbp]
   \caption{\label{fig:blockchain}Arquitetura da \emph{Blockchain}}
@@ -425,7 +425,7 @@ Para que o livro-razão fosse público, distribuído, decentralizado e digital, 
 3. Cada nó tenta realizar uma prova de trabalho válida para o seu bloco;
 4. Quando um nó encontra uma prova de trabalho válida ele transmite o bloco para todos os nós da rede;
 5. Os nós da rede apenas aceitam o novo bloco se todas as transações contidas nesse bloco forem válidas e já não tiverem sido gastas;
-6. Os nós expressam sua aceitação ao novo bloco trabalhando para criar o próximo bloco da *blockchain* usando o *hash* do bloco aceito como o *hash* anterior do bloco a qual estão trabalhando \ref{fig:prev-hash}.
+6. Os nós expressam sua aceitação ao novo bloco trabalhando para criar o próximo bloco da *blockchain* usando o *hash* do bloco aceito como o *hash* anterior do bloco a qual estão trabalhando (fig. \ref{fig:prev-hash}).
 
 \begin{figure}[htbp]
   \caption{\label{fig:prev-hash}O próximo bloco a ser criado deve conter o hash do último bloco aceito como válido.}
