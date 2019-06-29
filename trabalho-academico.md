@@ -376,7 +376,7 @@ Embora tenha sido inspirado na ideia de *blockchain* concebida por \citeauthoron
 \begin{center}
 \includegraphics[width=1.0\textwidth]{imagens/transaction.png}
 \end{center}
-\legend{Fonte: \citeauthoronline{bitcoin}.}
+\legend{Fonte: \citeauthor{bitcoin}.}
 \end{figure}
 
 Além do simples registro da transação, informando valor, pagador e recebedor, é necessário também que haja a garantia de que Alice ao ter transferido uma quantia de dinheiro para Carlos, não possa transferir essa mesma quantia para outra pessoa, ou seja, é necessário impedir o gasto duplo. Em um sistema tradicional essa verificação ficaria a cargo de um agente central que seria o responsável por verificar se uma transação pode ocorrer e de registrá-la em um livro-razão, que pode ser armazenada em bases de dados tanto físicas quanto digitais.
@@ -417,7 +417,7 @@ Para que o livro-razão fosse público, distribuído, decentralizado e digital, 
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/blockchain.png}
   \end{center}
-  \legend{Fonte: \citeauthoronline{zheng2017overview}.}
+  \legend{Fonte: \citeauthor{zheng2017overview}.}
 \end{figure}
 
 1. Novas transações deverão ser transmitidas para todos os nós (participantes) da rede;
@@ -432,13 +432,27 @@ Para que o livro-razão fosse público, distribuído, decentralizado e digital, 
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/prev-hash.png}
   \end{center}
-  \legend{Fonte: \citeauthoronline{bitcoin}.}
+  \legend{Fonte: \citeauthor{bitcoin}.}
+\end{figure}
+
+Se dois nós transmitirem versões diferentes do próximo bloco, ou seja, se forem criado dois blocos válidos ao mesmo tempo (um chamado de *U4* e outro de *B4*), os demais nós da rede sempre trabalharão em cima do primeiro bloco que receberem. Esse acontecimento causaria a criação de duas ramificações da *blockchain* concorrentes, uma contendo *U4* como último bloco, e outra contendo *B4* como último bloco (fig. \ref{fig:long-branch}). Porém, a partir do momento que uma dessas ramificações se tornar maior (em número de blocos registrados) do que a outra, todos os nós que estiverem trabalhando na ramificação menor automaticamente abandonarão essa ramificação em detrimento da ramificação maior \cite{bitcoin}.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:long-branch}Disputa entre duas ramificações da \emph{blockchain}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/long-branch.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{zheng2017overview}.}
 \end{figure}
 
 
-O livro-razão proposto por \citeauthoronline{bitcoin} deveria ser público, distribuído e digital, e mais tarde veio a ser denominado como *blockchain*, e o dinheiro registrado na *blockchain* seguindo as especificações de\citeauthoronline{bitcoin} foi denominado *Bitcoin*. O *Bitcoin* ao ser proposto foi considerado.
+Mesmo considerando um cenário probabilístico em que dezenas de ramificações concorrentes surjam simultaneamente, como é altamente improvável que haja sempre o mesmo número de nós trabalhando em cada ramificação, a *blockchain* sempre tenderá a longo prazo a se manter com apenas uma ramificação.
 
-Para incentivar a entrada de participantes não-fraudulentos, \citeauthoronline{bitcoin} propôs que sempre que um participante conseguisse escrever no livro-razão, ele receberia uma recompensa.
+Como já discutido no *Problema dos Generais Bizantinos*, mesmo que um grupo de nós decida deliberadamente não obedecer esse algorítmo, eles apenas teriam sucesso em convencer os demais nós de que a sua ramificação fraudulenta da *blockchain* é a verdadeira, caso tivessem um poder de processamento maior do que a maioria dos nós não-fraudulentos.
+
+
+
+Para incentivar a entrada de participantes não-fraudulentos, \citeauthoronline{bitcoin} propôs que sempre que um participante conseguisse criar um bloco válido .
 
 
 
