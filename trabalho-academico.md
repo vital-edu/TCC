@@ -9,7 +9,6 @@ Para que o ser humano possa alcançar
 
 A partir do momento que um ser
 
-
 Desejo, esforço e recompensa
 
 O ser humano, vivendo em solidão, não precisa de outros
@@ -106,6 +105,8 @@ do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 -->
 
 # Referencial Teórico
+
+Este capítulo explica o que é um livre mercado, *blockchain*, contratos inteligente, e aplicações descentralizadas. Além de definir esses termos, é explicado quais problemas cada uma dessas tecnologias pretende resolver, suas características, vantagens, e desvantagens.
 
 ## Livre Mercado
 
@@ -302,14 +303,14 @@ Além de identificar a autoria do documento também é importante armazenar a da
 
 Ainda assim, é necessário confiar em um agente central (Bob), que poderia facilmente ser corrompido por Carlos sem que Alice conseguisse provar a fraude. \citeauthoronline{timestamp} propuseram uma solução denominada *confiança distribuída*.
 
-Nessa solução, haveria um gerador pseudoaleatório\footnote{\emph{gerador pseudoaleatório} é um algorítmo que usa \emph{bits} verdadeiramente aleatórios para gerar de forma determinística uma longa sequência de \emph{bits} \cite{pseudo}.} *G* disponível para todos os indivíduos que desejassem registrar documentos. Quando Alice desejasse registrar um documento, ela deveria gerar um *hash y* do documento, e usá-lo como *seed*\footnote{\emph{seed} (semente) é o nome que se dá a sequência de bits verdadeiramente aleatória utilizada no gerador pseudoalaorio.} para o gerador *G*, o que produzirá uma sequência de *bits* que podem ser agrupadas de maneira a forma um número *k* de *IDs*, conforme mostrado na equação \ref{eqn:g} \cite{timestamp}.
+Nessa solução, haveria um gerador pseudoaleatório\footnote{\emph{gerador pseudoaleatório} é um algorítmo que usa \emph{bits} verdadeiramente aleatórios para gerar de forma determinística uma longa sequência de \emph{bits} \cite{pseudo}.} *G* disponível para todos os indivíduos que desejassem registrar documentos. Quando Alice desejasse registrar um documento, ela deveria gerar um *hash y* do documento, e usá-lo como *seed*\footnote{\emph{seed} (semente) é o nome que se dá a sequência de bits verdadeiramente aleatória utilizada no gerador pseudoaleatório.} para o gerador *G*, o que produzirá uma sequência de *bits* que podem ser agrupadas de maneira a forma um número *k* de *IDs*, conforme mostrado na equação \ref{eqn:g} \cite{timestamp}.
 
 \begin{equation}
 \label{eqn:g}
 G(y) = (ID_{1}, ID_{2}, ..., ID_{k})
 \end{equation}
 
-Cada *ID* gerado corresponde a um identificador de um cliente (usuário desse sistema distribúido) e Alice deveria portanto enviar para cada um desses clientes uma requisição composta de seu próprio *ID* junto com o *hash y*. Cada cliente que recebesse essa requisição de Alice, deveria assinar a mensagem incluíndo o tempo *t* do ínicio do processamento, conforme a equação \ref{eqn:s} e enviar o resultado de volta para Alice \cite{timestamp}.
+Cada *ID* gerado corresponde a um identificador de um cliente (usuário desse sistema distribuído) e Alice deveria portanto enviar para cada um desses clientes uma requisição composta de seu próprio *ID* junto com o *hash y*. Cada cliente que recebesse essa requisição de Alice, deveria assinar a mensagem incluíndo o tempo *t* do ínicio do processamento, conforme a equação \ref{eqn:s} e enviar o resultado de volta para Alice \cite{timestamp}.
 
 \begin{equation}
 \label{eqn:s}
@@ -318,7 +319,7 @@ s_{j} = \sigma_{j}(t, ID, y)
 
 O único requisito para essa arquitetura funcionar é haver uma lista pública de clientes disponíveis de maneira a ser possível interpretar o resultado de *G(y)* como um conjunto de *k* clientes prontos para serem requisitados.
 
-Para resolver o possível problema de indisponibilidade de clientes \citeauthoronline{timestamp} afirmaram que bastaria a função *G* gerar um número suficientemente grande de *k* clientes de forma a garantir que haverá a disponiblidade de $k' < k$ clientes, sendo *k'* um número suficientemente grande de forma a garantir que seja improvável que a maioria dos clientes estejam ávidos por falsificar o *timestamp* do documento.
+Para resolver o possível problema de indisponibilidade de clientes \citeauthoronline{timestamp} afirmaram que bastaria a função *G* gerar um número suficientemente grande de *k* clientes de forma a garantir que haverá a disponibilidade de $k' < k$ clientes, sendo *k'* um número suficientemente grande de forma a garantir que seja improvável que a maioria dos clientes estejam ávidos por falsificar o *timestamp* do documento.
 
 Com essa solução, \citeauthoronline{timestamp} elaboraram uma solução que embora tenha sido concebida para o registro de documentos digitais, poderia ser utilizada para criar um sistema de transações financeiras digitais que não estivesse livre de agentes centrais.
 
@@ -346,9 +347,9 @@ O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work
 
 O algorítmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo token.
 
-Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algorítmos criptograficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
+Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algorítmos criptográficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
 
-Em \citeyear{bitgold}, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como caracteísticas: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas proprieddades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
+Em \citeyear{bitgold}, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como características: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas propriedades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
 
 O *Bit *Gold* funcionaria da seguinte forma:
 
@@ -362,17 +363,17 @@ O *Bit *Gold* funcionaria da seguinte forma:
 
 5. O último registro de *Bit Gold* provê o *desafio criptográfico* que servirá como insumo para a próxima *prova de trabalho*, que gerará o próximo registro de *Bit Gold*;
 
-6. Para verificar que Alice é a proprietaŕia de um registro de *Bit Gold*, Bob checaria a cadeia de registros de *Bit Gold* em qualquer serviço de registro de *Bit Gold*;
+6. Para verificar que Alice é a proprietária de um registro de *Bit Gold*, Bob checaria a cadeia de registros de *Bit Gold* em qualquer serviço de registro de *Bit Gold*;
 
 7. Para averiguar o valor do registro de *Bit Gold*, Bob checaria e verificaria o *desafio criptográfico*, a *prova de trabalho* e a *marcação temporal* do registro.
 
 Como cada registro de *Bit Gold* está ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros, a *blockchain*, é inalterável.
 
-\citeauthoronline{bitgold} destaca que todos os tipos de dinheiro já utilizados tem alguma forma de insegurança, desde falsificação à facilidade de roubo, mas que provavelemente a pior insegurança que um dinheiro possa ter é a inflação. E o *Bit Gold* seria uma solução de moeda que apresentaria em sua arquitetura essa segurança contra a inflação.
+\citeauthoronline{bitgold} destaca que todos os tipos de dinheiro já utilizados tem alguma forma de insegurança, desde falsificação à facilidade de roubo, mas que provavelmente a pior insegurança que um dinheiro possa ter é a inflação. E o *Bit Gold* seria uma solução de moeda que apresentaria em sua arquitetura essa segurança contra a inflação.
 
-E em \citeyear{bitcoin}, \citeauthoronline{bitcoin}, um pseudonimo pertencente a um ou vários indivíduos até hoje desconhecidos, a partir das ideias e tecnologias já apresentadas, concebeu o *Bitcoin*.
+E em \citeyear{bitcoin}, \citeauthoronline{bitcoin}, um pseudônimo pertencente a um ou vários indivíduos até hoje desconhecidos, a partir das ideias e tecnologias já apresentadas, concebeu o *Bitcoin*.
 
-Embora tenha sido inspirado na ideia de *blockchain* concebida por \citeauthoronline{timestamp} e nas moedas *b-cash*, *Hascash* e provavelemnte na moeda *Bit Gold*, o *Bitcoin* apresentou com mais detalhes como uma *blockchain* poderia ser utilizada para criar um sistema eletrônico de registro de transações que nâo dependesse de nenhum agente central e que conseguisse garantir as características necessárias para tornar-se uma moeda *de facto*.
+Embora tenha sido inspirado na ideia de *blockchain* concebida por \citeauthoronline{timestamp} e nas moedas *b-cash*, *Hascash* e provavelmente na moeda *Bit Gold*, o *Bitcoin* apresentou com mais detalhes como uma *blockchain* poderia ser utilizada para criar um sistema eletrônico de registro de transações que nâo dependesse de nenhum agente central e que conseguisse garantir as características necessárias para tornar-se uma moeda *de facto*.
 
 \citeauthoronline{bitcoin} definiu o termo *moeda eletrônica* como sendo uma cadeia de assinaturas digitais \cite{bitcoin}, em que Alice transferiria uma quantia de dinheiro para Carlos assinando digitalmente o *hash* da última transação registrada junto com a chave pública de Carlos \ref{fig:transaction}.
 
@@ -384,13 +385,32 @@ Embora tenha sido inspirado na ideia de *blockchain* concebida por \citeauthoron
 \legend{Fonte: \citeauthoronline{bitcoin}.}
 \end{figure}
 
-Além do simples registro da transação, informando valor, pagador e recebedor, é necessário também que haja a garantia de que Alice ao ter transferido uma quantia de dinheiro para Carlos, não possa transferir essa mesma quantia para outra pessoa, ou seja, é necessário impedir o gasto duplo. Em um sistema tradicional essa verificação ficaria a cargo de um agente central que seria o responsável por verificar se uma transação pode ocorrer e de registrá-la em um livro-razão, que pode ser armazenda em bases de dados tanto físicas quanto digitais.
+Além do simples registro da transação, informando valor, pagador e recebedor, é necessário também que haja a garantia de que Alice ao ter transferido uma quantia de dinheiro para Carlos, não possa transferir essa mesma quantia para outra pessoa, ou seja, é necessário impedir o gasto duplo. Em um sistema tradicional essa verificação ficaria a cargo de um agente central que seria o responsável por verificar se uma transação pode ocorrer e de registrá-la em um livro-razão, que pode ser armazenada em bases de dados tanto físicas quanto digitais.
 
 Mas a partir do momento que se dá a uma entidade ou indivíduo o poder de manipular transações, problemas de confiança surgem: será que o agente central não está usando esse poder para benefício próprio? Será que o agente central é capaz de garantir a segurança das informações que ele detém?
 
+A criação de um livro-razão público resolveria o problema de gasto duplo sem a necessidade de um agente central, já que qualquer um poderia verificar se uma transação já foi feita antes de aceitar uma nova, porém seria necessário exigir a realização de uma prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, a fim de resolver conflitos ou problemas de confiança entre os indivíduos que operam o livro-razão.
+
+\citeauthoronline{byzantine} formalizou em \citeyear{byzantine} o *Problema dos Generais Bizantinos*. Esse problema é apresentado por uma história fictícia de um exército bizantino acampado ao redor de uma cidade inimiga. O exército é composto por diversas divisões, cada uma comandada por um general, e a comunicação entre os generais só pode ocorrer por meio de troca de mensagens entre si.
+
+O exército deve decidir por usar um plano de ação único, porém deve-se considerar que dentre os generais, pode haver traidores. Assim, o problema é caracterizado por \cite{byzantine}:
+
+i. Todos os generais leais decidem adotar um mesmo plano de ação;
+ii. Um grupo pequeno de traidores não podem fazer com que os generais leais adotem um plano de ação ruim.
+
+Nesse problema teórico computacional, todos os generais leais farão o que o algorítmo implementado disser, porém os traidores utilizarão qualquer outro algorítmo com o objetivo de chegar a uma ação considerada ruim para os interesses do exército.
+
+Como \citeauthoronline{byzantine} explicitam, o algorítmo utilizado pelos generais leais devem garantir a condição (i) independente do que os traídores fizerem, e os generais leais não apenas devem chegar a um acordo sobre o que fazer, como também devem chegar a um acordo sobre um plano de ação razoável, ou em outras palavras, benéfico para o exército bizantino.
 
 
-um indivíduo ou grupo de indivíduos, até hoje
+
+ que fictício,
+
+ é caracterizado por \cite{byzantine}:
+
+1. Todos os generais leais decidem
+
+Para exemplificar a necessidade de uma prova de trabalho em um sistema decentralizado de informação,
 
 
 
@@ -421,9 +441,35 @@ Segundo o economista ... uma moeda é ... e tem as seguintes características ..
 
 O Bitcoin pode ser definido como uma moeda por se enquadrar nas seguintes características ... embora careça das características ...
 
+## *Blockchain*
+
+*Blockchain* é uma lista distribuída e simplesmente encadeamento de blocos de dados em que o bloco subsequente da lista contém o código *hash* do conteúdo do bloco anterior, garantindo que não haja adulteração de qualquer um dos blocos da lista sem que seja percebido a adulteração \ref{fig:blockchain}.
+
+\begin{figure}[htbp]
+\caption{\label{fig:blockchain}Arquitetura da \emph{Blockchain}}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{imagens/blockchain.png}
+\end{center}
+\legend{Fonte: \citeauthoronline{zheng2017overview}.}
+\end{figure}
+
+A primeira proposta de utilização de uma rede encadeada de dados utilizando conceitos de criptografia e rede distribuída de dados foi formalizada em \citeyear{timestamp} por \citeauthoronline{timestamp} para resolver o problema de certificar que um documento foi criado ou teve sua última modificação em determinada data.
+
+Em \citeyear{bitcoin}, \citeauthoronline{bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{timestamp} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
+
+\begin{figure}[htbp]
+\caption{\label{fig:privacy-model}Modelo de privacidade: centralizado x descentralizado.}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{imagens/privacy-model.png}
+\end{center}
+\legend{Fonte: \citeauthoronline{bitcoin}.}
+\end{figure}
+
+Como ilustrado na figura \ref{fig:privacy-model}, o modelo de privacidade tradicional para o registro de transações depende de um agente centralizador de informação
+
 ## Contratos Inteligentes
 
-Contrato inteligente foi um termo cunhado por \citeonline{nick} em \citeyear{nick} e é definido como uma forma de contrato que é incorporada a um *hardware* ou *software* de forma a criar um contrato
+Contrato inteligente foi um termo cunhado por \citeauthoronline{nick} em \citeyear{nick} e é definido como uma forma de contrato que é incorporada a um *hardware* ou *software* de forma a criar um contrato
 
 Contratos são definidos por ...
 
@@ -462,34 +508,3 @@ Embora a blockchain tenha se popularizado para ser utilizado com criptomoedas, h
 Contratos inteligentes podem ser aplicados em vários contextos, tais como ...
 
 No contexto de comércio eletrônico, os contratos inteligentes podem ser utilizados da seguinte forma ...
-
-
-# Referencial Teórico
-
-Este capítulo explica o que é *blockchain*, contrato inteligente, e aplicações descentralizadas. Além de definir esses termos, é explicado quais problemas cada uma dessas tecnologias pretende resolver, suas características, vantagens, e desvantagens.
-
-## *Blockchain*
-
-*Blockchain* é uma lista distribuída e simplesmente encadeamento de blocos de dados em que o bloco subsequente da lista contém o código *hash* do conteúdo do bloco anterior, garantindo que não haja adulteração de qualquer um dos blocos da lista sem que seja percebido a adulteração \ref{fig:blockchain}.
-
-\begin{figure}[htbp]
-\caption{\label{fig:blockchain}Arquitetura da \emph{Blockchain}}
-\begin{center}
-\includegraphics[width=1.0\textwidth]{imagens/blockchain.png}
-\end{center}
-\legend{Fonte: \citeauthoronline{zheng2017overview}.}
-\end{figure}
-
-A primeira proposta de utilização de uma rede encadeada de dados utilizando conceitos de criptografia e rede distribuída de dados foi formalizada em \citeyear{timestamp} por \citeauthoronline{timestamp} para resolver o problema de certificar que um documento foi criado ou teve sua última modificação em determinada data.
-
-Em \citeyear{bitcoin}, \citeauthoronline{bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{timestamp} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
-
-\begin{figure}[htbp]
-\caption{\label{fig:privacy-model}Modelo de privacidade: centralizado x descentralizado.}
-\begin{center}
-\includegraphics[width=1.0\textwidth]{imagens/privacy-model.png}
-\end{center}
-\legend{Fonte: \citeauthoronline{bitcoin}.}
-\end{figure}
-
-Como ilustrado na figura \ref{fig:privacy-model}, o modelo de privacidade tradicional para o registro de transações depende de um agente centralizador de informação
