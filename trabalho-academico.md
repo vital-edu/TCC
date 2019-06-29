@@ -350,7 +350,7 @@ Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente 
 
 Em \citeyear{bitgold}, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como caracteísticas: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas proprieddades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
 
-O Bit Gold funcionaria da seguinte forma:
+O *Bit *Gold* funcionaria da seguinte forma:
 
 1. Um *conjunto de bits*, denominado *desafio criptográfico* seria criado;
 
@@ -370,7 +370,25 @@ Como cada registro de *Bit Gold* está ligado ao próximo registro de *Bit Gold*
 
 \citeauthoronline{bitgold} destaca que todos os tipos de dinheiro já utilizados tem alguma forma de insegurança, desde falsificação à facilidade de roubo, mas que provavelemente a pior insegurança que um dinheiro possa ter é a inflação. E o *Bit Gold* seria uma solução de moeda que apresentaria em sua arquitetura essa segurança contra a inflação.
 
-E em \citeyear{bitcoin}, \citeauthoronline{bitcoin}, um pseudonimo pertencete um ou vários indivíduos até hoje desconhecidos, a partir ereuniram propriedades, ideias, características e
+E em \citeyear{bitcoin}, \citeauthoronline{bitcoin}, um pseudonimo pertencente a um ou vários indivíduos até hoje desconhecidos, a partir das ideias e tecnologias já apresentadas, concebeu o *Bitcoin*.
+
+Embora tenha sido inspirado na ideia de *blockchain* concebida por \citeauthoronline{timestamp} e nas moedas *b-cash*, *Hascash* e provavelemnte na moeda *Bit Gold*, o *Bitcoin* apresentou com mais detalhes como uma *blockchain* poderia ser utilizada para criar um sistema eletrônico de registro de transações que nâo dependesse de nenhum agente central e que conseguisse garantir as características necessárias para tornar-se uma moeda *de facto*.
+
+\citeauthoronline{bitcoin} definiu o termo *moeda eletrônica* como sendo uma cadeia de assinaturas digitais \cite{bitcoin}, em que Alice transferiria uma quantia de dinheiro para Carlos assinando digitalmente o *hash* da última transação registrada junto com a chave pública de Carlos \ref{fig:transaction}.
+
+\begin{figure}[htbp]
+\caption{\label{fig:transaction}Registro de transação em uma cadeia de assinaturas digitais.}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{imagens/transaction.png}
+\end{center}
+\legend{Fonte: \citeauthoronline{bitcoin}.}
+\end{figure}
+
+Além do simples registro da transação, informando valor, pagador e recebedor, é necessário também que haja a garantia de que Alice ao ter transferido uma quantia de dinheiro para Carlos, não possa transferir essa mesma quantia para outra pessoa, ou seja, é necessário impedir o gasto duplo. Em um sistema tradicional essa verificação ficaria a cargo de um agente central que seria o responsável por verificar se uma transação pode ocorrer e de registrá-la em um livro-razão, que pode ser armazenda em bases de dados tanto físicas quanto digitais.
+
+Mas a partir do momento que se dá a uma entidade ou indivíduo o poder de manipular transações, problemas de confiança surgem: será que o agente central não está usando esse poder para benefício próprio? Será que o agente central é capaz de garantir a segurança das informações que ele detém?
+
+
 
 um indivíduo ou grupo de indivíduos, até hoje
 
