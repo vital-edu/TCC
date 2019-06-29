@@ -354,17 +354,11 @@ Em \citeyear{bitgold}, \citeauthoronline{bitgold} expressou sua preocupação co
 O *Bit *Gold* funcionaria da seguinte forma:
 
 1. Um *conjunto de bits*, denominado *desafio criptográfico* seria criado;
-
 2. Alice, em seu computador, geraria uma *prova de trabalho* a partir do *desafio criptográfico* utilizando uma função criptográfica de referência;
-
 3. A *prova de trabalho* contém uma *marcação temporal* de quando foi produzida. Essa *marcação temporal* seria registrada por qualquer ou mesmo vários serviços de *marcação temporal* que comprovariam a confiabilidade da data de criação da *prova de trabalho*.
-
 4. Alice registraria a *prova de trabalho* junto com a *marcação temporal* em um serviço computacionalmente distribuído compatível com o *Bit Gold*. A partir de então, esse seria oficialmente um registro *Bit Gold*;
-
 5. O último registro de *Bit Gold* provê o *desafio criptográfico* que servirá como insumo para a próxima *prova de trabalho*, que gerará o próximo registro de *Bit Gold*;
-
 6. Para verificar que Alice é a proprietária de um registro de *Bit Gold*, Bob checaria a cadeia de registros de *Bit Gold* em qualquer serviço de registro de *Bit Gold*;
-
 7. Para averiguar o valor do registro de *Bit Gold*, Bob checaria e verificaria o *desafio criptográfico*, a *prova de trabalho* e a *marcação temporal* do registro.
 
 Como cada registro de *Bit Gold* está ligado ao próximo registro de *Bit Gold*, e esses registros estão registrados em diversos serviços distribuídos e independentes, entende-se que essa cadeia de registros, a *blockchain*, é inalterável.
@@ -396,9 +390,9 @@ A criação de um livro-razão público resolveria o problema de gasto duplo sem
 O exército deve decidir por usar um plano de ação único, porém deve-se considerar que dentre os generais pode haver traidores. Assim, o problema é caracterizado por \cite{byzantine}:
 
 i. Todos os generais leais devem adotar um mesmo plano de ação;
-ii. Um grupo pequeno de traidores não podem conseguir que os generais leais adotem um plano de ação ruim.
+ii. Um grupo pequeno de traidores não pode conseguir que os generais leais adotem um plano de ação ruim.
 
-Nesse problema teórico computacional, todos os generais leais farão o que o algorítmo implementado disser, porém os traidores utilizarão qualquer outro algorítmo com o objetivo de chegar a uma ação considerada ruim para os interesses do exército.
+Nesse problema teórico computacional, todos os generais leais farão o que o algorítmo implementado disser, porém, os traidores utilizarão qualquer outro algorítmo com o objetivo de chegar a uma ação considerada ruim para os interesses do exército.
 
 Como \citeauthoronline{byzantine} explicitam, o algorítmo utilizado pelos generais leais devem garantir a condição (i) independente do que os traídores fizerem, e os generais leais não apenas devem chegar a um acordo sobre o que fazer, como também devem chegar a um acordo sobre um plano de ação razoável, ou em outras palavras, benéfico para o exército bizantino.
 
@@ -406,30 +400,53 @@ Para resolver o *Problema dos Generais Bizantinos* no contexto de registro de tr
 
 1. O livro-razão pode ser escrito por qualquer um, ou seja, não existe um agente central que define quem pode escrever no livro-razão;
 2. O livro-razão deve impedir o gasto duplo;
-3. Todos os participantes não-fraudadores devem concordar que o conteúdo do livro-razão é o correto e único aceito;
+3. Todos os participantes não-fraudulentos devem concordar que o conteúdo do livro-razão é o correto e único aceito;
 
 A terceira característica remete ao *Problema dos Generais Bizantinos*. A primeira característica se opõe a qualquer tipo de regulação centralizada, enquanto que a segunda característica garante que esse livro-razão possa ser utilizado como um sistema de transações financeiras confiável.
 
-Para garantir a terceira característica, a simples votação entre os participantes, solução tradicional proposta por \citeauthoronline{byzantine}, não seria suficiente pois não há como impedir que novos participantes entrem no sistema, o que tornaria fácil a multiplicação artificial de agentes fraudadores, que invariavelmente conseguiriam se tornar a maioria e consequentemente obteriam sucesso em fraudar o livro-razão.
+Para garantir a terceira característica, a simples votação entre os participantes, solução tradicional proposta por \citeauthoronline{byzantine}, não seria suficiente pois não há como impedir que novos participantes entrem no sistema, o que tornaria fácil a multiplicação artificial de agentes fraudulentos, que invariavelmente conseguiriam se tornar a maioria e consequentemente obteriam sucesso em fraudar o livro-razão.
 
 Por isso \citeauthoronline{bitcoin} propôs a utilização de um algorítmo de prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, inspirado pelo trabalho de \citeauthoronline{hashcash}. De forma simplificada, a prova de trabalho obriga que qualquer agente que queira escrever no livro-razão seja obrigado a calcular uma função *hash*, que é computacionalmente dispendiosa e cujo resultado é probabilisticamente difícil de ser o correto (apenas quem calcula um resultado correto consegue escrever no livro-razão).
 
-Além do trabalho despendido para escrever uma transação no livro-razão, seja ela uma transação fraudulenta ou não, os agentes não-fraudulentos apenas confiarão no livro-razão mais extenso, ou seja, a única forma de enganar os participantes não-fraudulentos seria os fraudadores possuírem mais poder de processamento do que todos os participantes não-fraudadores juntos. Quanto mais participantes não-fraudulentos entram neste processo de escrita concorrente, mais improvável de ocorrer torna-se uma fraude, e mais caro torna-se tentar fraudar o livro-razão.
+Além do trabalho despendido para escrever uma transação no livro-razão, seja ela uma transação fraudulenta ou não, os agentes não-fraudulentos apenas confiarão no livro-razão mais extenso, ou seja, a única forma de enganar os participantes não-fraudulentos seria os fraudadores possuírem mais poder de processamento do que todos os participantes não-fraudulentos juntos. Quanto mais participantes não-fraudulentos entram neste processo de escrita concorrente, mais improvável de ocorrer torna-se uma fraude, e mais caro torna-se tentar fraudar o livro-razão.
+
+Para que o livro-razão fosse público, distribuído, decentralizado e digital, \citeauthoronline{bitcoin} descreveu um sistema *peer-to-peer*\footnote{\emph{peer-to-peer} (p2p - ponto-a-ponto) é o nome que se dá a uma arquitetura de rede distribuída em que os participantes compartilham parte de seus recursos de \emph{hardware} (poder de processamento, capacidade de armazenamento, etc) para outros \emph{peers} (pontos) diretamente, sem passar por entidades intermediárias. Esses recursos compartilhados são necessários para prover o serviço e/ou conteúdo oferecido pela rede, e cada participante dessa rede é ao mesmo tempo provedor e consumidor de recursos \apud{p2p}{kellerer}.} em que as transações seriam registradas em blocos, e em que cada novo bloco dependeria do bloco anteriormente registrado \ref{fig:blockchain}, criando uma *blockchain*. Esse sistema teria as seguintes características:
+
+\begin{figure}[htbp]
+  \caption{\label{fig:blockchain}Arquitetura da \emph{Blockchain}}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/blockchain.png}
+  \end{center}
+  \legend{Fonte: \citeauthoronline{zheng2017overview}.}
+\end{figure}
+
+1. Novas transações deverão ser transmitidas para todos os nós (participantes) da rede;
+2. Cado nó reúne as novas transações em um único bloco;
+3. Cada nó tenta realizar uma prova de trabalho válida para o seu bloco;
+4. Quando um nó encontra uma prova de trabalho válida ele transmite o bloco para todos os nós da rede;
+5. Os nós da rede apenas aceitam o novo bloco se todas as transações contidas nesse bloco forem válidas e já não tiverem sido gastas;
+6. Os nós expressam sua aceitação ao novo bloco trabalhando para criar o próximo bloco da *blockchain* usando o *hash* do bloco aceito como o *hash* anterior do bloco a qual estão trabalhando \ref{fig:prev-hash}.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:prev-hash}O próximo bloco a ser criado deve conter o hash do último bloco aceito como válido.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/prev-hash.png}
+  \end{center}
+  \legend{Fonte: \citeauthoronline{bitcoin}.}
+\end{figure}
+
+
+O livro-razão proposto por \citeauthoronline{bitcoin} deveria ser público, distribuído e digital, e mais tarde veio a ser denominado como *blockchain*, e o dinheiro registrado na *blockchain* seguindo as especificações de\citeauthoronline{bitcoin} foi denominado *Bitcoin*. O *Bitcoin* ao ser proposto foi considerado.
+
+Para incentivar a entrada de participantes não-fraudulentos, \citeauthoronline{bitcoin} propôs que sempre que um participante conseguisse escrever no livro-razão, ele receberia uma recompensa.
 
 
 
-Para incentivar a entrada de participantes não-fraudadores, \citeauthoronline{bitcoin} propôs que sempre que um participante conseguisse escrever no livro-razão, ele receberia uma recompensa.
+O livro-razão proposto por \citeauthoronline{bitcoin} deveria ser público, distribuído e digital. Para isso \citeauthoronline{bitcoin} descreveu as seguintes características:
 
 
 
 
-Os Cypherpunks, grupo de criptólogos e ... definido como ... e formado pelos pensadores ... a partir do ano ... preocupados  com as questões ... se reuniram para criar tecnologias capazes de proteger o indivíduo de agentes centrais, que segundo eles, provocam os malefícios ...
-
-Os Cypherpunks baseando-se nas teorias econômicas da escola austríaca de economia começaram os esforços de criarem moedas descentralizadas.
-
-A primeira solução criada foi .. e tinha as características ...
-
-Também surgiram as moedas ...
 
 Finalmente, em ... Satoshi Nakamoto, um pseudônimo pertencente a um indivíduo ou grupo de indivíduos desconhecidos, publicou o *white paper* *Bitcoin: A Peer-to-Peer Electronic Cash System* e em 2009 minerou o primeiro bloco da *blockchain*, o *genesis block*, e nele foi incorporado o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.**, em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia.
 
@@ -448,32 +465,6 @@ Dentre elas, podemos citar as moedas ... por suas características ...
 Segundo o economista ... uma moeda é ... e tem as seguintes características ...
 
 O Bitcoin pode ser definido como uma moeda por se enquadrar nas seguintes características ... embora careça das características ...
-
-## *Blockchain*
-
-*Blockchain* é uma lista distribuída e simplesmente encadeamento de blocos de dados em que o bloco subsequente da lista contém o código *hash* do conteúdo do bloco anterior, garantindo que não haja adulteração de qualquer um dos blocos da lista sem que seja percebido a adulteração \ref{fig:blockchain}.
-
-\begin{figure}[htbp]
-\caption{\label{fig:blockchain}Arquitetura da \emph{Blockchain}}
-\begin{center}
-\includegraphics[width=1.0\textwidth]{imagens/blockchain.png}
-\end{center}
-\legend{Fonte: \citeauthoronline{zheng2017overview}.}
-\end{figure}
-
-A primeira proposta de utilização de uma rede encadeada de dados utilizando conceitos de criptografia e rede distribuída de dados foi formalizada em \citeyear{timestamp} por \citeauthoronline{timestamp} para resolver o problema de certificar que um documento foi criado ou teve sua última modificação em determinada data.
-
-Em \citeyear{bitcoin}, \citeauthoronline{bitcoin} descreveu uma solução utilizando os mesmos conceitos de \citeauthoronline{timestamp} mas no domínio de moeda digital, e incorporando um algoritmo de consenso baseado em *PoW* (*Proof-of-Work* - Prova de Trabalho).
-
-\begin{figure}[htbp]
-\caption{\label{fig:privacy-model}Modelo de privacidade: centralizado x descentralizado.}
-\begin{center}
-\includegraphics[width=1.0\textwidth]{imagens/privacy-model.png}
-\end{center}
-\legend{Fonte: \citeauthoronline{bitcoin}.}
-\end{figure}
-
-Como ilustrado na figura \ref{fig:privacy-model}, o modelo de privacidade tradicional para o registro de transações depende de um agente centralizador de informação
 
 ## Contratos Inteligentes
 
