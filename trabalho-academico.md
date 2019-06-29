@@ -410,9 +410,15 @@ Para resolver o *Problema dos Generais Bizantinos* no contexto de registro de tr
 
 A terceira característica remete ao *Problema dos Generais Bizantinos*. A primeira característica se opõe a qualquer tipo de regulação centralizada, enquanto que a segunda característica garante que esse livro-razão possa ser utilizado como um sistema de transações financeiras confiável.
 
-Para garantir a terceira característica, a simples votação entre os participantes, solução tradicional proposta por \citeauthoronline{byzantine}, não seria suficiente pois não há como impedir que novos participantes entrem no sistema, o que tornaria fácil a multiplicação artificial de agentes fraudadores, que invariavelmente conseguiriam se tornar a maioria e consequentemente fraudariam o livro-razão.
+Para garantir a terceira característica, a simples votação entre os participantes, solução tradicional proposta por \citeauthoronline{byzantine}, não seria suficiente pois não há como impedir que novos participantes entrem no sistema, o que tornaria fácil a multiplicação artificial de agentes fraudadores, que invariavelmente conseguiriam se tornar a maioria e consequentemente obteriam sucesso em fraudar o livro-razão.
 
-Por isso \citeauthoronline{bitcoin} propôs a utilização de um algorítmo de prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, inspirado pelo trabalho de \citeauthoronline{hashcash}. A prova de trabalho funcionaria da seguinte maneira:
+Por isso \citeauthoronline{bitcoin} propôs a utilização de um algorítmo de prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, inspirado pelo trabalho de \citeauthoronline{hashcash}. De forma simplificada, a prova de trabalho obriga que qualquer agente que queira escrever no livro-razão seja obrigado a calcular uma função *hash*, que é computacionalmente dispendiosa e cujo resultado é probabilisticamente difícil de ser o correto (apenas quem calcula um resultado correto consegue escrever no livro-razão).
+
+Além do trabalho despendido para escrever uma transação no livro-razão, seja ela uma transação fraudulenta ou não, os agentes não-fraudulentos apenas confiarão no livro-razão mais extenso, ou seja, a única forma de enganar os participantes não-fraudulentos seria os fraudadores possuírem mais poder de processamento do que todos os participantes não-fraudadores juntos. Quanto mais participantes não-fraudulentos entram neste processo de escrita concorrente, mais improvável de ocorrer torna-se uma fraude, e mais caro torna-se tentar fraudar o livro-razão.
+
+
+
+Para incentivar a entrada de participantes não-fraudadores, \citeauthoronline{bitcoin} propôs que sempre que um participante conseguisse escrever no livro-razão, ele receberia uma recompensa.
 
 
 
