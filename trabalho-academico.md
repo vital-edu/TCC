@@ -435,10 +435,10 @@ Para que o livro-razão fosse público, distribuído, decentralizado e digital, 
   \legend{Fonte: \citeauthor{bitcoin}.}
 \end{figure}
 
-Se dois nós transmitirem versões diferentes do próximo bloco, ou seja, se forem criado dois blocos válidos ao mesmo tempo (um chamado de *U4* e outro de *B4*), os demais nós da rede sempre trabalharão em cima do primeiro bloco que receberem. Esse acontecimento causaria a criação de duas ramificações da *blockchain* concorrentes, uma contendo *U4* como último bloco, e outra contendo *B4* como último bloco (fig. \ref{fig:long-branch}). Porém, a partir do momento que uma dessas ramificações se tornar maior (em número de blocos registrados) do que a outra, todos os nós que estiverem trabalhando na ramificação menor automaticamente abandonarão essa ramificação em detrimento da ramificação maior \cite{bitcoin}.
+Se dois nós transmitirem versões diferentes do próximo bloco, ou seja, se forem criado dois blocos válidos ao mesmo tempo (um chamado de *U4* e outro de *B4*), os demais nós da rede sempre trabalharão em cima do primeiro bloco que receberem. Esse acontecimento causaria a criação de duas ramificações concorrentes da *blockchain*, uma contendo *U4* como último bloco, e outra contendo *B4* como último bloco (fig. \ref{fig:long-branch}). Porém, a partir do momento que uma dessas ramificações se tornar maior (em número de blocos registrados) do que a outra, todos os nós que estiverem trabalhando na ramificação menor automaticamente abandonarão essa ramificação em detrimento da ramificação maior \cite{bitcoin}.
 
 \begin{figure}[htbp]
-  \caption{\label{fig:long-branch}Disputa entre duas ramificações da \emph{blockchain}.}
+  \caption{\label{fig:long-branch}Disputa entre duas ramificações da \emph{Blockchain}.}
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/long-branch.png}
   \end{center}
@@ -518,12 +518,53 @@ Cada *UTXO* contém um valor em *satoshi* disponível para ser gasto e um *Publi
 \end{figure}
 
 \begin{figure}[htbp]
-  \caption{\label{fig:block}Estrutura de um bloco da \emph{blockchain}.}
+  \caption{\label{fig:block}Estrutura de um bloco da \emph{Blockchain}.}
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/block.png}
   \end{center}
   \legend{Fonte: \citeauthor{zheng2017overview}.}
 \end{figure}
+
+O bloco (fig. \ref{fig:block}) armazenado na *Blockchain* além de conter as transações nele registradas, contém \cite{dev-ref}:
+
+- *Contador de Transações*: o número de transações registradas no bloco;
+- *Versão do Bloco*: a versão das regras de validação ao qual o bloco obedece. Isso permite que o protocolo do *Bitcoin* evolua mantendo a compatibilidade com blocos antigos. A versão atualmente utilizada nos novos blocos é a versão 4;
+  - Versão 1: introduzida no *Bloco Genesis* da *Blockchain*, em janeiro de 2009;
+  - Versão 2: introduzida em setembro de 2012;
+  - Versão 3: introduzida em fevereiro de 2012;
+  - Versão 4: introduzida em novembro de 2015.
+- *Time Stamp* (Marcação de Tempo): data e hora em que o bloco foi criado. Deve ser estritamente maior do que a média das marcações de tempo dos últimos 11 blocos da *Blockchain*;
+- *Hash do Último Bloco*: contém o *hash* do último bloco adicionado na *Blockchain. Isso permite que a partir de qualquer bloco consiga-se acessar o bloco anterior, característica comum de uma estrutura de dados simplesmente encadeada.
+- *Merkle Tree Root Hash*: *hash* gerado a partir dos *hashes* de todas as transações registradas no bloco. Isso garante que qualquer alteração nas transações do bloco seja facilmente identificada e rejeitada por outros nós da rede, impedindo fraudes nas transações;
+- *Nonce*: um número arbitrário utilizado para que seja possível realizar a prova de trabalho;
+- *nBits*: é o valor limite a qual o resultado do algorítmo de prova de trabalho deve ser inferiror para ser considerado válido.
+
+O *Merkle Tree Root Hash* (fig. \ref{fig:hashtree}) é uma estrutura de dados em árvore em que os nós superiores são calculados a partir do valor dos nós inferiores. Isso garante que qualquer alteração no conteúdo dos nós inferiores seja facilmente identificada. Esse mecanismo permite que blocos antigos que já tiveram suas transações válidas por diversos nós possam ter suas transações descartadas pelos mineradores para reduzir espaço em disco mas sem comprometer o algorítmo de validação do bloco.
+
+No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree Root Hash} segue os seguintes passos (fig. \ref{fig:merkle}) \cite{dev-ref}:
+
+1. As transação são ordenadas seguindo algumas regras aqui não discutidas;
+2. É gerado o *hash* de cada transação a partir do *id* da mesma e utilizando o algorítmo *SHA256*;
+3. Os *hashes* são agrupadas em pares, caso sobre um *hash* sem um par, ele é duplicado;
+4. Os *hashes* dos pares são concatenados e novamente é aplicado o algorítmo *SHA256* para gerar um novo *hash*;
+5. O passos 3 e 4 é repetido até que sobre apenas um *hash*, esse *hash* é denominado \emph{Merkle Tree Root Hash}, e é então guardado no cabeçalho do bloco.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:hashtree}Estrutura de um \emph{Merkle Tree Root Hash}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/hashtree.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{bitcoin}.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \caption{\label{fig:merkle}Exemplo de Formação do \emph{Merkle Tree Root Hash}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/merkle.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{dev-ref}.}
+\end{figure}
+
 
 Em 2009, \citeauthoronline{bitcoin} implementou o protocolo que descreveu em \citeyear{bitcoin} e minerou o primeiro bloco da *blockchain*, o *Genesis Block* (Bloco Gênesis), e nele foi incorporado o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.**, em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia.
 
