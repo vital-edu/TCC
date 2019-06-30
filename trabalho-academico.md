@@ -537,9 +537,17 @@ O bloco (fig. \ref{fig:block}) armazenado na *Blockchain* além de conter as tra
 - *Hash do Último Bloco*: contém o *hash* do último bloco adicionado na *Blockchain. Isso permite que a partir de qualquer bloco consiga-se acessar o bloco anterior, característica comum de uma estrutura de dados simplesmente encadeada.
 - *Merkle Tree Root Hash*: *hash* gerado a partir dos *hashes* de todas as transações registradas no bloco. Isso garante que qualquer alteração nas transações do bloco seja facilmente identificada e rejeitada por outros nós da rede, impedindo fraudes nas transações;
 - *Nonce*: um número arbitrário utilizado para que seja possível realizar a prova de trabalho;
-- *nBits*: é o valor limite a qual o resultado do algorítmo de prova de trabalho deve ser inferiror para ser considerado válido.
+- *nBits*: é o valor limite a qual o resultado do algorítmo de prova de trabalho deve ser inferior para ser considerado válido.
 
 O *Merkle Tree Root Hash* (fig. \ref{fig:hashtree}) é uma estrutura de dados em árvore em que os nós superiores são calculados a partir do valor dos nós inferiores. Isso garante que qualquer alteração no conteúdo dos nós inferiores seja facilmente identificada. Esse mecanismo permite que blocos antigos que já tiveram suas transações válidas por diversos nós possam ter suas transações descartadas pelos mineradores para reduzir espaço em disco mas sem comprometer o algorítmo de validação do bloco.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:hashtree}Estrutura de um \emph{Merkle Tree Root Hash}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/hashtree.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{bitcoin}.}
+\end{figure}
 
 No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree Root Hash} segue os seguintes passos (fig. \ref{fig:merkle}) \cite{dev-ref}:
 
@@ -550,14 +558,6 @@ No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree
 5. O passos 3 e 4 é repetido até que sobre apenas um *hash*, esse *hash* é denominado \emph{Merkle Tree Root Hash}, e é então guardado no cabeçalho do bloco.
 
 \begin{figure}[htbp]
-  \caption{\label{fig:hashtree}Estrutura de um \emph{Merkle Tree Root Hash}.}
-  \begin{center}
-  \includegraphics[width=1.0\textwidth]{imagens/hashtree.png}
-  \end{center}
-  \legend{Fonte: \citeauthor{bitcoin}.}
-\end{figure}
-
-\begin{figure}[htbp]
   \caption{\label{fig:merkle}Exemplo de Formação do \emph{Merkle Tree Root Hash}.}
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/merkle.png}
@@ -565,6 +565,25 @@ No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree
   \legend{Fonte: \citeauthor{dev-ref}.}
 \end{figure}
 
+Um bloco só pode ser inserido na *Blockchain* caso o minerador conclua a prova de trabalho, que, no protocolo do *Bitcoin*, é realizada aplicando a função *hash SHA256* no *time stamp* e no *nonce* do bloco, porém, o *hash* resultante só será aceito caso ele tenha um valor estritamente inferior ao especificado no campo *nBits*. Caso o *hash* gerado seja igual ou superior ao *nBits*, ele deve ser descartado, como mostrado na figura \ref{fig:hashcalc}.
+
+Como a *função hash* produz um resultado imprevisível, a única forma de achar um resultado que satisfaça essa condição é através de força bruta. Porém, é importante salientar que uma vez encontrado um *hash* que satisfaça a condição, qualquer outro nó pode facilmente verificar se a solução encontrada é verdadeira. Sendo assim, a prova de trabalho é, com o perdão da redundância, trabalhosa porém facilmente verificável.
+
+Pelo fato de a função *hash* sempre produzir o mesmo resultado quando aplicada a um mesmo valor, o *nonce* deve ser incrementado sempre que a tentativa de produzir um *hash* válido falhar. Em último caso, caso todas as tentativas possíveis falhem em produzir um *hash* válido, o *time stamp* pode ser atualizado para que se continue fazendo novas tentativas \cite{surveyblockchain}.
+
+O *nBits* foi especificado para ser um valor variável, permitindo equilibrar a dificuldade de se encontrar um resultado válido. Ou seja, quanto maior for o valor do *nBits*, probabilisticamente menos tentativas serão necessárias para que se encontre uma solução para a prova de trabalho, e quanto menor ele for, probabilisticamente mais tentativas serão necessárias para encontrar uma solução \cite{dev-ref}.
+
+Sempre que 2016 blocos são adicionados ao *Blockchain*, a rede de nós cálcula quanto tempo se passou entre a criação do primeiro e do último bloco desses 2016 blocos e então o *nBits* é recalculado. O tempo ideal estipulado pelo protocolo é que demore exatamente 1.209.600 segundos (duas semanas) para que 2016 blocos sejam gerados. Caso tenha se demorado mais do que duas semanas para produzir os 2016 blocos, o valor do *nBits* é diminuído, e caso tenha-se demorado menos do que duas semanas, o valor do *nBits* é aumentado.
+
+Essa característica de alterar o *nBits* para garantir que a quantidade de blocos gerados em duas semanas seja, em média, sempre igual, permite que o protocolo possa ser utilizado mesmo com o aumento da capacidade de processamento da rede. Quanto mais poder computacional for inserido na rede, mais difícil se tornará de calcular a prova de trabalho, sendo o inverso também verdade.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:hashcalc}Cálculo da Prova de Trabalho.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/hashcalc.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{surveyblockchain}.}
+\end{figure}
 
 Em 2009, \citeauthoronline{bitcoin} implementou o protocolo que descreveu em \citeyear{bitcoin} e minerou o primeiro bloco da *blockchain*, o *Genesis Block* (Bloco Gênesis), e nele foi incorporado o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.**, em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia.
 

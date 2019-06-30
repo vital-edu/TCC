@@ -47,6 +47,12 @@
     "csquotes",
     "usepackage",
     "kellerer",
-    "satoshis"
+    "satoshis",
+    "UTXO",
+    "Merkle",
+    "hashcalc",
+    "publichash",
+    "hashtree",
+    "surveyblockchain",
   ]
 }
