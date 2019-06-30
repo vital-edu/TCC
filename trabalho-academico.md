@@ -497,17 +497,25 @@ A figura \ref{fig:transaction-ex} mostra um exemplo de uma sequência de seis tr
   \legend{Fonte: \citeauthor{blockchain-guide}.}
 \end{figure}
 
-Cada *output* (saída) de uma transação é oriundo de um *input* (entrada) de uma transação anterior e só pode ser utilizado em uma única transação, o que garante que não haja gasto duplo. Um *output* que não vira *input* para outra transação é, portanto, um valor não gasto, sendo denominado neste cenário, um *UTXO* (*Unspent Transaction Output* - Saída de Transação não Gasta).
+Cada *output* (saída) de uma transação é oriundo de um *input* (entrada) de uma transação anterior e só pode ser utilizado em uma única transação, o que garante que não haja gasto duplo. Um *output* que não vira *input* para outra transação é, portanto, um valor não gasto, sendo denominado neste cenário um *UTXO* (*Unspent Transaction Output* - Saída de Transação não Gasta).
 
 \begin{figure}[htbp]
-  \caption{\label{fig:output}Estrutura do \emph{output} de uma transação.}
+  \caption{\label{fig:publichash}Processo de Geração do \emph{Public Key Hash}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/publichash.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{transaction-guide}.}
+\end{figure}
+
+Cada *UTXO* contém um valor em *satoshi* disponível para ser gasto e um *Public Key Hash*. O *Public Key Hash* de um *UTXO* também é conhecido como *Redeem Script Hash*, que é um *hash* produzido a partir da chave pública do proprietário do *UTXO* (fig. \ref{fig:publichash}). Quando o dono do *UTXO* desejar gastar seu *UTXO* ele deve utilizar sua chave privada junto com um *script* denominado *Full Redeem Script* que ao ser aplicado no *Public Key Hash* do *UTXO*, liberá-o para ser gasto em uma nova transação. O *Public Key Hash* é único para cada *UTXO* e apenas a chave privada que o originou é capaz de gastá-lo (fig. \ref{fig:output}) \cite{transaction-guide}.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:output}Gasto de um \emph{Output}.}
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/output.png}
   \end{center}
   \legend{Fonte: \citeauthor{transaction-guide}.}
 \end{figure}
-
-Cada *UTXO* contém um valor em *satoshi* disponível para ser gasto e um *Redeem Script Hash*. O *Redeem Script Hash* é um *hash* produzido a partir da chave pública a qual o *UTXO* pertence através de um algorítmo denominado *Full Redeem Script*. Quando o dono do *UTXO* desejar gastá-lo em uma transação, ele deve aplicar seu *Full Redeem Script* no *Redeem Script Hash*. Apenas o *Full Redeem Script* que produziu o *Script Hash* é capaz de gastar o *UTXO* associado. A figura \ref{fig:output} mostra como *Bob* utiliza seu *Full Public Key* para assinar o *UTXO* que possui para conseguir gastá-lo.
 
 \begin{figure}[htbp]
   \caption{\label{fig:block}Estrutura de um bloco da \emph{blockchain}.}
