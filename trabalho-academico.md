@@ -567,6 +567,14 @@ No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree
 
 Um bloco só pode ser inserido na *Blockchain* caso o minerador conclua a prova de trabalho, que, no protocolo do *Bitcoin*, é realizada aplicando a função *hash SHA256* no *time stamp* e no *nonce* do bloco, porém, o *hash* resultante só será aceito caso ele tenha um valor estritamente inferior ao especificado no campo *nBits*. Caso o *hash* gerado seja igual ou superior ao *nBits*, ele deve ser descartado, como mostrado na figura \ref{fig:hashcalc}.
 
+\begin{figure}[htbp]
+  \caption{\label{fig:hashcalc}Cálculo da Prova de Trabalho.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/hashcalc.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{surveyblockchain}.}
+\end{figure}
+
 Como a *função hash* produz um resultado imprevisível, a única forma de achar um resultado que satisfaça essa condição é através de força bruta. Porém, é importante salientar que uma vez encontrado um *hash* que satisfaça a condição, qualquer outro nó pode facilmente verificar se a solução encontrada é verdadeira. Sendo assim, a prova de trabalho é, com o perdão da redundância, trabalhosa porém facilmente verificável.
 
 Pelo fato de a função *hash* sempre produzir o mesmo resultado quando aplicada a um mesmo valor, o *nonce* deve ser incrementado sempre que a tentativa de produzir um *hash* válido falhar. Em último caso, caso todas as tentativas possíveis falhem em produzir um *hash* válido, o *time stamp* pode ser atualizado para que se continue fazendo novas tentativas \cite{surveyblockchain}.
@@ -577,31 +585,19 @@ Sempre que 2016 blocos são adicionados ao *Blockchain*, a rede de nós cálcula
 
 Essa característica de alterar o *nBits* para garantir que a quantidade de blocos gerados em duas semanas seja, em média, sempre igual, permite que o protocolo possa ser utilizado mesmo com o aumento da capacidade de processamento da rede. Quanto mais poder computacional for inserido na rede, mais difícil se tornará de calcular a prova de trabalho, sendo o inverso também verdade.
 
+O primeiro bloco de *Bitcoin*, o Bloco Gênesis, foi minerado em 2009 pelo próprio \citeauthoronline{bitcoin}, e foi incorporado na *transação coinbase*\footnote{\emph{transação coinbase} é o nome dado a primeira transação de cada bloco que, como já discutido no texto, serve como recompensa para quem minerou o bloco. A \emph{transação coinbase} possui um campo de 100 bytes denominado *coinbase script* que pode ser utilizados arbitrariamente pelo minerador sem que o protocolo *Bitcoin* seja violado.} do bloco, o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks**\cite{genesis} em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia. A figura \ref{fig:times} mostra uma foto da edição do jornal da qual a frase foi retirada.
+
 \begin{figure}[htbp]
-  \caption{\label{fig:hashcalc}Cálculo da Prova de Trabalho.}
+  \caption{\label{fig:times}Foto da Edição de 03 de janeiro de 2009 do Jornal \emph{The Times}.}
   \begin{center}
-  \includegraphics[width=1.0\textwidth]{imagens/hashcalc.png}
+  \includegraphics[width=1.0\textwidth]{imagens/times.png}
   \end{center}
-  \legend{Fonte: \citeauthor{surveyblockchain}.}
-\end{figure}
+  \legend{Fonte: \citeauthor{timesimg}.}
+\end{figure}.
 
-Em 2009, \citeauthoronline{bitcoin} implementou o protocolo que descreveu em \citeyear{bitcoin} e minerou o primeiro bloco da *blockchain*, o *Genesis Block* (Bloco Gênesis), e nele foi incorporado o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.**, em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia.
+O *Bitcoin* foi criado para se tornar uma moeda decentralizada e livre do poder estatal, e o texto publicado no *Bloco Gênesis*, bem como o fato do *Bitcoin* ter sido lançado em meio a crise financeira que começou em 2008, demonstra o seu objetivo de ser uma moeda concorrente a todas as moedas fiduciárias atualmente em circulação.
 
-Essa frase, simboliza a crítica do movimento cypherpunks ao sistema bancário vigente e marca o inicio do Bitcoin.
-
-O Bitcoin apresentou o seguinte crescimento em uso e valor ...
-
-Os acontecimentos ... caracterizados por ... marcam a história de sucesso do Bitcoin.
-
-Em contrapartida, seguindo as leis de livre-mercado, criptomoedas concorrentes surgiram oferecendo soluções diferentes para os problemas ...
-
-Mais de ... criptomoedas existem atualmente.
-
-Dentre elas, podemos citar as moedas ... por suas características ...
-
-Segundo o economista ... uma moeda é ... e tem as seguintes características ...
-
-O Bitcoin pode ser definido como uma moeda por se enquadrar nas seguintes características ... embora careça das características ...
+O livre mercado só é plenamente possível em um ambiente livre de coerção, em que os indivíduos se sintam livres para realizar trocas voluntárias e que não possam ser ameaçados ou inibidos por forças centralizadoras. O uso de moedas fiduciárias em espécie permite que transações livre de interferências estatais ocorram, porém, na era da conectividade em tempo real é necessário que haja uma moeda digital que garanta ou ao menos melhore a privacidade dos indivíduos que desejem realizar trocas voluntárias.
 
 ## Contratos Inteligentes
 
