@@ -445,20 +445,13 @@ Se dois nós transmitirem versões diferentes do próximo bloco, ou seja, se for
   \legend{Fonte: \citeauthor{zheng2017overview}.}
 \end{figure}
 
-
 Mesmo considerando um cenário probabilístico em que dezenas de ramificações concorrentes surjam simultaneamente, como é altamente improvável que haja sempre o mesmo número de nós trabalhando em cada ramificação, a *blockchain* sempre tenderá a longo prazo a se manter com apenas uma ramificação.
 
 Como já discutido no *Problema dos Generais Bizantinos*, mesmo que um grupo de nós decida deliberadamente não obedecer esse algorítmo, eles apenas teriam sucesso em convencer os demais nós de que a sua ramificação fraudulenta da *blockchain* é a verdadeira, caso tivessem um poder de processamento maior do que a maioria dos nós não-fraudulentos.
 
+Para que esse sistema seja viável é necessário que haja diversos nós, sendo que quanto maior for a quantidade de nós na rede, maior será a impossibilidade de fraudar a *blockchain*, por isso, \citeauthoronline{bitcoin} especificou que a primeira transação de cada bloco seria uma transação que cria uma nova unidade de Bitcoin, que passa a ser de propriedade do criador do bloco, sendo a única forma de criar novas unidades de *Bitcoin*. Isso remove completamente a figura de bancos centrais, que em moedas fiduciárias são responsáveis por emitir novas unidades de dinheiro.
 
-
-Para incentivar a entrada de participantes não-fraudulentos, \citeauthoronline{bitcoin} propôs que sempre que um participante conseguisse criar um bloco válido .
-
-
-
-O livro-razão proposto por \citeauthoronline{bitcoin} deveria ser público, distribuído e digital. Para isso \citeauthoronline{bitcoin} descreveu as seguintes características:
-
-
+O *Bitcoin*, assim como o *Bit Gold* foi concebido com a ideia de imitar o padrão ouro, e por isso foi estipulado em seu protocolo que deverá ser emitido um máximo de 21 milhões de unidades de *Bitcoin*. E para que haja um incentivo para que participantes continuem adicionando blocos na *blockchain* mesmo quando o limite de 21 milhões de unidade for alcançado, também foi concebido em seu protocolo que cada transação processada paga uma taxa para o nó que registrou o novo bloco de transações na *Blockchain* \cite{better}.
 
 
 
