@@ -458,9 +458,63 @@ Para que seja permitido o registro de transações com frações de *Bitcoin*, c
 \begin{figure}[htbp]
   \caption{\label{fig:transaction-fraction}Composição de uma transação na \emph{Blockchain}.}
   \begin{center}
-  \includegraphics[width=1.0\textwidth]{imagens/transaction-fraction.png}
+  \includegraphics[width=0.5\textwidth]{imagens/transaction-fraction.png}
   \end{center}
   \legend{Fonte: \citeauthor{bitcoin}.}
+\end{figure}
+
+A figura \ref{fig:transaction-ex} mostra um exemplo de uma sequência de seis transações:
+
+- Alice utiliza seus 10 mil *satoshis* na transação 0;
+  - Bob recebe 40 mil *satoshis* de Alice;
+  - 50 mil *satoshis* voltam para Alice como troco;
+  - 10 mil *satoshis* ficam com o minerador\footnote{\emph{Minerador} é o dispositivo (nó) ou indivíduo que possuí esse dispositivo, que minera um novo bloco (cria um novo bloco na \emph{blockchain}) \cite{bitcoin-glossary}.} como taxa de transação\footnote{A taxa de transação é a diferença entre entrada e saída de uma transação, sendo um valor variável que depende do tamanho (em *bits*) da transação.}.
+- Bob gasta seus 40 mil *satoshis* na transação 1;
+  - Carlos recebe 30 mil *satoshis* de Bob;
+  - 10 mil *satoshis* ficam com o minerador como taxa de transação.
+- Carlos gasta seus 30 mil *satoshis* na transação 3;
+  - Denis recebe 20 mil *satoshis* de Carlos e os mantém sem gastá-los;
+  - 10 mil *satoshis* ficam com o minerador como taxa de transação.
+- Alice utiliza seus 50 mil *satoshis* na transação 2;
+  - Eduardo recebe 20 mil *satoshis* de Alice;
+  - 20 mil *satoshis* voltam para Alice como troco;
+  - 10 mil *satoshis* ficam com o minerador como taxa de transação.
+- Eduardo gasta seus 20 mil *satoshis* na transação 4;
+  - Fernando recebe 10 mil *satoshis* de Eduardo;
+  - 10 mil *satoshis* ficam com o minerador como taxa de transação.
+- Alice gasta seus 20 mil *satoshis* na transação 5;
+  - Gustavo recebe 10 mil *satoshis* de Alice;
+  - 10 mil *satoshis* ficam com o minerador como taxa de transação.
+- Fernando e Gustavo gastam cada um 10 mil *satoshis* na transação 6;
+  - Hélio recebe 10 mil *satoshis*, 5 mil oriundos de Fernando e 5 mil oriundos de Gustavo. Hélio não gasta os 10 mil *satoshis* que recebeu;
+  - 10 mil *satoshis* ficam com o minerador como taxa de transação.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:transaction-ex}Exemplo de sequência de transações.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/transaction-ex.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{blockchain-guide}.}
+\end{figure}
+
+Cada *output* (saída) de uma transação é oriundo de um *input* (entrada) de uma transação anterior e só pode ser utilizado em uma única transação, o que garante que não haja gasto duplo. Um *output* que não vira *input* para outra transação é, portanto, um valor não gasto, sendo denominado neste cenário, um *UTXO* (*Unspent Transaction Output* - Saída de Transação não Gasta).
+
+\begin{figure}[htbp]
+  \caption{\label{fig:output}Estrutura do \emph{output} de uma transação.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/output.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{transaction-guide}.}
+\end{figure}
+
+Cada *UTXO* contém um valor em *satoshi* disponível para ser gasto e um *Redeem Script Hash*. O *Redeem Script Hash* é um *hash* produzido a partir da chave pública a qual o *UTXO* pertence através de um algorítmo denominado *Full Redeem Script*. Quando o dono do *UTXO* desejar gastá-lo em uma transação, ele deve aplicar seu *Full Redeem Script* no *Redeem Script Hash*. Apenas o *Full Redeem Script* que produziu o *Script Hash* é capaz de gastar o *UTXO* associado. A figura \ref{fig:output} mostra como *Bob* utiliza seu *Full Public Key* para assinar o *UTXO* que possui para conseguir gastá-lo.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:block}Estrutura de um bloco da \emph{blockchain}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/block.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{zheng2017overview}.}
 \end{figure}
 
 Em 2009, \citeauthoronline{bitcoin} implementou o protocolo que descreveu em \citeyear{bitcoin} e minerou o primeiro bloco da *blockchain*, o *Genesis Block* (Bloco Gênesis), e nele foi incorporado o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.**, em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia.
