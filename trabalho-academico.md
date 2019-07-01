@@ -84,25 +84,16 @@ Para resolver as eventuais disputas entre usuários de forma impessoal, justa e 
 
 ### Objetivo geral
 
-O presente trabalho tem como objetivo descrever como tecnologias decentralizadas podem ser utilizadas para a criação de uma plataforma de comércio eletrônico que possa sobreviver livre de interferências de agentes centrais, tais como governos estatais ou qualquer outra instituição centralizadora de poder que por quaisquer motivos queira impedir o livre comércio voluntário e pacífico entre indivíduos.
+O presente trabalho tem como objetivo descrever como tecnologias decentralizadas podem ser utilizadas para a criação de uma plataforma de comércio eletrônico que possa sobreviver livre de interferências de agentes centrais, tais como governos estatais ou qualquer outra instituição centralizadora de poder que por quaisquer motivos queira regular ou impedir o livre comércio voluntário e pacífico entre indivíduos.
 
 ### Objetivos específicos
 
 Para alcançar o objetivo geral, os objetivos específicos abaixo foram definidos:
 
-- Estudar o funcionamento do protocolo *blockchain*;
-- Estudar o que é um contrato inteligente;
-- Estudar as *blockchains* compatíveis com contratos inteligentes;
-- Comparar diferentes implementações da tecnologia *blockchain* que suportam contratos inteligentes;
-- Comparar as Estudar como contratos inteligentes são desenvolvidos através da tecnologia *blockchain*;
-- Estudar as vantagens e desvantagens de aplicações descentralizadas;
-- Estudar o funcionamento de aplicações descentralizadas utilizando a tecnologia *blockchain*;
-- Implementar uma aplicação descentralizada baseada em contratos digitais utilizando a tecnologia *blockchain*.
-
-<!--
-Isto é um comentário, mesma sintaxe do HTML. Para conhecer a sintaxe
-do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
--->
+- Estudar o que caracteriza um livre mercado e sua importância nas relações sociais;
+- Estudar como tecnologias decentralizadoras funcionam;
+- Identificar características essenciais para que um comércio eletrônico decentralizado seja viável;
+- Propor uma solução de comércio eletrônico baseado em tecnologias decentralizadas.
 
 # Referencial Teórico
 
