@@ -1,6 +1,4 @@
-
-# Introdução
-
+<!--
 ## Contexto com Justificativa
 
 O estudo da economia só faz sentido a partir do momento que se define a escassez
@@ -45,7 +43,16 @@ Contrato inteligente se consolidou ao ser incorporado à blockchain por cause de
 
 Contratos inteligentes proveem a segurança necessária para que uma economia de livre mercado descentralizado seja possível por conta de ...
 
-## Contexto (Versão antiga)
+-->
+
+<!-- resumo, final alternativo
+A plataforma de comércio eletrônico proposta neste trabalho utiliza o Bitcoin como forma
+de pagamento, e é hospedada de forma distribuída utilizando o framework Holochain.
+-->
+
+# Introdução
+
+## Contexto com Justificativa
 
 A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não se limitam a fronteiras físicas e que conseguem realizar processos complexos em milissegundos.
 
@@ -54,31 +61,13 @@ o comércio eletrônico teve um crescimento de 24% no mundo todo em 2018, movime
 
 Essa nova forma de consumir e oferecer produtos e serviços, barateia e facilita a vida de compradores e vendedores, permitindo inclusive que consumidores de um país tenham acesso a produtos de outros países. Porém, o comércio eletrônico, assim como o comércio tradicional, sofre de regulamentações e taxações que dificultam que o livre comércio ocorra, sendo um meio mais fácil de controle, principalmente por dificultar as vendas informais devido a opção de pagamento predominantemente ser o cartão de crédito ou outros meios eletrônicos facilmente controlados e fiscalizados por governos.
 
-Somado a isso, há o problema inerente da inflação da moeda provocado pelo controle dos preços e as políticas de expansão monetária, que faz com que a cada ano, uma unidade de moeda perca um pouco do seu valor de troca. Essa situação é mais crítica em países como a Venezuela, que sofre com alta inflação, tendo experienciado segundo o \citeauthoronline{fmireport2019} uma inflação de mais de 929 mil porcento em 2018 e uma inflação projetada para alcançar 10 milhões no ano de 2019.
+Em situações como essa, em que há uma alta insegurança econômica, e em que não há mais a confiança de que as liberdades individuais dos indivíduos sejam respeitadas, surge a preocupação de como garantir que trocas pacíficas e voluntárias entre indivíduos possam ocorrer mesmo com agentes centrais tentando controlá-las, impedi-las ou fiscalizá-las.
 
-Em situações como essa, em que há uma alta insegurança econômica, e em que não há mais a confiança em nenhum agente central, aqui tratado como o governo, surge a expectativa de que tecnologias descentralizadas como a *blockchain* e contratos inteligentes, bem como criptomoedas como Bitcoin, possam propiciar um ambiente seguro e confiável onde as atividades econômicas possam continuar existindo paralelo ao forte controle estatal.
+A interferência de agentes centrais na vida dos indivíduos é dito como um mal necessário para evitar males maiores, porém, como Juvenal, poeta romano do final do Século I e início do Século II escreveu em uma de suas sátiras "*Quis custodiet ipsos custodes?*" \cite{juvenal} (Quem irá vigiar os próprios vigilantes?).
 
-Casos como o da Venezuela, deixam evidente como o mercado tradicional é diretamente afetado por agentes centrais através da desvalorização constante e abrupta da moeda, que torna impossível a reserva de valor, fazendo com que o dinheiro capaz de comprar a comida de hoje, não valha mais nada no dia seguinte.
+Para resolver esse problema, o presente trabalho apresenta uma solução de plataforma de comércio eletrônico decentralizada, capaz de resistir ao poder coercitivo de estados, e de garantir que os indivíduos sejam livres para praticar o verdadeiro livre comércio, de forma pacífica, voluntária, mutualmente benéfica e que iniba o uso da força por terceiros. Somente assim, poder-se-á criar uma verdadeira economia de livre mercado, que ultrapassa fronteiras, gerações e jurisdições arbitrárias.
 
-Em países desenvolvidos, como os Estados Unidos da América, os danos causado pelos agentes centrais no dia a dia das pessoas não é tão evidente, porém, como Juvenal, poeta romano do final do Século I e início do Século II escreveu em uma de suas sátiras "*Quis custodiet ipsos custodes?*" \cite{juvenal} (Quem irá vigiar os próprios vigilantes?).
-
-O comércio eletrônico ao tornar-se cada vez mais cotidiano na vida das pessoas, precisa usar de meios que previnam a interferência, seja ela em maior ou menor grau, de um agente central em trocas mutualmente benéficas e voluntárias entre indivíduos. Somente assim, poder-se-á criar uma verdadeira economia de mercado livre, que ultrapassa fronteiras, gerações e jurisdições arbitrárias.
-
-Este trabalho tem como objetivo geral descrever
-
-Para conseguir criar um mercado eletrônico livre de agentes centrais é preciso resolver quatro problemas: **[CARECE DE FONTES]**
--estabelecer confiança entre comprador e vendedor;
--realizar pagamento pelo produto ou serviço sem interferência de agentes centrais;
--definir as expectativas de comprador e vendedor sobre o que está sendo negociado de forma bilateral e que não envolvam terceiros indesejáveis;
--resolver disputas entre usuários de forma descentralizada, impessoal, e justa.
-
-Para que se consiga estabelecer confiança entre os usuários da plataforma **[CARECE DE FONTES]**, é estudado modelos de avaliação e ranqueamento de usuários.
-
-Para realizar o pagamento pelo produto ou serviço, é avaliado os principais meios de pagamento para decidir qual deles possui as características que previnam a interferência de agentes centrais no preço do produto ou serviço.
-
-Para definir as expectativas entre compradores e vendedores sobre o produto ou serviço sendo negociado, é estudado quais são os meios pelos quais se pode descrever de forma objetiva as características do bem a ser negociado e quais são as expectativas relacionadas a transação entre o comprador e o vendedor.
-
-Para resolver as eventuais disputas entre usuários de forma impessoal, justa e impessoal serão analisados os sistemas de arbitragem exigentes e suas características.
+Portanto, esse trabalho apresenta o estudo de tecnologias decentralizadas capazes de prover um ambiente decentralizado de livre mercado e idealiza uma pĺataforma de comércio  eletrônico baseada em criptomoedas e que opera de forma distribuída.
 
 ## Objetivos
 
@@ -97,7 +86,7 @@ Para alcançar o objetivo geral, os objetivos específicos abaixo foram definido
 
 # Referencial Teórico
 
-Este capítulo explica o que é um livre mercado, *blockchain*, contratos inteligente, e aplicações descentralizadas. Além de definir esses termos, é explicado quais problemas cada uma dessas tecnologias pretende resolver, suas características, vantagens, e desvantagens.
+Este capítulo explica o que é um livre mercado e qual a sua importância para as relações sociais; o que são *blockchain*, criptomoedas e aplicações descentralizadas, como elas funcionam e como podem ser utilizadas.
 
 ## Livre Mercado
 
