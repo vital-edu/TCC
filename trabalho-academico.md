@@ -1,7 +1,7 @@
 
 # Introdução
 
-## Contexto com Justificativa (Planejamento)
+## Contexto com Justificativa
 
 O estudo da economia só faz sentido a partir do momento que se define a escassez
 
@@ -84,7 +84,7 @@ Para resolver as eventuais disputas entre usuários de forma impessoal, justa e 
 
 ### Objetivo geral
 
-O presente trabalho tem como objetivo descrever o funcionamento da tecnologia *blockchain* e como a mesma pode ser utilizada para o desenvolvimento de aplicações descentralizadas e baseadas em contratos inteligentes.
+O presente trabalho tem como objetivo descrever como tecnologias decentralizadas podem ser utilizadas para a criação de uma plataforma de comércio eletrônico que possa sobreviver livre de interferências de agentes centrais, tais como governos estatais ou qualquer outra instituição centralizadora de poder que por quaisquer motivos queira impedir o livre comércio voluntário e pacífico entre indivíduos.
 
 ### Objetivos específicos
 
@@ -599,6 +599,7 @@ O *Bitcoin* foi criado para se tornar uma moeda decentralizada e livre do poder 
 
 O livre mercado só é plenamente possível em um ambiente livre de coerção, em que os indivíduos se sintam livres para realizar trocas voluntárias e que não possam ser ameaçados ou inibidos por forças centralizadoras. O uso de moedas fiduciárias em espécie permite que transações livre de interferências estatais ocorram, porém, na era da conectividade em tempo real é necessário que haja uma moeda digital que garanta ou ao menos melhore a privacidade dos indivíduos que desejem realizar trocas voluntárias.
 
+<!--
 ## Contratos Inteligentes
 
 Contrato inteligente foi um termo cunhado por \citeauthoronline{nick} em \citeyear{nick} e é definido como uma forma de contrato que é incorporada a um *hardware* ou *software* de forma a criar um contrato
@@ -640,3 +641,5 @@ Embora a blockchain tenha se popularizado para ser utilizado com criptomoedas, h
 Contratos inteligentes podem ser aplicados em vários contextos, tais como ...
 
 No contexto de comércio eletrônico, os contratos inteligentes podem ser utilizados da seguinte forma ...
+
+-->
