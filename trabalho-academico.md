@@ -579,6 +579,32 @@ O *Bitcoin* foi criado para se tornar uma moeda decentralizada e livre do poder 
 
 O livre mercado só é plenamente possível em um ambiente livre de coerção, em que os indivíduos se sintam livres para realizar trocas voluntárias e que não possam ser ameaçados ou inibidos por forças centralizadoras. O uso de moedas fiduciárias em espécie permite que transações livre de interferências estatais ocorram, porém, na era da conectividade em tempo real é necessário que haja uma moeda digital que garanta ou ao menos melhore a privacidade dos indivíduos que desejem realizar trocas voluntárias.
 
+## Aplicações Decentralizadas
+
+Aplicações de *software* podem ser classificadas baseado no seu nível de centralização (fig. \ref{fig:apptypes}). Aplicações centralizadas(a), são as mais comuns e são caracterizadas como aplicações fornecidas ou controladas por apenas um agente ou organização. Aplicações distribuídas(b) são aplicações que possuem diversas replicas espalhadas geograficamente e que cooperam entre si para garantir consistência e disponibilidade de dados. Atualmente aplicações distribuídas se popularizaram com os serviços de nuvem, em que empresas provêem servidores de aplicações espalhadas pelo mundo que podem ser alugados por outras empresas.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:apptypes}Tipos de aplicatções de \emph{software}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/apptypes.png}
+  \end{center}
+  \legend{Fonte: Autor \citeauthoronline{raval} \cite[pp. 3 e 32]{raval}.}
+\end{figure}
+
+Aplicações decentralizadas(c) são aplicações em que cada nó opera de forma independente. autônoma e autossuficiente, e que portanto, necessita de um algorítmo de consenso para resolver disputas. Uma aplicação centralizada e distribuída resolve problemas de disponibilidade, latência de rede, problemas de corrupção de dados através da redundância de dados, porém não resolvem problemas de ordem institucional.
+
+No contexto de uma plataforma de mercado livre, é importante que haja mecanismos que garantam a desregulação do mercado, e portanto, uma plataforma centralizada poderia sucumbir por diversos motivos tais como: aquisição da plataforma por outra empresa, que pode culminar numa mudança nas políticas e regras da plataforma; mudança na diretoria da empresa por manobra de acionistas ou conflitos entre acionistas; morte ou incapacidade ação política externa causado por grupos de interesse contrários; ações judiciais ou inconformidade com regras regulatórias de determinadas nações; morte ou incapacitação dos mantenedores.
+
+Para se proteger dessa centralização de poder, \citeauthor{raval} propôs que aplicações decentralizadas, para serem consideradas como tal, devem possuir as seguintes características:
+
+1. Ter código aberto: é inviável criar uma plataforma decentralizada em que apenas um grupo de indivíduos tenha acesso ao código fonte da mesma.
+2. Possuir moeda interna: como não existe a propriedade definitiva da plataforma por ninguém, é preciso encontrar uma maneira de incentivar ao desenvolvimento da plataforma por desenvolvedores e custear a infra-estratura da aplicação, para isso normalmente são criados *tokens*\footnote{\emph{tokens}, segundo \citeauthor{}, são meios de trocas não-autorizados por lei e emitidos por indivíduos privados ou empresa, que é reconhecido como dinheiro e serve de forma prática esse propósito.}.
+3. Usar um algorítmo de consenso decentralizado: é o algorítmo de consenso decentralizado (que resolva o *Problemas dos Generais Bizantinos*) que permitirá que nós independentes com resultados conflitantes consigam convergir para um único resultado e assim possa-se garantir que a rede funcione sem chegar nunca a um estado permanente de impasse (*deadlock*).
+4. Não possuir ponto central de falha: aplicações decentralizadas, em teoria, não podem ser removidas ou derrubadas, pois não possuem um único ponto de falha. Por funcionar em um sistema *peer-to-peer*, todos os participantes da rede teriam que ser desligados  simultaneâmente para que a aplicação parasse de funcionar. E ainda assim, é facilmente possível que novos nós entrassem na rede em uma situação dessa, evitando o seu desligamento. Na prática, porém, isso só é possível quando há o interesse constante de vários e diversos agentes em manter a rede funcionando.
+
+A própria internet surgiu como uma rede decentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantem-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (internet profunda) é o termo usado para designar a parte da internet que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a internet de superfície, nome dado a internet prontamente acessível por buscadores.}.
+
+
 <!--
 ## Contratos Inteligentes
 
