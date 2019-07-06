@@ -598,54 +598,24 @@ No contexto de uma plataforma de mercado livre, é importante que haja mecanismo
 Para se proteger dessa centralização de poder, \citeauthor{raval} propôs que aplicações decentralizadas, para serem consideradas como tal, devem possuir as seguintes características:
 
 1. Ter código aberto: é inviável criar uma plataforma decentralizada em que apenas um grupo de indivíduos tenha acesso ao código fonte da mesma.
-2. Possuir moeda interna: como não existe a propriedade definitiva da plataforma por ninguém, é preciso encontrar uma maneira de incentivar ao desenvolvimento da plataforma por desenvolvedores e custear a infra-estratura da aplicação, para isso normalmente são criados *tokens*\footnote{\emph{tokens}, segundo \citeauthor{}, são meios de trocas não-autorizados por lei e emitidos por indivíduos privados ou empresa, que é reconhecido como dinheiro e serve de forma prática esse propósito.}.
+2. Possuir moeda interna: como não existe a propriedade definitiva da plataforma por ninguém, é preciso encontrar uma maneira de incentivar ao desenvolvimento da plataforma por desenvolvedores e custear a infra-estrutura da aplicação, para isso normalmente são criados *tokens*\footnote{\emph{tokens}, segundo \citeauthor{token}, são meios de trocas não-autorizados por lei e emitidos por indivíduos privados ou empresa, que é reconhecido como dinheiro e que serve de forma pŕatica a esse propósito.}.
 3. Usar um algorítmo de consenso decentralizado: é o algorítmo de consenso decentralizado (que resolva o *Problemas dos Generais Bizantinos*) que permitirá que nós independentes com resultados conflitantes consigam convergir para um único resultado e assim possa-se garantir que a rede funcione sem chegar nunca a um estado permanente de impasse (*deadlock*).
 4. Não possuir ponto central de falha: aplicações decentralizadas, em teoria, não podem ser removidas ou derrubadas, pois não possuem um único ponto de falha. Por funcionar em um sistema *peer-to-peer*, todos os participantes da rede teriam que ser desligados  simultaneâmente para que a aplicação parasse de funcionar. E ainda assim, é facilmente possível que novos nós entrassem na rede em uma situação dessa, evitando o seu desligamento. Na prática, porém, isso só é possível quando há o interesse constante de vários e diversos agentes em manter a rede funcionando.
 
 A própria internet surgiu como uma rede decentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantem-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (internet profunda) é o termo usado para designar a parte da internet que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a internet de superfície, nome dado a internet prontamente acessível por buscadores.}.
 
+Para que uma aplicação decentralizada seja possível, é necessário que haja regras, ou contratos, que formalizem a operação da aplicação. \citeauthor{smartcontract} criou a definição de *smart contract* (contrato inteligente), que, segundo ele, é a incorporação de cláusulas contratuais no *hardware* e/ou *software* que utilizamos, que tornem a violação do contrato onerosa, e, no melhor dos casos, proibitiva.
 
-<!--
-## Contratos Inteligentes
+Para \citeauthoronline{smartcontract}, contratos são a base para uma economia livre de mercado, e que por isso, é necessário que os mecanismos do mundo sejam construídos de madeira a criar contratos:
 
-Contrato inteligente foi um termo cunhado por \citeauthoronline{nick} em \citeyear{nick} e é definido como uma forma de contrato que é incorporada a um *hardware* ou *software* de forma a criar um contrato
+a. robustos contra vandalismo ingênuo;
+b. robustos contra violações sofisticadas\footnote{É importante salientar, que um contrato inteligente não se propõe a lidar com um terceiro tipo de ataque, o vandalismo sofisticado, caracterizado como sendo o uso extensivo e desproporcional de força ou poder, tais como ataques militares efetuados por terceiros\cite{smartcontract}. Esse tipo de ataque é raramente utilizado nas relações de livre mercado, e quase invariavelmente são oriundos de uma alocação de recursos obtidos de forma coercitiva por governos ou entidades autoritárias.}.
 
-Contratos são definidos por ...
+\citeauthoronline{smartcontract} classifica a forma de seguração contratual em:
 
-Já os contratos inteligentes possuem as seguintes distinções ...
+- reativa: ação tomada após a quebra de um contrato, como medidas físicas tomadas por agências de segurança, tais quais, prisão e confiscação de propriedade;
+- proativa: ação tomada de forma a coibir a quebra de um contrato:, como caixas fortes com mecanismos de autenticação que impeçam o acesso não autorizado a um bem de valor.
 
-Os autores ... propuseram suas próprias definições de contratos inteligentes, tais quais ...
+Nessas classificações, um sistema judicial estatal, bem como a polícia e empresas de seguros, são considerados uma segurança contratual reativa, que embora sejam efetivas, são onerosas e burocráticas, aumentando o custo de transação, o que produz produtos ou serviços mais caros. E por esse motivo, contratos inteligentes, que incorporam em si mecanismos proativos de segurança, oferecem um menor custo de transação e uma segurança suficiente para coibir a violação de contratos.
 
-Atualmente há quase uma simbiose entre contratos inteligentes e blockchain, como os autores ... expõem.
-
-### Blockchain
-
-O primeiro autor a citar uma lista encadeada de blocos com o intuito de estabelecer um meio descentralizado de informação foi ... em ...
-
-Ele definiu a arquitetura ... como solução para o objetivo ...
-
-Posteriormente, o Bitcoin aplicou a mesma estrutura para resolver o seu problema de duplo gasto.
-
-A arquitetura genérica de uma blockchain se dar por ...
-
-Várias adaptações podem ser feitas na blockchain.
-
-Uma das preocupações inerentes a blockchains ou qualquer outra tecnologia descentralizada é como resolver as divergências que venham a ocorrer na rede.
-
-O Bitcoin estabeleceu pela primeira vez o algoritmo de consenso baseado em *Proof of Work* que possui as seguintes características ...
-
-No entanto, o *Proof of Work* tem as seguintes desvantagens ...
-
-Outros algoritmos surgiram para resolver esse problemas, tais como os algoritmos ... que possuem as seguintes características ...
-
-Abaixo há uma tabela dos algoritmos de consenso mais utilizados junto com suas características ...
-
-Embora a blockchain tenha se popularizado para ser utilizado com criptomoedas, há varias outras aplicações, dentre elas ...
-
-### Aplicações
-
-Contratos inteligentes podem ser aplicados em vários contextos, tais como ...
-
-No contexto de comércio eletrônico, os contratos inteligentes podem ser utilizados da seguinte forma ...
-
--->
+Com o surgimento da *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em software, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algorítmo de consenso para garantir uma segurança reativa de que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da blockchain seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
