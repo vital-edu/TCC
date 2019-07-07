@@ -1,55 +1,3 @@
-<!--
-## Contexto com Justificativa
-
-O estudo da economia só faz sentido a partir do momento que se define a escassez
-
-Para que o ser humano possa alcançar
-
-A partir do momento que um ser
-
-Desejo, esforço e recompensa
-
-O ser humano, vivendo em solidão, não precisa de outros
-
-A economia de livre mercado é importante por causa de ...
-
-Mercado livre é definido como ...
-
->>>>>>>>> Bastiat (A Lei)
-
-Qualquer interferência de um terceiro em uma transação voluntária entre duas partes, sem o consentimento delas, é desnecessária ou prejudicial.
-
-<<<<<<<<<
-
-É natural o surgimento de moedas, bens que possuem um valor de troca maior do que de consumo, dentro de um mercado livre pois isso facilita as transações.
-
-As moedas quando são controladas por agentes centrais perdem suas características essenciais
-
-As características que definem uma moeda são ...
-em
-Criptomoedas podem ser consideradas moedas por conta de ... embora ...
-
-Quando a complexidade das transações aumenta surge a necessidade de criar mecanismos que tragam segurança .
-
-Os contratos surgiram para prover essa segurança.
-
-Contratos são definidos como ...
-
-Contratos devem ser livres de agentes centralizadores por causa de ...
-
-Contratos inteligentes é uma alternativa a contratos convencionais por conta de ...
-
-Contrato inteligente se consolidou ao ser incorporado à blockchain por cause de ...
-
-Contratos inteligentes proveem a segurança necessária para que uma economia de livre mercado descentralizado seja possível por conta de ...
-
--->
-
-<!-- resumo, final alternativo
-A plataforma de comércio eletrônico proposta neste trabalho utiliza o Bitcoin como forma
-de pagamento, e é hospedada de forma distribuída utilizando o framework Holochain.
--->
-
 # Introdução
 
 ## Contexto com Justificativa
@@ -581,7 +529,7 @@ O livre mercado só é plenamente possível em um ambiente livre de coerção, e
 
 ## Aplicações Decentralizadas
 
-Aplicações de *software* podem ser classificadas baseado no seu nível de centralização (fig. \ref{fig:apptypes}). Aplicações centralizadas(a), são as mais comuns e são caracterizadas como aplicações fornecidas ou controladas por apenas um agente ou organização. Aplicações distribuídas(b) são aplicações que possuem diversas replicas espalhadas geograficamente e que cooperam entre si para garantir consistência e disponibilidade de dados. Atualmente aplicações distribuídas se popularizaram com os serviços de nuvem, em que empresas provêem servidores de aplicações espalhadas pelo mundo que podem ser alugados por outras empresas.
+Aplicações de *software* podem ser classificadas baseado no seu nível de centralização (fig. \ref{fig:apptypes}). Aplicações centralizadas(a), são as mais comuns e são caracterizadas como aplicações fornecidas ou controladas por apenas um agente ou organização. Aplicações distribuídas(b) são aplicações que possuem diversas replicas espalhadas geograficamente e que cooperam entre si para garantir consistência e disponibilidade de dados \cite{raval}. Atualmente aplicações distribuídas se popularizaram com os serviços de nuvem, em que empresas provêem servidores de aplicações espalhadas pelo mundo que podem ser alugados por outras empresas.
 
 \begin{figure}[htbp]
   \caption{\label{fig:apptypes}Tipos de aplicatções de \emph{software}.}
@@ -598,9 +546,9 @@ No contexto de uma plataforma de mercado livre, é importante que haja mecanismo
 Para se proteger dessa centralização de poder, \citeauthor{raval} propôs que aplicações decentralizadas, para serem consideradas como tal, devem possuir as seguintes características:
 
 1. Ter código aberto: é inviável criar uma plataforma decentralizada em que apenas um grupo de indivíduos tenha acesso ao código fonte da mesma.
-2. Possuir moeda interna: como não existe a propriedade definitiva da plataforma por ninguém, é preciso encontrar uma maneira de incentivar ao desenvolvimento da plataforma por desenvolvedores e custear a infra-estrutura da aplicação, para isso normalmente são criados *tokens*\footnote{\emph{tokens}, segundo \citeauthor{token}, são meios de trocas não-autorizados por lei e emitidos por indivíduos privados ou empresa, que é reconhecido como dinheiro e que serve de forma pŕatica a esse propósito.}.
+2. Possuir moeda interna: como não existe a propriedade definitiva da plataforma por ninguém, é preciso encontrar uma maneira de incentivar o desenvolvimento da plataforma por desenvolvedores e custear a infra-estrutura da aplicação, para isso normalmente são criados *tokens*\footnote{\emph{tokens}, segundo \citeauthor{token}, são meios de trocas não-autorizados por lei e emitidos por indivíduos privados ou empresa, que é reconhecido como dinheiro e que serve de forma pŕatica a esse propósito.} específicos para a plataforma que funcionam de forma similar a ações de empresas (títulos emitidos por sociedades anônimas), garantindo tanto poder de decisão sobre o rumo da empresa, bem como uma forma de captar investimento externo e premiar os fundadores quando há a valorização do valor da organização.
 3. Usar um algorítmo de consenso decentralizado: é o algorítmo de consenso decentralizado (que resolva o *Problemas dos Generais Bizantinos*) que permitirá que nós independentes com resultados conflitantes consigam convergir para um único resultado e assim possa-se garantir que a rede funcione sem chegar nunca a um estado permanente de impasse (*deadlock*).
-4. Não possuir ponto central de falha: aplicações decentralizadas, em teoria, não podem ser removidas ou derrubadas, pois não possuem um único ponto de falha. Por funcionar em um sistema *peer-to-peer*, todos os participantes da rede teriam que ser desligados  simultaneâmente para que a aplicação parasse de funcionar. E ainda assim, é facilmente possível que novos nós entrassem na rede em uma situação dessa, evitando o seu desligamento. Na prática, porém, isso só é possível quando há o interesse constante de vários e diversos agentes em manter a rede funcionando.
+4. Não possuir ponto central de falha: aplicações decentralizadas, em teoria, não podem ser removidas ou derrubadas, pois não possuem um único ponto de falha. Por funcionar em um sistema *peer-to-peer*, todos os participantes da rede teriam que ser desligados  simultaneâmente para que a aplicação parasse de funcionar. E ainda assim, é facilmente possível que novos nós entrem na rede em uma situação dessa, evitando o seu desligamento. Na prática, porém, isso só é possível quando há o interesse constante de vários e diversos agentes em manter a rede funcionando.
 
 A própria internet surgiu como uma rede decentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantem-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (internet profunda) é o termo usado para designar a parte da internet que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a internet de superfície, nome dado a internet prontamente acessível por buscadores.}.
 
@@ -620,11 +568,11 @@ Nessas classificações, um sistema judicial estatal, bem como a polícia e empr
 
 Com o surgimento do *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em *software*, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algorítmo de consenso para garantir que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da blockchain seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
 
-E foi o surgimento da *Ethereum* que culminou na adoção e propagação de contratos inteligentes em diferentes contexto. A *Ethereum*, uma criptomoeda que implementa uma *blockchain* que suporta o uso de uma linguagem *Turing-completo\footnote{\emph{Turing-complete} é a denominação dada a sistemas de regras capazes de simular um computador primitivo, ou seja, permitir teóricamente, sem levar em consideração capacidade de memória e de processamento, a resolução de qualquer problema computacional, o que no contexto de linguagens de programação, significa ter suporte a estruturas condicionais e de repetição \cite{ethereum}.} foi concebida para permitir a criação de aplicações decentralizadas que fosse além do contexto financeiro \cite{ethereum}.
+E foi o surgimento da *Ethereum* que culminou na adoção e propagação de contratos inteligentes em diferentes contexto. A *Ethereum*, uma criptomoeda que implementa uma *blockchain* que suporta o uso de uma linguagem *Turing-completa*\footnote{\emph{Turing-completo} é a denominação dada a sistemas de regras capazes de simular um computador primitivo, ou seja, permitir teóricamente, sem levar em consideração capacidade de memória e de processamento, a resolução de qualquer problema computacional, o que no contexto de linguagens de programação, significa ter suporte a estruturas condicionais e de repetição \cite{ethereum}.} foi concebida para permitir a criação de aplicações decentralizadas que fosse além do contexto financeiro \cite{ethereum}.
 
 O desenvolvimento de aplicações decentralizadas permitiu o surgimento de um novo modelo organizacional, o DAO (*Decentralized Autonomous Organization - Organização Autônoma Decentralizada), em que todas as regras de funcionamento da empresa, inclusive divisão de lucros e como é feito decisões de negócio da empresa, são codificadas em contratos inteligentes utilizando *blockchain*. Isso garante que crie-se empresas com regras claras, imutáveis, e que haja a garantia  de como a empresa vai funcionar durante toda sua existência.
 
-Embora, aplicações decentralizadas sejam interessantes em contextos que envolvem a desconfiança em agentes centrais, é importante salientar que existe problemas intrínsecos relacionados ao uso de *blockchain* na construção de aplicações. Como \citeauthor{safesmart} constatou, o desenvolvimento de contratos inteligentes embora se assemelhe ao desenvolvimento tradicional, possui preocupações muito maiores quanto a segurança, além de não ser nem um pouco trivial.
+Embora, aplicações decentralizadas sejam interessantes em contextos que envolvem a desconfiança em agentes centrais, é importante salientar que existe problemas intrínsecos relacionados ao uso de *blockchain* na construção de aplicações. Como \citeauthor{safesmart} constataram, o desenvolvimento de contratos inteligentes embora se assemelhe ao desenvolvimento tradicional, possui preocupações muito maiores quanto a segurança, além de não ser nem um pouco trivial.
 
 De forma simplista, um código de contrato inteligente é invocado sempre que recebe uma mensagem, podendo haver vários pontos de entrada, sendo cada ponto de entrada uma função do código a ser executada. Ou seja, uma mensagem recebida é como a chamada de uma função, que deve retornar um resultado para quem enviou a mensagem após a mensagem ser processada pela função do contrato (fig. \ref{fig:ethcode}).
 
@@ -640,10 +588,17 @@ Em última análise, criar um contrato inteligente é um processo meticuloso e q
 
 O desenvolvimento de contratos inteligentes, assemelha-se então, muito mais ao desenvolvimento de *software* embarcado (em que o *recall*\footnote{\emph{recall} (devolução) é o termo usado para quando um lote inteiro de uma linha de produto já vendida apresenta defeitos de fabricação e a fabricante convida seus clientes a devolverem o produto seja para reparação do problema ou para troca, sem gerar custos para o cliente por esse serviço.} é indesejádo e oneroso financeiramente), do que *software* evolutivo e incremental (em que a atualização do *software* é facilmente realizada e incentivada).
 
-Outra preocupação recorrente em relação ao desenvolvimento de aplicações decentralizadas, é a utilização da tecnologia *Blockchain*, que exige que um nó completamente engajado no processo de criação de novos blocos,  deve processar cada transação e manter uma cópia completa do estado atual da *Blockchain*. Embora isso garanta questões de segurança, neutralidade política e tolerância a falhas, isso tem um alto custo de escalabilidade. Inclusive, cada novo nó que entra na rede, ao invés de deixá-la mais performática, acaba por tornar a rede mais fraca, pelo fato de a latência entre nós cresce de forma logarítmica a cada nó adicionado \cite{scale}.
+Outra preocupação recorrente em relação ao desenvolvimento de aplicações decentralizadas, é a utilização da tecnologia *Blockchain*, que exige que um nó completamente engajado no processo de criação de novos blocos,  deve processar cada transação e manter uma cópia completa do estado atual da *Blockchain*. Embora isso garanta questões de segurança, neutralidade política e tolerância a falhas, isso tem um alto custo de escalabilidade. Inclusive, cada novo nó que entra na rede, ao invés de deixá-la mais performática, acaba por tornar a rede mais fraca, pelo fato de a latência entre nós crescer de forma logarítmica a cada nó adicionado \cite{scale}.
 
-Devido ao aumento do número de transações, e do tamanho total da *Blockchain*, a *Prova de Trabalho* acaba por obrigar que os nós tenham cada vez mais capacidade de processamento e de armazenamento, o que pode culminar em um processo de centralização, em que apenas nós com maior infra-estrutura conseguem participar da rede.
+Devido ao aumento do número de transações, e do tamanho total da *Blockchain*, a *Prova de Trabalho* acaba por obrigar que os nós tenham cada vez mais capacidade de processamento e de armazenamento, o que pode culminar em um processo de centralização, em que apenas nós com maior infra-estrutura conseguem participar da rede. Para exemplificar, \citeauthoronline{scale} relatou que em \citeyear{scale}, a *Blockchain* do *Bitcoin* transacionou 7 transações por segundo, tendo na época, um limite teórico de 4000 transações por segundo; e a *Blockchain* da *Ethereum* chegou a transacionar 15 transações por segundo.
 
-Para exemplificar, \citeauthoronline{scale} em \citeyear{scale}, a *Blockchain* do *Bitcoin* transacionou 7 transações por segundo, tendo na época, um limite teórico de 4000 transações por segundo; e a *Blockchain* da *Ethereum* chegou a transacionar 15 transações por segundo. Embora novas tecnologias e abordagens tenham sido implementadas no protocolo *Bitcoin*, assim como de outras criptomoedas, como a *Ethereum*, e o potencial de escalabilidade esteja aumentando ano a ano, é inegável que esse volume de transações por segundo é irrisório comparado com aplicações centralizadas e distribuídas.
+Embora novas tecnologias e abordagens tenham sido implementadas no protocolo *Bitcoin*, assim como de outras criptomoedas, como a *Ethereum*, e o potencial de escalabilidade esteja aumentando ano a ano, é inegável que esse volume de transações por segundo é irrisório comparado com aplicações centralizadas e distribuídas, que conseguem lidar com milhares de transações por segundo, e que possuem capacidade de escalonamento de acordo com a demanda pelo serviço.
+
+Para tentar solucionar o problema de construção de aplicações decentralizadas que sejam escaláveis, \citeauthoronline{holo} propuseram uma arquitetura denomina *Holochain* que possui como principais características:
+
+1. permitir aplicações decentralizadas completamente funcionais (muito mais sofisticas que meros contratos inteligentes), e capaz de servir usuários tradicionais da internet;
+2. prover infraestrutura criptográfica massivamente escalável necessária para hospedar e gerenciar aplicações com enorme volume de uso.
+
+A *Holochain* provê a garantia de integridade de dados para aplicações *peer-to*peer* sem utilizar algorítmos de consenso, o que economiza poder de processamento, sem abandonar a característica de imutabilidade. \citeauthoronline{holo} denomina essa abordagem como *centrada no agente* e destaca que o costo computacional de gerenciamento de consenso requer uma quantidade desnecessária de processamento de dados que carrega limitações de escalabilidade inerentes a abordagem.
 
 
