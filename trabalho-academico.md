@@ -588,7 +588,7 @@ Aplicações de *software* podem ser classificadas baseado no seu nível de cent
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/apptypes.png}
   \end{center}
-  \legend{Fonte: Autor \citeauthoronline{raval} \cite[pp. 3 e 32]{raval}.}
+  \legend{Fonte: \citeauthoronline{raval} \cite[pp. 3 e 32]{raval}.}
 \end{figure}
 
 Aplicações decentralizadas(c) são aplicações em que cada nó opera de forma independente. autônoma e autossuficiente, e que portanto, necessita de um algorítmo de consenso para resolver disputas. Uma aplicação centralizada e distribuída resolve problemas de disponibilidade, latência de rede, problemas de corrupção de dados através da redundância de dados, porém não resolvem problemas de ordem institucional.
@@ -618,5 +618,24 @@ b. robustos contra violações sofisticadas\footnote{É importante salientar, qu
 
 Nessas classificações, um sistema judicial estatal, bem como a polícia e empresas de seguros, são considerados uma segurança contratual reativa, que embora sejam efetivas, são onerosas e burocráticas, aumentando o custo de transação, o que produz produtos ou serviços mais caros. E por esse motivo, contratos inteligentes, que incorporam em si mecanismos proativos de segurança, oferecem um menor custo de transação e uma segurança suficiente para coibir a violação de contratos.
 
-Com o surgimento do *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em software, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algorítmo de consenso para garantir que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da blockchain seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
+Com o surgimento do *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em *software*, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algorítmo de consenso para garantir que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da blockchain seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
 
+E foi o surgimento da *Ethereum* que culminou na adoção e propagação de contratos inteligentes em diferentes contexto. A *Ethereum*, uma criptomoeda que implementa uma *blockchain* que suporta o uso de uma linguagem *Turing-completo\footnote{\emph{Turing-complete} é a denominação dada a sistemas de regras capazes de simular um computador primitivo, ou seja, permitir teóricamente, sem levar em consideração capacidade de memória e de processamento, a resolução de qualquer problema computacional, o que no contexto de linguagens de programação, significa ter suporte a estruturas condicionais e de repetição \cite{ethereum}.} foi concebida para permitir a criação de aplicações decentralizadas que fosse além do contexto financeiro \cite{ethereum}.
+
+O desenvolvimento de aplicações decentralizadas permitiu o surgimento de um novo modelo organizacional, o DAO (*Decentralized Autonomous Organization - Organização Autônoma Decentralizada), em que todas as regras de funcionamento da empresa, inclusive divisão de lucros e como é feito decisões de negócio da empresa, são codificadas em contratos inteligentes utilizando *blockchain*. Isso garante que crie-se empresas com regras claras, imutáveis, e que haja a garantia  de como a empresa vai funcionar durante toda sua existência.
+
+Embora, aplicações decentralizadas sejam interessantes em contextos que envolvem a desconfiança em agentes centrais, é importante salientar que existe problemas intrínsecos relacionados ao uso de *blockchain* na construção de aplicações. Como \citeauthor{safesmart} constatou, o desenvolvimento de contratos inteligentes embora se assemelhe ao desenvolvimento tradicional, possui preocupações muito maiores quanto a segurança, além de não ser nem um pouco trivial.
+
+De forma simplista, um código de contrato inteligente é invocado sempre que recebe uma mensagem, podendo haver vários pontos de entrada, sendo cada ponto de entrada uma função do código a ser executada. Ou seja, uma mensagem recebida é como a chamada de uma função, que deve retornar um resultado para quem enviou a mensagem após a mensagem ser processada pela função do contrato (fig. \ref{fig:ethcode}).
+
+\begin{figure}[htbp]
+  \caption{\label{fig:ethcode}Exemplo de contrato inteligente implementado na linguage \emph{Serpent}.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/ethcode.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{safesmart}.}
+\end{figure}
+
+Em última análise, criar um contrato inteligente é um processo meticuloso e que envolve codificar máquinas de estado muitas vezes complexas, em que qualquer omissão de um estado de transição ou negligẽncia em checar o estado atual, pode causar problemas drásticos \cite{safesmart}, principalmente por serem, a príncipio, imutáveis e envolverem contextos atrelados a manipulação de recursos financeiros.
+
+O desenvolvimento de contratos inteligentes, assemelha-se então, muito mais ao desenvolvimento de *software* embarcado (em que o *recall*\footnote{\emph{recall} (devolução) é o termo usado para quando um lote inteiro de uma linha de produto já vendida apresenta defeitos de fabricação e a fabricante convida seus clientes a devolverem o produto seja para reparação do problema ou para troca, sem gerar custos para o cliente por esse serviço.} é indesejádo e oneroso financeiramente), do que *software* evolutivo e incremental (em que a atualização do *software* é facilmente realizada e incentivada).
