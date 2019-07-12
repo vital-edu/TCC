@@ -619,7 +619,7 @@ Incluir um novo registro na *DHT* envolve encontrar um nó responsável por cuid
 
 Diferentemente da aplicações decentralizadas construídas utilizando tecnologia *blockchain*, a *Holochain* não sofre de problema de escalabilidade, se tornando cada vez mais eficiente a medida que o número de nós aumenta, já que a rede divide o trabalho entre os nós. Por conta disso, enquanto a rede *Ethereum* necessita de melhorias para resolver problemas de escalabilidade, a Holochain já está pronta para o desenvolvimento de aplicações decentralizadas, o que a torna uma excelente opção para uma plataforma de comércio eletrônico que pretende ser utilizada de forma extensiva.
 
-\begin{table}[htpb]
+\begin{table}[htbp]
 \caption{\label{tab:holo}Comparativo entre \emph{Blockchain} e \emph{Holochain}.}
 \begin{tabular}{m{0.2\linewidth} | m{0.4\linewidth} | m{0.4\linewidth}}
 \toprule
