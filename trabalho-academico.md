@@ -637,7 +637,7 @@ Diferentemente da aplicações decentralizadas construídas utilizando tecnologi
 
 Neste capítulo será apresentado detalhes da proposta de plataforma de comércio eletrônico decentralizada, cujo objetivo é oferecer um ambiente de livre comércio que não dependa de um agente central e que possa ser utilizado globalmente. Para a solução proposta serão apresentados os requísitos de alto nível da solução, bem como um cronograma de execução do projeto.
 
-## Escopo do Projeto
+## Visão do Projeto
 
 O projeto trata-se de uma plataforma de comércio  eletrônica onde poderão ser ofertados produtos ou serviços sem que haja intermediários entre ofertante e pagador e se baseará em um sistema de reputação para qualificar os usuários e coibir maus usuários. Por se tratar de uma plataforma baseada no livre mercado, os mecanismos de reputação de usuário deixarão claro os riscos envolvidos em cada transação, bem como recomendações, mas jamais se sobreporá a vontade dos usuários em relação a quem eles desejam transacionar, baseando-se nos princípios de livre-associação e escolha, nas liberdades indivíduais, e na responsabilidade de cada indivíduo quanto as suas ações.
 
@@ -650,4 +650,32 @@ Para possibilitar o uso da plataforma por qualquer usuário, localizado em qualq
 A plataforma será operada utilizando contratos inteligentes, de forma a garantir que todo o processo de cadastramento de usuário, depósito de segurança, oferta e pagamento de produto ou serviço, reputação dos usuários, e todas as regras de negócios, serão implementadas em forma de contrato inteligente, a fim de prover uma forma automatizada, segura, auditável e que não dependa de terceiros para funcionar.
 
 A príncipio a plataforma será desenvolvida para ser acessada por qualquer dispositivo conectado a internet que possua um navegador moderno, porém, o intuito é que sejam disponibilizadas versões para dispositivos móveis, que utilizem os sistemas operacionais iOS e Android.
+
+## Escopo do Projeto
+
+Devido a limitação de tempo para desenvolver o projeto, apenas um conjunto essencial do projeto será desenvolvido inicialmente. O escopo aqui delimitado será entendido como uma prova de conceito para determinar a viabilidade técnica da solução, bem como para validar a ideia e verificar se há demanda pela solução.
+
+O prazo estipulado de desenvolvimento da prova de conceito compreende a um período de 4 meses. Para determinar o produto mínimo a ser entregue neste prazo, levou-se em conta o diferencial dessa solução. Como já existem soluções consolidadas de plataformas de comércio eletrônico, é preciso destacar os diferencias da solução aqui proposta:
+
+### Decentralização
+
+As plataformas de comércio eletrônico atuais movimentam um grande volume de dinheiro (fig. \ref{fig:revenue}), porém, a limitação de operarem apenas com dinheiro fiduciário, além das restrições que são impostas por agentes centrais, impedem que essas plataformas sejam utilizadas em ambientes, que com menos regulação, se beneficiariam de produtos mais baratos e uma maior variedade de oferta. Além disso, são plataformas que só conseguem operar em um país a partir do momento em que cumprem com todas as obrigações legais e fiscais do país.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:revenue}Aumento da receita de empresas de comércio eletrônico em 2017.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/revenue.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{revenue}.}
+\end{figure}
+
+Na África do Sul, há pelo menos duas vezes mais celulares do que linhas de telefone fixo, e as transações bancárias são comumente realizadas por meio de celulares ao invés de tradicionáis máquinas de auto-atendimento \cite{africa}. Isso retrata uma realidade diferente da que estamos acostumados, e como \citeauthor{africa-btc} traz em vários relatos e entrevistas, a utilização de criptomoedas e tecnologias *blockchain* tem crescido e se popularizado em diversos países africanos.
+
+Não se pode deduzir uma relação de causa e efeito, mas pode-se tentar inferir que países que durante décadas passaram por instabilidades políticas e tiveram pouco desenvolvimento tecnológico, agora estão chegando na era da tecnologia muito mais dispostos a adotarem tecnologias consideradas disruptivas, e muito mais preocupados em adotarem sistemas menos centralizados, já que são comunidades com um forte senso de colaboração e que geralmente veem com desconfiança figuras centralizadores de poder.
+
+Nesses cenários, a não existência de intermediários e a utilização de tecnologias que permitam a fácil interação entre membros da comunidade e de forma não burocrática, é um forte atrativo e diferencial que plataformas centralizadoras não têm interesse em prover.
+
+A população da Venezuela, que segundo o \citeauthor{fmireport2019} teve uma inflação de mais de 929.000% (novecentos e vinte e nove mil porcento) em 2018 e uma inflação projetada para alcançar 10.000.000% (dez milhões porcento) no ano de 2019, enxerga a adoção de uma moeda sem fronteiras e que não possui um agente central de forma muito mais natural do que a população brasileira, que ainda conta com uma moeda relativamente estável.
+
+Já é comum que os venezuelano, por não confiarem mais na moeda de seu país, convertam o dinheiro que ganham em moeda local para criptomoedas, e que as usem como reserva de valor, trocando-as quando necessário \cite{venezuela}. Já é possível viajar para a Venezuela, e passar vários dias lá, pagando desde a passagem do avião até hospedagem, comida, e transporte utilizando criptomoedas, como relatado em primeira mão pelo documentário produzido por \citeauthor{doc}.
 
