@@ -143,7 +143,7 @@ Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um est
 
 ## Criptomoedas
 
-As criptomoedas, um dinheiro virtual que utiliza conceitos e algorítmos oriundos da criptografia, teve sua história moldada por pequenos e progressivos avanços na área da criptografia. Portanto, é importante entender a contribuição de diferentes autores que culminaram no advento do *Bitcoin*, a principal criptomoeda em circulação atualmente.
+As criptomoedas, um dinheiro virtual que utiliza conceitos e algoritmos oriundos da criptografia, teve sua história moldada por pequenos e progressivos avanços na área da criptografia. Portanto, é importante entender a contribuição de diferentes autores que culminaram no advento do *Bitcoin*, a principal criptomoeda em circulação atualmente.
 
 Embora já houvessem soluções de pagamento envolvendo dinheiro virtual em \citeyear{blindsignature}, \citeauthoronline{blindsignature} preocupou-se com uma importante característica das transações no mundo real que não estava presente nas transações virtuais: a privacidade.
 
@@ -168,7 +168,7 @@ O sistema proposto baseava-se na utilização de assinaturas digitais e funciona
 
 Com essa solução, Bob não conseguiria saber que Alice fez um pagamento para Carlos, já que o documento que Carlos apresentou a Bob poderia ter sido assinado por qualquer outra pessoa, e tampouco conseguiria saber a data do pagamento, já que Alice poderia demorar um tempo indefinido entre os passos 6 e 7.
 
-A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento em alto nível e a figura \ref{fig:blind-signature-rsa} ilustra o processo utilizando o algorítmo Rivest–Shamir–Adleman (RSA).
+A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento em alto nível e a figura \ref{fig:blind-signature-rsa} ilustra o processo utilizando o algoritmo Rivest–Shamir–Adleman (RSA).
 
 \begin{figure}[htbp]
   \centering
@@ -179,7 +179,7 @@ A figura \ref{fig:blind-signature} ilustra o processo de assinatura do documento
 
 \begin{figure}[htbp]
   \centering
-  \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algorítmo RSA.}
+  \caption{\label{fig:blind-signature-rsa}Implementação da assinatura cega utilizando o algoritmo RSA.}
   \includegraphics[width=1.0\textwidth]{imagens/blind-signature-rsa.jpg}
   \legend{Fonte: \citeauthor{blindsignaturewiki}.}
 \end{figure}
@@ -188,7 +188,7 @@ Embora o processo descrito garanta que Bob não conheça o conteúdo do document
 
 Foi apenas em \citeyear{timestamp} que surgiu uma solução com potencial de resolver o problema da dependência de um agente central para registro de informações importantes. \citeauthor{timestamp} pensando na facilidade em modificar e copiar documentos digitais, e no problema que isso causa ao tentar determinar quando um documento digital é criado ou modificado, criaram uma maneira de registrar documentos eletrônicos de forma a garantir a autenticidade, a data de registro, bem como a imutabilidade de seu conteúdo, e impossibilitando a adulteração dessas informações por quem os armazenassem.
 
-Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algorítmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma descentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
+Essa solução, que viria a ser conhecida como *blockchain*, consistia de um algoritmo de encadeamento de dados em que o elemento seguinte da cadeia é criado a partir de informações contidas no documento anteriormente registrado, e que seria armazenada e validado de forma descentralizada por seus utilizadores, garantindo que mesmo que um grupo de utilizadores tentassem corromper os dados, ou outros teriam como identificar a fraude.
 
 A solução de \citeauthoronline{timestamp} foi concebida para funcionar com qualquer documento digital, independente do formato ou tamanho, e para garantir isso ele propôs o uso de uma família de funções criptograficamente segura  e livre de colisões, mais conhecidas como funções *hash* (fig. \ref{fig:hash}).
 
@@ -229,7 +229,7 @@ Além de identificar a autoria do documento também é importante armazenar a da
 
 Ainda assim, é necessário confiar em um agente central (Bob), que poderia facilmente ser corrompido por Carlos sem que Alice conseguisse provar a fraude. \citeauthoronline{timestamp} propuseram uma solução denominada *confiança distribuída*.
 
-Nessa solução, haveria um gerador pseudoaleatório\footnote{\emph{gerador pseudoaleatório} é um algorítmo que usa \emph{bits} verdadeiramente aleatórios para gerar de forma determinística uma longa sequência de \emph{bits} \cite{pseudo}.} *G* disponível para todos os indivíduos que desejassem registrar documentos. Quando Alice desejasse registrar um documento, ela deveria gerar um *hash y* do documento, e usá-lo como *seed*\footnote{\emph{seed} (semente) é o nome que se dá a sequência de bits verdadeiramente aleatória utilizada no gerador pseudoaleatório.} para o gerador *G*, o que produzirá uma sequência de *bits* que podem ser agrupadas de maneira a forma um número *k* de *IDs*, conforme mostrado na equação \ref{eqn:g} \cite{timestamp}.
+Nessa solução, haveria um gerador pseudoaleatório\footnote{\emph{gerador pseudoaleatório} é um algoritmo que usa \emph{bits} verdadeiramente aleatórios para gerar de forma determinística uma longa sequência de \emph{bits} \cite{pseudo}.} *G* disponível para todos os indivíduos que desejassem registrar documentos. Quando Alice desejasse registrar um documento, ela deveria gerar um *hash y* do documento, e usá-lo como *seed*\footnote{\emph{seed} (semente) é o nome que se dá a sequência de bits verdadeiramente aleatória utilizada no gerador pseudoaleatório.} para o gerador *G*, o que produzirá uma sequência de *bits* que podem ser agrupadas de maneira a forma um número *k* de *IDs*, conforme mostrado na equação \ref{eqn:g} \cite{timestamp}.
 
 \begin{equation}
 \label{eqn:g}
@@ -269,11 +269,11 @@ Para \citeauthoronline{hashcash}, as funções de custo deveriam ser eficienteme
 
 Alguns dos diferenciais da função de custo *Hashcash* eram as alterações dos desafios a cada intervalo de tempo, o que evitaria a pré-computação de respostas; e o ajuste do custo computacional necessário para decifrar o desafio, o que permitiria a adaptação do nível do desafio de acordo com a demanda de requisições que o servidor enfrentava.
 
-O *Hashcash* veio a ser conhecido como sendo um algorítmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthor{rpow} em \citeyear{rpow}.
+O *Hashcash* veio a ser conhecido como sendo um algoritmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthor{rpow} em \citeyear{rpow}.
 
-O algorítmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo token.
+O algoritmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo token.
 
-Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algorítmos criptográficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
+Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algoritmos criptográficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
 
 Em \citeyear{bitgold}, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como características: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas propriedades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
 
@@ -318,9 +318,9 @@ O exército deve decidir por usar um plano de ação único, porém deve-se cons
 i. Todos os generais leais devem adotar um mesmo plano de ação;
 ii. Um grupo pequeno de traidores não pode conseguir que os generais leais adotem um plano de ação ruim.
 
-Nesse problema teórico computacional, todos os generais leais farão o que o algorítmo implementado disser, porém, os traidores utilizarão qualquer outro algorítmo com o objetivo de chegar a uma ação considerada ruim para os interesses do exército.
+Nesse problema teórico computacional, todos os generais leais farão o que o algoritmo implementado disser, porém, os traidores utilizarão qualquer outro algoritmo com o objetivo de chegar a uma ação considerada ruim para os interesses do exército.
 
-Como \citeauthoronline{byzantine} explicitam, o algorítmo utilizado pelos generais leais devem garantir a condição (i) independente do que os traídores fizerem, e os generais leais não apenas devem chegar a um acordo sobre o que fazer, como também devem chegar a um acordo sobre um plano de ação razoável, ou em outras palavras, benéfico para o exército bizantino.
+Como \citeauthoronline{byzantine} explicitam, o algoritmo utilizado pelos generais leais devem garantir a condição (i) independente do que os traídores fizerem, e os generais leais não apenas devem chegar a um acordo sobre o que fazer, como também devem chegar a um acordo sobre um plano de ação razoável, ou em outras palavras, benéfico para o exército bizantino.
 
 Para resolver o *Problema dos Generais Bizantinos* no contexto de registro de transações em um livro-razão público, é necessário considerar as seguintes características desse livro-razão:
 
@@ -332,7 +332,7 @@ A terceira característica remete ao *Problema dos Generais Bizantinos*. A prime
 
 Para garantir a terceira característica, a simples votação entre os participantes, solução tradicional proposta por \citeauthoronline{byzantine}, não seria suficiente pois não há como impedir que novos participantes entrem no sistema, o que tornaria fácil a multiplicação artificial de agentes fraudulentos, que invariavelmente conseguiriam se tornar a maioria e consequentemente obteriam sucesso em fraudar o livro-razão.
 
-Por isso \citeauthoronline{bitcoin} propôs a utilização de um algorítmo de prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, inspirado pelo trabalho de \citeauthoronline{hashcash}. De forma simplificada, a prova de trabalho obriga que qualquer agente que queira escrever no livro-razão seja obrigado a calcular uma função *hash*, que é computacionalmente dispendiosa e cujo resultado é probabilisticamente difícil de ser o correto (apenas quem calcula um resultado correto consegue escrever no livro-razão).
+Por isso \citeauthoronline{bitcoin} propôs a utilização de um algoritmo de prova de trabalho (*PoW - Proof of Work*) para registrar uma transação no livro-razão, inspirado pelo trabalho de \citeauthoronline{hashcash}. De forma simplificada, a prova de trabalho obriga que qualquer agente que queira escrever no livro-razão seja obrigado a calcular uma função *hash*, que é computacionalmente dispendiosa e cujo resultado é probabilisticamente difícil de ser o correto (apenas quem calcula um resultado correto consegue escrever no livro-razão).
 
 Além do trabalho despendido para escrever uma transação no livro-razão, seja ela uma transação fraudulenta ou não, os agentes não-fraudulentos apenas confiarão no livro-razão mais extenso, ou seja, a única forma de enganar os participantes não-fraudulentos seria os fraudadores possuírem mais poder de processamento do que todos os participantes não-fraudulentos juntos. Quanto mais participantes não-fraudulentos entram neste processo de escrita concorrente, mais improvável de ocorrer torna-se uma fraude, e mais caro torna-se tentar fraudar o livro-razão.
 
@@ -373,7 +373,7 @@ Se dois nós transmitirem versões diferentes do próximo bloco, ou seja, se for
 
 Mesmo considerando um cenário probabilístico em que dezenas de ramificações concorrentes surjam simultaneamente, como é altamente improvável que haja sempre o mesmo número de nós trabalhando em cada ramificação, a *blockchain* sempre tenderá a longo prazo a se manter com apenas uma ramificação.
 
-Como já discutido no *Problema dos Generais Bizantinos*, mesmo que um grupo de nós decida deliberadamente não obedecer esse algorítmo, eles apenas teriam sucesso em convencer os demais nós de que a sua ramificação fraudulenta da *blockchain* é a verdadeira, caso tivessem um poder de processamento maior do que a maioria dos nós não-fraudulentos.
+Como já discutido no *Problema dos Generais Bizantinos*, mesmo que um grupo de nós decida deliberadamente não obedecer esse algoritmo, eles apenas teriam sucesso em convencer os demais nós de que a sua ramificação fraudulenta da *blockchain* é a verdadeira, caso tivessem um poder de processamento maior do que a maioria dos nós não-fraudulentos.
 
 Para que esse sistema seja viável é necessário que haja diversos nós, sendo que quanto maior for a quantidade de nós na rede, maior será a impossibilidade de fraudar a *blockchain*, por isso, \citeauthoronline{bitcoin} especificou que a primeira transação de cada bloco seria uma transação que cria unidades de *Bitcoin*\footnote{A primeira transação de cada bloco da \emph{Blockchain} do \emph{Bitcoin} serve como uma recompensa para quem criou o bloco. Inicialmente a recompensa era de 50 unidades de \emph{Bitcoin} (BTC 50,00), e a cada 210 mil blocos gerados (o que leva aproximadamente 4 anos) a recompensa é reduzida pela metade. Até junho de 2019 essa recompensa era de 12.5 BTC \cite{dev-ref}.}, que passa a ser de propriedade do criador do bloco, sendo a única forma de criar novas unidades de *Bitcoin*. Isso remove completamente a figura de bancos centrais, que em moedas fiduciárias são responsáveis por emitir novas unidades de dinheiro.
 
@@ -463,9 +463,9 @@ O bloco (fig. \ref{fig:block}) armazenado na *Blockchain* além de conter as tra
 - *Hash do Último Bloco*: contém o *hash* do último bloco adicionado na *Blockchain. Isso permite que a partir de qualquer bloco consiga-se acessar o bloco anterior, característica comum de uma estrutura de dados simplesmente encadeada.
 - *Merkle Tree Root Hash*: *hash* gerado a partir dos *hashes* de todas as transações registradas no bloco. Isso garante que qualquer alteração nas transações do bloco seja facilmente identificada e rejeitada por outros nós da rede, impedindo fraudes nas transações;
 - *Nonce*: um número arbitrário utilizado para que seja possível realizar a prova de trabalho;
-- *nBits*: é o valor limite a qual o resultado do algorítmo de prova de trabalho deve ser inferior para ser considerado válido.
+- *nBits*: é o valor limite a qual o resultado do algoritmo de prova de trabalho deve ser inferior para ser considerado válido.
 
-O *Merkle Tree Root Hash* (fig. \ref{fig:hashtree}) é uma estrutura de dados em árvore em que os nós superiores são calculados a partir do valor dos nós inferiores. Isso garante que qualquer alteração no conteúdo dos nós inferiores seja facilmente identificada. Esse mecanismo permite que blocos antigos que já tiveram suas transações válidas por diversos nós possam ter suas transações descartadas pelos mineradores para reduzir espaço em disco mas sem comprometer o algorítmo de validação do bloco.
+O *Merkle Tree Root Hash* (fig. \ref{fig:hashtree}) é uma estrutura de dados em árvore em que os nós superiores são calculados a partir do valor dos nós inferiores. Isso garante que qualquer alteração no conteúdo dos nós inferiores seja facilmente identificada. Esse mecanismo permite que blocos antigos que já tiveram suas transações válidas por diversos nós possam ter suas transações descartadas pelos mineradores para reduzir espaço em disco mas sem comprometer o algoritmo de validação do bloco.
 
 \begin{figure}[htbp]
   \caption{\label{fig:hashtree}Estrutura de um \emph{Merkle Tree Root Hash}.}
@@ -477,10 +477,10 @@ O *Merkle Tree Root Hash* (fig. \ref{fig:hashtree}) é uma estrutura de dados em
 
 No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree Root Hash} segue os seguintes passos (fig. \ref{fig:merkle}) \cite{dev-ref}:
 
-1. As transação são ordenadas seguindo algumas regras aqui não discutidas;
-2. É gerado o *hash* de cada transação a partir do *id* da mesma e utilizando o algorítmo *SHA256*;
+1. As transações são ordenadas seguindo algumas regras aqui não discutidas;
+2. É gerado o *hash* de cada transação a partir do *id* da mesma e utilizando o algoritmo *SHA256*;
 3. Os *hashes* são agrupadas em pares, caso sobre um *hash* sem um par, ele é duplicado;
-4. Os *hashes* dos pares são concatenados e novamente é aplicado o algorítmo *SHA256* para gerar um novo *hash*;
+4. Os *hashes* dos pares são concatenados e novamente é aplicado o algoritmo *SHA256* para gerar um novo *hash*;
 5. O passos 3 e 4 é repetido até que sobre apenas um *hash*, esse *hash* é denominado \emph{Merkle Tree Root Hash}, e é então guardado no cabeçalho do bloco.
 
 \begin{figure}[htbp]
@@ -537,7 +537,7 @@ Aplicações de *software* podem ser classificadas baseado no seu nível de cent
   \legend{Fonte: \citeauthoronline{raval} \cite[pp. 3 e 32]{raval}.}
 \end{figure}
 
-Aplicações descentralizadas(c) são aplicações em que cada nó opera de forma independente. autônoma e autossuficiente, e que portanto, necessita de um algorítmo de consenso para resolver disputas. Uma aplicação centralizada e distribuída resolve problemas de disponibilidade, latência de rede, problemas de corrupção de dados através da redundância de dados, porém não resolvem problemas de ordem institucional.
+Aplicações descentralizadas(c) são aplicações em que cada nó opera de forma independente. autônoma e autossuficiente, e que portanto, necessita de um algoritmo de consenso para resolver disputas. Uma aplicação centralizada e distribuída resolve problemas de disponibilidade, latência de rede, problemas de corrupção de dados através da redundância de dados, porém não resolvem problemas de ordem institucional.
 
 No contexto de uma plataforma de mercado livre, é importante que haja mecanismos que garantam a desregulação do mercado, e portanto, uma plataforma centralizada poderia sucumbir por diversos motivos tais como: aquisição da plataforma por outra empresa, que pode culminar numa mudança nas políticas e regras da plataforma; mudança na diretoria da empresa por manobra de acionistas ou conflitos entre acionistas; ação política externa causado por grupos de interesse contrários; ações judiciais ou inconformidade com regras regulatórias de determinadas nações; morte ou incapacitação dos mantenedores.
 
@@ -545,7 +545,7 @@ Para se proteger dessa centralização de poder, \citeauthor{raval} propôs que 
 
 1. Ter código aberto: é inviável criar uma plataforma descentralizada em que apenas um grupo de indivíduos tenha acesso ao código fonte da mesma.
 2. Possuir moeda interna: como não existe a propriedade definitiva da plataforma por ninguém, é preciso encontrar uma maneira de incentivar o desenvolvimento da plataforma por desenvolvedores e custear a infra-estrutura da aplicação, para isso normalmente são criados *tokens*\footnote{\emph{tokens}, segundo \citeauthor{token}, são meios de trocas não-autorizados por lei e emitidos por indivíduos privados ou empresa, que é reconhecido como dinheiro e que serve de forma pŕatica a esse propósito.} específicos para a plataforma que funcionam de forma similar a ações de empresas (títulos emitidos por sociedades anônimas), garantindo tanto poder de decisão sobre o rumo da empresa, bem como uma forma de captar investimento externo e premiar os fundadores quando há a valorização do valor da organização.
-3. Usar um algorítmo de consenso descentralizado: é o algorítmo de consenso descentralizado (que resolva o *Problemas dos Generais Bizantinos*) que permitirá que nós independentes com resultados conflitantes consigam convergir para um único resultado e assim possa-se garantir que a rede funcione sem chegar nunca a um estado permanente de impasse (*deadlock*).
+3. Usar um algoritmo de consenso descentralizado: é o algoritmo de consenso descentralizado (que resolva o *Problemas dos Generais Bizantinos*) que permitirá que nós independentes com resultados conflitantes consigam convergir para um único resultado e assim possa-se garantir que a rede funcione sem chegar nunca a um estado permanente de impasse (*deadlock*).
 4. Não possuir ponto central de falha: aplicações descentralizadas, em teoria, não podem ser removidas ou derrubadas, pois não possuem um único ponto de falha. Por funcionar em um sistema *peer-to-peer*, todos os participantes da rede teriam que ser desligados  simultaneâmente para que a aplicação parasse de funcionar. E ainda assim, é facilmente possível que novos nós entrem na rede em uma situação dessa, evitando o seu desligamento. Na prática, porém, isso só é possível quando há o interesse constante de vários e diversos agentes em manter a rede funcionando.
 
 A própria *internet* surgiu como uma rede descentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantem-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (\emph{internet} profunda) é o termo usado para designar a parte da \emph{internet} que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a \emph{internet} de superfície, nome dado a \emph{internet} prontamente acessível por buscadores.}.
@@ -564,7 +564,7 @@ b. robustos contra violações sofisticadas\footnote{É importante salientar, qu
 
 Nessas classificações, um sistema judicial estatal, bem como a polícia e empresas de seguros, são considerados uma segurança contratual reativa, que embora sejam efetivas, são onerosas e burocráticas, aumentando o custo de transação, o que produz produtos ou serviços mais caros. E por esse motivo, contratos inteligentes, que incorporam em si mecanismos proativos de segurança, oferecem um menor custo de transação e uma segurança suficiente para coibir a violação de contratos.
 
-Com o surgimento do *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em *software*, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algorítmo de consenso para garantir que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da blockchain seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
+Com o surgimento do *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em *software*, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algoritmo de consenso para garantir que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da blockchain seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
 
 E foi o surgimento da *Ethereum* que culminou na adoção e propagação de contratos inteligentes em diferentes contexto. A *Ethereum*, uma criptomoeda que implementa uma *blockchain* que suporta o uso de uma linguagem *Turing-completa*\footnote{\emph{Turing-completo} é a denominação dada a sistemas de regras capazes de simular um computador primitivo, ou seja, permitir teóricamente, sem levar em consideração capacidade de memória e de processamento, a resolução de qualquer problema computacional, o que no contexto de linguagens de programação, significa ter suporte a estruturas condicionais e de repetição \cite{ethereum}.} foi concebida para permitir a criação de aplicações descentralizadas que fosse além do contexto financeiro \cite{ethereum}.
 
@@ -597,7 +597,7 @@ Para tentar solucionar o problema de construção de aplicações descentralizad
 1. permitir aplicações descentralizadas completamente funcionais (muito mais sofisticas que meros contratos inteligentes), e capaz de servir usuários tradicionais da *internet*;
 2. prover infraestrutura criptográfica massivamente escalável necessária para hospedar e gerenciar aplicações com enorme volume de uso.
 
-A *Holochain* provê a garantia de integridade de dados para aplicações *peer-to-peer* sem utilizar algorítmos de consenso, o que economiza poder de processamento, sem abandonar a característica de imutabilidade. \citeauthor{holo} denomina essa abordagem como *centrada no agente* e destaca que o custo computacional de gerenciamento de consenso requer uma quantidade desnecessária de processamento de dados que carrega limitações de escalabilidade inerentes a abordagem.
+A *Holochain* provê a garantia de integridade de dados para aplicações *peer-to-peer* sem utilizar algoritmos de consenso, o que economiza poder de processamento, sem abandonar a característica de imutabilidade. \citeauthor{holo} denomina essa abordagem como *centrada no agente* e destaca que o custo computacional de gerenciamento de consenso requer uma quantidade desnecessária de processamento de dados que carrega limitações de escalabilidade inerentes a abordagem.
 
 A *Holochain* foi pensada para ter um modo de operação similar ao *git*, em que cada nó não precisa estar sincronizado com outros nós, e que cada nó pode ter  sua própria *blockchain* interna, independente das demais. Apenas quando os nós se comunicam, deve haver a validação das informações trocadas e a resolução de conflitos entre os nós \cite{holo2}. Nesse sentido, para \citeauthoronline{holo2} a *Blockchain* possui uma estrutura *centrada no dado*, em contraste com a abordagem *centrada no agente*, adotada pela *Holochain*.
 
@@ -628,7 +628,7 @@ Diferentemente da aplicações descentralizadas construídas utilizando tecnolog
 \textbf{Escalabilidade}           & Mesmo desconsiderando a Prova de Trabalho, há sérios  problemas de limite de escalabilidade pelo fato  de requerer a sincronia entre muitos nós da rede        & Utilizando uma DHT compartilhada, o volume de transação  carregada por nó se torna menor a medida que a rede cresce                                                                                                  \\ \hline
 \textbf{Plataforma}               & Atualmente só pode funcionar de forma efetiva em computadores especializados para mineração                                                                    & Pode ser executado em Raspberry Pi ou em um smartphone                                                                                                                                                               \\ \hline
 \textbf{Eficiência Computacional} & O(\(n \times m\)) para validar transações                                                                                                                      & \(O(\frac{n}{m \times log m})\) para validar transações                                                                                                                                                              \\ \hline
-\textbf{Efeito de consenso}       & Algorítmos de consenso centralizam o poder e a  Prova de Trabalho resulta em um crescimento computacional exorbitante  para um conjunto de dados finito        & Não possui mineração nem consenso. Não possui vulnerabilidade  ao ataque da maioria. Apenas é necessário confiar  no código que roda em seu nó e validar o histórico dos  nós com que se comunica
+\textbf{Efeito de consenso}       & Algoritmos de consenso centralizam o poder e a  Prova de Trabalho resulta em um crescimento computacional exorbitante  para um conjunto de dados finito        & Não possui mineração nem consenso. Não possui vulnerabilidade  ao ataque da maioria. Apenas é necessário confiar  no código que roda em seu nó e validar o histórico dos  nós com que se comunica
 \end{tabular}
 \legend{Fonte: \citeauthor{holo3}}
 \end{table}
