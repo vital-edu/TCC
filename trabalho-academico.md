@@ -1,6 +1,6 @@
 # Introdução
 
-A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não se limitam a fronteiras físicas e que conseguem realizar processos complexos em milissegundos.
+A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a *internet* tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não se limitam a fronteiras físicas e que conseguem realizar processos complexos em milissegundos.
 
 Em menos de cinquenta anos, a transformação digital tem trazido revoluções na forma como trocamos informações, nos comunicamos e realizamos tarefas cotidianas e dentre essas inúmeras transformações digitais, o comércio eletrônico tem se destacado pela seu crescimento e por sua participação cada vez maior na econômica. Segundo \apudonline[pp. 9]{emarketer}{webshoppers2019}
 o comércio eletrônico teve um crescimento de 24% no mundo todo em 2018, movimentando 2,9 trilhões de dólares em vendas. Esse crescimento tem acontecido ano após ano, em escala global, e o que em seu primórdio se restringia apenas a industria do entretenimento, passou a embarcar setores de turismo e prestação de serviços, posteriormente o setor de bens duráveis e não-duráveis, e está finalmente começando a incluir o comércio de bens perecíveis.
@@ -249,7 +249,7 @@ Para resolver o possível problema de indisponibilidade de clientes \citeauthoro
 
 Com essa solução, \citeauthoronline{timestamp} elaboraram uma solução que embora tenha sido concebida para o registro de documentos digitais, poderia ser utilizada para criar um sistema de transações financeiras digitais que não estivesse livre de agentes centrais.
 
-Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e internet \cite{answertocash}.
+Em 1992, Timothy May, um físico aposentado, temendo as ameaças e restrições que os governos ao redor do mundo poderiam impor sobre o acesso as informações convidou um grupo de amigos à sua casa para discutir sobre privacidade e *internet* \cite{answertocash}.
 
 Este grupo se auto nomeou *Cypherpunks* e em \citeyear{cyphermanifesto} lançou seu manifesto em que declara sua preocupação com a regulação da criptografia e cita sua intenção em criar uma moeda digital:
 
@@ -548,7 +548,7 @@ Para se proteger dessa centralização de poder, \citeauthor{raval} propôs que 
 3. Usar um algorítmo de consenso descentralizado: é o algorítmo de consenso descentralizado (que resolva o *Problemas dos Generais Bizantinos*) que permitirá que nós independentes com resultados conflitantes consigam convergir para um único resultado e assim possa-se garantir que a rede funcione sem chegar nunca a um estado permanente de impasse (*deadlock*).
 4. Não possuir ponto central de falha: aplicações descentralizadas, em teoria, não podem ser removidas ou derrubadas, pois não possuem um único ponto de falha. Por funcionar em um sistema *peer-to-peer*, todos os participantes da rede teriam que ser desligados  simultaneâmente para que a aplicação parasse de funcionar. E ainda assim, é facilmente possível que novos nós entrem na rede em uma situação dessa, evitando o seu desligamento. Na prática, porém, isso só é possível quando há o interesse constante de vários e diversos agentes em manter a rede funcionando.
 
-A própria internet surgiu como uma rede descentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantem-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (internet profunda) é o termo usado para designar a parte da internet que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a internet de superfície, nome dado a internet prontamente acessível por buscadores.}.
+A própria *internet* surgiu como uma rede descentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantem-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (\emph{internet} profunda) é o termo usado para designar a parte da \emph{internet} que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a \emph{internet} de superfície, nome dado a \emph{internet} prontamente acessível por buscadores.}.
 
 Para que uma aplicação descentralizada seja possível, é necessário que haja regras, ou contratos, que formalizem a operação da aplicação. \citeauthor{smartcontract} criou a definição de *smart contract* (contrato inteligente), que, segundo ele, é a incorporação de cláusulas contratuais no *hardware* e/ou *software* que utilizamos, que tornem a violação do contrato onerosa, e, no melhor dos casos, proibitiva.
 
@@ -594,7 +594,7 @@ Embora novas tecnologias e abordagens tenham sido implementadas no protocolo *Bi
 
 Para tentar solucionar o problema de construção de aplicações descentralizadas que sejam escaláveis, \citeauthoronline{holo} propuseram uma arquitetura denomina *Holochain* que possui como principais características:
 
-1. permitir aplicações descentralizadas completamente funcionais (muito mais sofisticas que meros contratos inteligentes), e capaz de servir usuários tradicionais da internet;
+1. permitir aplicações descentralizadas completamente funcionais (muito mais sofisticas que meros contratos inteligentes), e capaz de servir usuários tradicionais da *internet*;
 2. prover infraestrutura criptográfica massivamente escalável necessária para hospedar e gerenciar aplicações com enorme volume de uso.
 
 A *Holochain* provê a garantia de integridade de dados para aplicações *peer-to-peer* sem utilizar algorítmos de consenso, o que economiza poder de processamento, sem abandonar a característica de imutabilidade. \citeauthor{holo} denomina essa abordagem como *centrada no agente* e destaca que o custo computacional de gerenciamento de consenso requer uma quantidade desnecessária de processamento de dados que carrega limitações de escalabilidade inerentes a abordagem.
@@ -649,7 +649,7 @@ Para possibilitar o uso da plataforma por qualquer usuário, localizado em qualq
 
 A plataforma será operada utilizando contratos inteligentes, de forma a garantir que todo o processo de cadastramento de usuário, depósito de segurança, oferta e pagamento de produto ou serviço, reputação dos usuários, e todas as regras de negócios, serão implementadas em forma de contrato inteligente, a fim de prover uma forma automatizada, segura, auditável e que não dependa de terceiros para funcionar.
 
-A príncipio a plataforma será desenvolvida para ser acessada por qualquer dispositivo conectado a internet que possua um navegador moderno, porém, o intuito é que sejam disponibilizadas versões para dispositivos móveis, que utilizem os sistemas operacionais iOS e Android.
+A príncipio a plataforma será desenvolvida para ser acessada por qualquer dispositivo conectado a *internet* que possua um navegador moderno, porém, o intuito é que sejam disponibilizadas versões para dispositivos móveis, que utilizem os sistemas operacionais iOS e Android.
 
 ### Diferença em Relação a Concorrentes
 
