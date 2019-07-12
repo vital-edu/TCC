@@ -527,7 +527,7 @@ O livre mercado só é plenamente possível em um ambiente livre de coerção, e
 
 ## Aplicações descentralizadas
 
-Aplicações de *software* podem ser classificadas baseado no seu nível de centralização (fig. \ref{fig:apptypes}). Aplicações centralizadas(a), são as mais comuns e são caracterizadas como aplicações fornecidas ou controladas por apenas um agente ou organização. Aplicações distribuídas(b) são aplicações que possuem diversas replicas espalhadas geograficamente e que cooperam entre si para garantir consistência e disponibilidade de dados \cite{raval}. Atualmente aplicações distribuídas se popularizaram com os serviços de nuvem, em que empresas provêem servidores de aplicações espalhadas pelo mundo que podem ser alugados por outras empresas.
+Aplicações de *software* podem ser classificadas baseado no seu nível de centralização (fig. \ref{fig:apptypes}). Aplicações centralizadas (a), são as mais comuns e são caracterizadas como aplicações fornecidas ou controladas por apenas um agente ou organização. Aplicações distribuídas (b) são aplicações que possuem diversas replicas espalhadas geograficamente e que cooperam entre si para garantir consistência e disponibilidade de dados \cite{raval}. Atualmente aplicações distribuídas se popularizaram com os serviços de nuvem, em que empresas provêem servidores de aplicações espalhadas pelo mundo que podem ser alugados por outras empresas.
 
 \begin{figure}[htbp]
   \caption{\label{fig:apptypes}Tipos de aplicações de \emph{software}.}
@@ -537,7 +537,7 @@ Aplicações de *software* podem ser classificadas baseado no seu nível de cent
   \legend{Fonte: \citeauthoronline{raval} \cite[pp. 3 e 32]{raval}.}
 \end{figure}
 
-Aplicações descentralizadas(c) são aplicações em que cada nó opera de forma independente. autônoma e autossuficiente, e que portanto, necessita de um algoritmo de consenso para resolver disputas. Uma aplicação centralizada e distribuída resolve problemas de disponibilidade, latência de rede, problemas de corrupção de dados através da redundância de dados, porém não resolvem problemas de ordem institucional.
+Aplicações descentralizadas (c) são aplicações em que cada nó opera de forma independente. autônoma e autossuficiente, e que portanto, necessita de um algoritmo de consenso para resolver disputas. Uma aplicação centralizada e distribuída resolve problemas de disponibilidade, latência de rede, problemas de corrupção de dados através da redundância de dados, porém não resolvem problemas de ordem institucional.
 
 No contexto de uma plataforma de mercado livre, é importante que haja mecanismos que garantam a desregulação do mercado, e portanto, uma plataforma centralizada poderia sucumbir por diversos motivos tais como: aquisição da plataforma por outra empresa, que pode culminar numa mudança nas políticas e regras da plataforma; mudança na diretoria da empresa por manobra de acionistas ou conflitos entre acionistas; ação política externa causado por grupos de interesse contrários; ações judiciais ou inconformidade com regras regulatórias de determinadas nações; morte ou incapacitação dos mantenedores.
 
