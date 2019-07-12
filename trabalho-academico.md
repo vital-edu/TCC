@@ -339,7 +339,7 @@ Além do trabalho despendido para escrever uma transação no livro-razão, seja
 Para que o livro-razão fosse público, distribuído, descentralizado e digital, \citeauthoronline{bitcoin} descreveu um sistema *peer-to-peer*\footnote{\emph{peer-to-peer} (p2p - ponto-a-ponto) é o nome que se dá a uma arquitetura de rede distribuída em que os participantes compartilham parte de seus recursos de \emph{hardware} (poder de processamento, capacidade de armazenamento, etc) para outros \emph{peers} (pontos) diretamente, sem passar por entidades intermediárias. Esses recursos compartilhados são necessários para prover o serviço e/ou conteúdo oferecido pela rede, e cada participante dessa rede é ao mesmo tempo provedor e consumidor de recursos \apud{kellerer}{p2p}.} em que as transações seriam registradas em blocos, e em que cada novo bloco dependeria do bloco anteriormente registrado (fig. \ref{fig:blockchain}), criando uma *blockchain*. Esse sistema teria as seguintes características:
 
 \begin{figure}[htbp]
-  \caption{\label{fig:blockchain}Arquitetura da \emph{Blockchain}}
+  \caption{\label{fig:blockchain}Arquitetura da \emph{blockchain}}
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/blockchain.png}
   \end{center}
@@ -364,7 +364,7 @@ Para que o livro-razão fosse público, distribuído, descentralizado e digital,
 Se dois nós transmitirem versões diferentes do próximo bloco, ou seja, se forem criado dois blocos válidos ao mesmo tempo (um chamado de *U4* e outro de *B4*), os demais nós da rede sempre trabalharão em cima do primeiro bloco que receberem. Esse acontecimento causaria a criação de duas ramificações concorrentes da *blockchain*, uma contendo *U4* como último bloco, e outra contendo *B4* como último bloco (fig. \ref{fig:long-branch}). Porém, a partir do momento que uma dessas ramificações se tornar maior (em número de blocos registrados) do que a outra, todos os nós que estiverem trabalhando na ramificação menor automaticamente abandonarão essa ramificação em detrimento da ramificação maior \cite{bitcoin}.
 
 \begin{figure}[htbp]
-  \caption{\label{fig:long-branch}Disputa entre duas ramificações da \emph{Blockchain}.}
+  \caption{\label{fig:long-branch}Disputa entre duas ramificações da \emph{blockchain}.}
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/long-branch.png}
   \end{center}
@@ -375,14 +375,14 @@ Mesmo considerando um cenário probabilístico em que dezenas de ramificações 
 
 Como já discutido no *Problema dos Generais Bizantinos*, mesmo que um grupo de nós decida deliberadamente não obedecer esse algoritmo, eles apenas teriam sucesso em convencer os demais nós de que a sua ramificação fraudulenta da *blockchain* é a verdadeira, caso tivessem um poder de processamento maior do que a maioria dos nós não-fraudulentos.
 
-Para que esse sistema seja viável é necessário que haja diversos nós, sendo que quanto maior for a quantidade de nós na rede, maior será a impossibilidade de fraudar a *blockchain*, por isso, \citeauthoronline{bitcoin} especificou que a primeira transação de cada bloco seria uma transação que cria unidades de *Bitcoin*\footnote{A primeira transação de cada bloco da \emph{Blockchain} do \emph{Bitcoin} serve como uma recompensa para quem criou o bloco. Inicialmente a recompensa era de 50 unidades de \emph{Bitcoin} (BTC 50,00), e a cada 210 mil blocos gerados (o que leva aproximadamente 4 anos) a recompensa é reduzida pela metade. Até junho de 2019 essa recompensa era de 12.5 BTC \cite{dev-ref}.}, que passa a ser de propriedade do criador do bloco, sendo a única forma de criar novas unidades de *Bitcoin*. Isso remove completamente a figura de bancos centrais, que em moedas fiduciárias são responsáveis por emitir novas unidades de dinheiro.
+Para que esse sistema seja viável é necessário que haja diversos nós, sendo que quanto maior for a quantidade de nós na rede, maior será a impossibilidade de fraudar a *blockchain*, por isso, \citeauthoronline{bitcoin} especificou que a primeira transação de cada bloco seria uma transação que cria unidades de *Bitcoin*\footnote{A primeira transação de cada bloco da \emph{blockchain} do \emph{Bitcoin} serve como uma recompensa para quem criou o bloco. Inicialmente a recompensa era de 50 unidades de \emph{Bitcoin} (BTC 50,00), e a cada 210 mil blocos gerados (o que leva aproximadamente 4 anos) a recompensa é reduzida pela metade. Até junho de 2019 essa recompensa era de 12.5 BTC \cite{dev-ref}.}, que passa a ser de propriedade do criador do bloco, sendo a única forma de criar novas unidades de *Bitcoin*. Isso remove completamente a figura de bancos centrais, que em moedas fiduciárias são responsáveis por emitir novas unidades de dinheiro.
 
-O *Bitcoin*, assim como o *Bit Gold* foi concebido com a ideia de imitar o padrão ouro, e por isso foi estipulado em seu protocolo que deverá ser emitido um máximo de 21 milhões de unidades de *Bitcoin*. E para que haja um incentivo para que participantes continuem adicionando blocos na *blockchain* mesmo quando o limite de 21 milhões de unidade for alcançado, também foi concebido em seu protocolo que cada transação processada paga uma taxa para o nó que registrou o novo bloco de transações na *Blockchain* \cite{better}.
+O *Bitcoin*, assim como o *Bit Gold* foi concebido com a ideia de imitar o padrão ouro, e por isso foi estipulado em seu protocolo que deverá ser emitido um máximo de 21 milhões de unidades de *Bitcoin*. E para que haja um incentivo para que participantes continuem adicionando blocos na *blockchain* mesmo quando o limite de 21 milhões de unidade for alcançado, também foi concebido em seu protocolo que cada transação processada paga uma taxa para o nó que registrou o novo bloco de transações na *blockchain* \cite{better}.
 
 Para que seja permitido o registro de transações com frações de *Bitcoin*, cada transação (fig. \ref{fig:transaction-fraction}) é composta por entradas e saídas. Deve haver em cada transação uma ou mais entradas (isso permite que haja a junção de vários pequenas quantidades de *Bitcoins* para totalizar o valor a ser transferído para o recebedor) e uma ou duas saídas (uma para pagar o recebedor e outra para o troco, caso exista) \cite{transaction-guide}.
 
 \begin{figure}[htbp]
-  \caption{\label{fig:transaction-fraction}Composição de uma transação na \emph{Blockchain}.}
+  \caption{\label{fig:transaction-fraction}Composição de uma transação na \emph{blockchain}.}
   \begin{center}
   \includegraphics[width=0.5\textwidth]{imagens/transaction-fraction.png}
   \end{center}
@@ -444,23 +444,23 @@ Cada *UTXO* contém um valor em *satoshi* disponível para ser gasto e um *Publi
 \end{figure}
 
 \begin{figure}[htbp]
-  \caption{\label{fig:block}Estrutura de um bloco da \emph{Blockchain}.}
+  \caption{\label{fig:block}Estrutura de um bloco da \emph{blockchain}.}
   \begin{center}
   \includegraphics[width=1.0\textwidth]{imagens/block.png}
   \end{center}
   \legend{Fonte: \citeauthor{zheng2017overview}.}
 \end{figure}
 
-O bloco (fig. \ref{fig:block}) armazenado na *Blockchain* além de conter as transações nele registradas, contém \cite{dev-ref}:
+O bloco (fig. \ref{fig:block}) armazenado na *blockchain* além de conter as transações nele registradas, contém \cite{dev-ref}:
 
 - *Contador de Transações*: o número de transações registradas no bloco;
 - *Versão do Bloco*: a versão das regras de validação ao qual o bloco obedece. Isso permite que o protocolo do *Bitcoin* evolua mantendo a compatibilidade com blocos antigos. A versão atualmente utilizada nos novos blocos é a versão 4;
-  - Versão 1: introduzida no *Bloco Genesis* da *Blockchain*, em janeiro de 2009;
+  - Versão 1: introduzida no *Bloco Genesis* da *blockchain*, em janeiro de 2009;
   - Versão 2: introduzida em setembro de 2012;
   - Versão 3: introduzida em fevereiro de 2012;
   - Versão 4: introduzida em novembro de 2015.
-- *Time Stamp* (Marcação de Tempo): data e hora em que o bloco foi criado. Deve ser estritamente maior do que a média das marcações de tempo dos últimos 11 blocos da *Blockchain*;
-- *Hash do Último Bloco*: contém o *hash* do último bloco adicionado na *Blockchain. Isso permite que a partir de qualquer bloco consiga-se acessar o bloco anterior, característica comum de uma estrutura de dados simplesmente encadeada.
+- *Time Stamp* (Marcação de Tempo): data e hora em que o bloco foi criado. Deve ser estritamente maior do que a média das marcações de tempo dos últimos 11 blocos da *blockchain*;
+- *Hash do Último Bloco*: contém o *hash* do último bloco adicionado na *blockchain*. Isso permite que a partir de qualquer bloco consiga-se acessar o bloco anterior, característica comum de uma estrutura de dados simplesmente encadeada.
 - *Merkle Tree Root Hash*: *hash* gerado a partir dos *hashes* de todas as transações registradas no bloco. Isso garante que qualquer alteração nas transações do bloco seja facilmente identificada e rejeitada por outros nós da rede, impedindo fraudes nas transações;
 - *Nonce*: um número arbitrário utilizado para que seja possível realizar a prova de trabalho;
 - *nBits*: é o valor limite a qual o resultado do algoritmo de prova de trabalho deve ser inferior para ser considerado válido.
@@ -491,7 +491,7 @@ No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree
   \legend{Fonte: \citeauthor{dev-ref}.}
 \end{figure}
 
-Um bloco só pode ser inserido na *Blockchain* caso o minerador conclua a prova de trabalho, que, no protocolo do *Bitcoin*, é realizada aplicando a função *hash SHA256* no *time stamp* e no *nonce* do bloco, porém, o *hash* resultante só será aceito caso ele tenha um valor estritamente inferior ao especificado no campo *nBits*. Caso o *hash* gerado seja igual ou superior ao *nBits*, ele deve ser descartado, como mostrado na figura \ref{fig:hashcalc}.
+Um bloco só pode ser inserido na *blockchain* caso o minerador conclua a prova de trabalho, que, no protocolo do *Bitcoin*, é realizada aplicando a função *hash SHA256* no *time stamp* e no *nonce* do bloco, porém, o *hash* resultante só será aceito caso ele tenha um valor estritamente inferior ao especificado no campo *nBits*. Caso o *hash* gerado seja igual ou superior ao *nBits*, ele deve ser descartado, como mostrado na figura \ref{fig:hashcalc}.
 
 \begin{figure}[htbp]
   \caption{\label{fig:hashcalc}Cálculo da Prova de Trabalho.}
@@ -507,7 +507,7 @@ Pelo fato de a função *hash* sempre produzir o mesmo resultado quando aplicada
 
 O *nBits* foi especificado para ser um valor variável, permitindo equilibrar a dificuldade de se encontrar um resultado válido. Ou seja, quanto maior for o valor do *nBits*, probabilisticamente menos tentativas serão necessárias para que se encontre uma solução para a prova de trabalho, e quanto menor ele for, probabilisticamente mais tentativas serão necessárias para encontrar uma solução \cite{dev-ref}.
 
-Sempre que 2016 blocos são adicionados ao *Blockchain*, a rede de nós cálcula quanto tempo se passou entre a criação do primeiro e do último bloco desses 2016 blocos e então o *nBits* é recalculado. O tempo ideal estipulado pelo protocolo é que demore exatamente 1.209.600 segundos (duas semanas) para que 2016 blocos sejam gerados. Caso tenha se demorado mais do que duas semanas para produzir os 2016 blocos, o valor do *nBits* é diminuído, e caso tenha-se demorado menos do que duas semanas, o valor do *nBits* é aumentado.
+Sempre que 2016 blocos são adicionados à *blockchain*, a rede de nós cálcula quanto tempo se passou entre a criação do primeiro e do último bloco desses 2016 blocos e então o *nBits* é recalculado. O tempo ideal estipulado pelo protocolo é que demore exatamente 1.209.600 segundos (duas semanas) para que 2016 blocos sejam gerados. Caso tenha se demorado mais do que duas semanas para produzir os 2016 blocos, o valor do *nBits* é diminuído, e caso tenha-se demorado menos do que duas semanas, o valor do *nBits* é aumentado.
 
 Essa característica de alterar o *nBits* para garantir que a quantidade de blocos gerados em duas semanas seja, em média, sempre igual, permite que o protocolo possa ser utilizado mesmo com o aumento da capacidade de processamento da rede. Quanto mais poder computacional for inserido na rede, mais difícil se tornará de calcular a prova de trabalho, sendo o inverso também verdade.
 
@@ -564,7 +564,7 @@ b. robustos contra violações sofisticadas\footnote{É importante salientar, qu
 
 Nessas classificações, um sistema judicial estatal, bem como a polícia e empresas de seguros, são considerados uma segurança contratual reativa, que embora sejam efetivas, são onerosas e burocráticas, aumentando o custo de transação, o que produz produtos ou serviços mais caros. E por esse motivo, contratos inteligentes, que incorporam em si mecanismos proativos de segurança, oferecem um menor custo de transação e uma segurança suficiente para coibir a violação de contratos.
 
-Com o surgimento do *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em *software*, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algoritmo de consenso para garantir que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da blockchain seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
+Com o surgimento do *Bitcoin*, criou-se a possibilidade de incorporar contratos inteligentes em *blockchain*, sendo a moeda *Bitcoin*, uma forma de contrato inteligente incorporado em *software*, já que a moeda em si não possui nenhum componente de segurança reativa, confiando completamente no poder da criptografia e do algoritmo de consenso para garantir que as regras, ou cláusulas, que definem o que é uma transação válida não sejam quebradas, e que qualquer tentativa de fraude da *blockchain* seja punida com a perda de tempo e recursos computacionais, e consequentemente recursos energéticos.
 
 E foi o surgimento da *Ethereum* que culminou na adoção e propagação de contratos inteligentes em diferentes contexto. A *Ethereum*, uma criptomoeda que implementa uma *blockchain* que suporta o uso de uma linguagem *Turing-completa*\footnote{\emph{Turing-completo} é a denominação dada a sistemas de regras capazes de simular um computador primitivo, ou seja, permitir teóricamente, sem levar em consideração capacidade de memória e de processamento, a resolução de qualquer problema computacional, o que no contexto de linguagens de programação, significa ter suporte a estruturas condicionais e de repetição \cite{ethereum}.} foi concebida para permitir a criação de aplicações descentralizadas que fosse além do contexto financeiro \cite{ethereum}.
 
@@ -586,9 +586,9 @@ Em última análise, criar um contrato inteligente é um processo meticuloso e q
 
 O desenvolvimento de contratos inteligentes, assemelha-se então, muito mais ao desenvolvimento de *software* embarcado (em que o *recall*\footnote{\emph{recall} (devolução) é o termo usado para quando um lote inteiro de uma linha de produto já vendida apresenta defeitos de fabricação e a fabricante convida seus clientes a devolverem o produto seja para reparação do problema ou para troca, sem gerar custos para o cliente por esse serviço.} é indesejádo e oneroso financeiramente), do que *software* evolutivo e incremental (em que a atualização do *software* é facilmente realizada e incentivada).
 
-Outra preocupação recorrente em relação ao desenvolvimento de aplicações descentralizadas, é a utilização da tecnologia *Blockchain*, que exige que um nó completamente engajado no processo de criação de novos blocos,  deve processar cada transação e manter uma cópia completa do estado atual da *Blockchain*. Embora isso garanta questões de segurança, neutralidade política e tolerância a falhas, isso tem um alto custo de escalabilidade. Inclusive, cada novo nó que entra na rede, ao invés de deixá-la mais performática, acaba por tornar a rede mais fraca, pelo fato de a latência entre nós crescer de forma logarítmica a cada nó adicionado \cite{scale}.
+Outra preocupação recorrente em relação ao desenvolvimento de aplicações descentralizadas, é a utilização da tecnologia *blockchain*, que exige que um nó completamente engajado no processo de criação de novos blocos,  deve processar cada transação e manter uma cópia completa do estado atual da *blockchain*. Embora isso garanta questões de segurança, neutralidade política e tolerância a falhas, isso tem um alto custo de escalabilidade. Inclusive, cada novo nó que entra na rede, ao invés de deixá-la mais performática, acaba por tornar a rede mais fraca, pelo fato de a latência entre nós crescer de forma logarítmica a cada nó adicionado \cite{scale}.
 
-Devido ao aumento do número de transações, e do tamanho total da *Blockchain*, a *Prova de Trabalho* acaba por obrigar que os nós tenham cada vez mais capacidade de processamento e de armazenamento, o que pode culminar em um processo de centralização, em que apenas nós com maior infra-estrutura conseguem participar da rede. Para exemplificar, \citeauthoronline{scale} relatou que em \citeyear{scale}, a *Blockchain* do *Bitcoin* transacionou 7 transações por segundo, tendo na época, um limite teórico de 4000 transações por segundo; e a *Blockchain* da *Ethereum* chegou a transacionar 15 transações por segundo.
+Devido ao aumento do número de transações, e do tamanho total da *blockchain*, a *Prova de Trabalho* acaba por obrigar que os nós tenham cada vez mais capacidade de processamento e de armazenamento, o que pode culminar em um processo de centralização, em que apenas nós com maior infra-estrutura conseguem participar da rede. Para exemplificar, \citeauthoronline{scale} relatou que em \citeyear{scale}, a *blockchain* do *Bitcoin* transacionou 7 transações por segundo, tendo na época, um limite teórico de 4000 transações por segundo; e a *blockchain* da *Ethereum* chegou a transacionar 15 transações por segundo.
 
 Embora novas tecnologias e abordagens tenham sido implementadas no protocolo *Bitcoin*, assim como de outras criptomoedas, como a *Ethereum*, e o potencial de escalabilidade esteja aumentando ano a ano, é inegável que esse volume de transações por segundo é irrisório comparado com aplicações centralizadas e distribuídas, que conseguem lidar com milhares de transações por segundo, e que possuem capacidade de escalonamento de acordo com a demanda pelo serviço.
 
@@ -599,7 +599,7 @@ Para tentar solucionar o problema de construção de aplicações descentralizad
 
 A *Holochain* provê a garantia de integridade de dados para aplicações *peer-to-peer* sem utilizar algoritmos de consenso, o que economiza poder de processamento, sem abandonar a característica de imutabilidade. \citeauthor{holo} denomina essa abordagem como *centrada no agente* e destaca que o custo computacional de gerenciamento de consenso requer uma quantidade desnecessária de processamento de dados que carrega limitações de escalabilidade inerentes a abordagem.
 
-A *Holochain* foi pensada para ter um modo de operação similar ao *git*, em que cada nó não precisa estar sincronizado com outros nós, e que cada nó pode ter  sua própria *blockchain* interna, independente das demais. Apenas quando os nós se comunicam, deve haver a validação das informações trocadas e a resolução de conflitos entre os nós \cite{holo2}. Nesse sentido, para \citeauthoronline{holo2} a *Blockchain* possui uma estrutura *centrada no dado*, em contraste com a abordagem *centrada no agente*, adotada pela *Holochain*.
+A *Holochain* foi pensada para ter um modo de operação similar ao *git*, em que cada nó não precisa estar sincronizado com outros nós, e que cada nó pode ter  sua própria *blockchain* interna, independente das demais. Apenas quando os nós se comunicam, deve haver a validação das informações trocadas e a resolução de conflitos entre os nós \cite{holo2}. Nesse sentido, para \citeauthoronline{holo2} a *blockchain* possui uma estrutura *centrada no dado*, em contraste com a abordagem *centrada no agente*, adotada pela *Holochain*.
 
 A abordagem *centrada no agente* abstrai muito mais o mundo real, ao reconhecer que cada nó tem uma perspectiva, interesse e tempo de interação diferente de outro nó da rede, não havendo uma memória única e idêntica compartilhada por todos os nós. Isso permite que haja o paralelismo no tratamento dos dados por cada nó, o que em última instância permite a escalabilidade da rede.
 
@@ -618,13 +618,13 @@ Incluir um novo registro na *DHT* envolve encontrar um nó responsável por cuid
 Diferentemente da aplicações descentralizadas construídas utilizando tecnologia *blockchain*, a *Holochain* não sofre de problema de escalabilidade, se tornando cada vez mais eficiente a medida que o número de nós aumenta, já que a rede divide o trabalho entre os nós. Por conta disso, enquanto a rede *Ethereum* necessita de melhorias para resolver problemas de escalabilidade, a Holochain já está pronta para o desenvolvimento de aplicações descentralizadas, o que a torna uma excelente opção para uma plataforma de comércio eletrônico que pretende ser utilizada de forma extensiva.
 
 \begin{table}[htbp]
-\caption{\label{tab:holo}Comparativo entre \emph{Blockchain} e \emph{Holochain}.}
+\caption{\label{tab:holo}Comparativo entre \emph{blockchain} e \emph{Holochain}.}
 \begin{tabular}{m{0.2\linewidth} | m{0.4\linewidth} | m{0.4\linewidth}}
 \toprule
                                   & \textbf{Blockchain}                                                                                                                                            & \textbf{Holochain}                                                                                                                                                                                                   \\ \hline
 \textbf{Abordagem}                & Centrado em dado, um único conjunto de dados global e uma realidade compartilhada por todos os nós                                                             & Centrado em agente, permite os nós atuarem independentemente ou em  estreita colaboração, e então compartilhar realidades independentes e evolutivas sobre os dados e que chegam a um acordo ao longo do tempo       \\ \hline
 \textbf{Consumo Energético}       & Bitcoin consome mais que 0,1\% de toda energia elétrica para prover menos de 0,0001\% do processamento financeiro mundial                                      & Como nenhuma mineração é necessária, não é necessário possuir  uma CPU ou GPU especializada, tornando factível  rodar os nós da rede em computadores com baixo poder de   processamento, ou mesmo em celulares       \\ \hline
-\textbf{Volume de Transações}     & Neo, uma blockchain bastante performática, processa mais de 1000 transações por segundo. Bitcoin e Ethereum processam menos de uma centena por segundo         & Expectativa de ultrapasse o número de transações suportado  pela rede VISA, que tem um máximo de 56000  transações por segundo}                                                                                      \\ \hline
+\textbf{Volume de Transações}     & Neo, uma *blockchain* bastante performática, processa mais de 1000 transações por segundo. Bitcoin e Ethereum processam menos de uma centena por segundo         & Expectativa de ultrapasse o número de transações suportado  pela rede VISA, que tem um máximo de 56000  transações por segundo}                                                                                      \\ \hline
 \textbf{Escalabilidade}           & Mesmo desconsiderando a Prova de Trabalho, há sérios  problemas de limite de escalabilidade pelo fato  de requerer a sincronia entre muitos nós da rede        & Utilizando uma DHT compartilhada, o volume de transação  carregada por nó se torna menor a medida que a rede cresce                                                                                                  \\ \hline
 \textbf{Plataforma}               & Atualmente só pode funcionar de forma efetiva em computadores especializados para mineração                                                                    & Pode ser executado em Raspberry Pi ou em um smartphone                                                                                                                                                               \\ \hline
 \textbf{Eficiência Computacional} & O(\(n \times m\)) para validar transações                                                                                                                      & \(O(\frac{n}{m \times log m})\) para validar transações                                                                                                                                                              \\ \hline
@@ -699,7 +699,7 @@ As principais funcionalidades que a plataforma deve prover na prova de conceito 
 
 # Discussões finais
 
-O presente trabalho apresentou a fundamentação por trás do livre mercado e porque ele é importante nas relações sociais; como as criptomoedas surgiram e como podem contribuir para a criação de um livre mercado; qual a tecnologia por trás das criptomoedas, a *Blockchain*, e como a descentralização trazida por ela possibilitou o surgimento de um novo tipo de aplicação, as aplicações descentralizadas.
+O presente trabalho apresentou a fundamentação por trás do livre mercado e porque ele é importante nas relações sociais; como as criptomoedas surgiram e como podem contribuir para a criação de um livre mercado; qual a tecnologia por trás das criptomoedas, a *blockchain*, e como a descentralização trazida por ela possibilitou o surgimento de um novo tipo de aplicação, as aplicações descentralizadas.
 
 A partir da contextualização do que é uma aplicação descentralizada, foi explicado o que é a rede *Ethereum* e como ela pode ser utilizada para a criação de contratos inteligentes; quais são suas desvantagens em termo de performance; e como a *Holochain* surgiu como proposta de rede descentralizada com capacidade de ser utilizada em alta escala na construção de aplicações robustas.
 
