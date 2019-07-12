@@ -30,11 +30,11 @@ Para alcançar o objetivo geral, os objetivos específicos abaixo foram definido
 - Identificar características essenciais para que um comércio eletrônico descentralizado seja viável;
 - Propor uma solução de comércio eletrônico baseado em tecnologias descentralizadas.
 
-# Referencial Teórico
+# Referencial teórico
 
 Este capítulo explica o que é um livre mercado e qual a sua importância para as relações sociais; o que são *blockchain*, criptomoedas e aplicações descentralizadas, como elas funcionam e como podem ser utilizadas.
 
-## Livre Mercado
+## Livre mercado
 
 Para entender o que é o livre mercado é preciso entender a natureza humana e um pouco sobre o estudo da economia. Ludwig von Mises usa da praxeologia, o estudo das ações humanas, para construir os princípios que regem a economia \cite[pp. 11--12]{mises}. Mises define a ação humana como o uso dos meios para se realizar um fim \cite[pp. 13]{mises}. Porém, é importante ressaltar que os motivos das ações humanas não pertencem ao campo da praxeologia e sim ao campo da psicologia e psicanalise sendo do interesse da praxeologia apenas as consequências práticos das ações.
 
@@ -637,7 +637,7 @@ Diferentemente da aplicações descentralizadas construídas utilizando tecnolog
 
 Neste capítulo será apresentado detalhes da proposta de plataforma de comércio eletrônico descentralizada, cujo objetivo é oferecer um ambiente de livre comércio que não dependa de um agente central e que possa ser utilizado globalmente. Para a solução proposta serão apresentados os requísitos de alto nível da solução, bem como um cronograma de execução do projeto.
 
-## Visão do Projeto
+## Visão do projeto
 
 O projeto trata-se de uma plataforma de comércio  eletrônica onde poderão ser ofertados produtos ou serviços sem que haja intermediários entre ofertante e pagador e se baseará em um sistema de reputação para qualificar os usuários e coibir maus usuários. Por se tratar de uma plataforma baseada no livre mercado, os mecanismos de reputação de usuário deixarão claro os riscos envolvidos em cada transação, bem como recomendações, mas jamais se sobreporá a vontade dos usuários em relação a quem eles desejam transacionar, baseando-se nos princípios de livre-associação e escolha, nas liberdades indivíduais, e na responsabilidade de cada indivíduo quanto as suas ações.
 
@@ -651,7 +651,7 @@ A plataforma será operada utilizando contratos inteligentes, de forma a garanti
 
 A príncipio a plataforma será desenvolvida para ser acessada por qualquer dispositivo conectado a *internet* que possua um navegador moderno, porém, o intuito é que sejam disponibilizadas versões para dispositivos móveis, que utilizem os sistemas operacionais iOS e Android.
 
-### Diferença em Relação a Concorrentes
+### Diferencial em relação a concorrentes
 
 As plataformas de comércio eletrônico atuais movimentam um grande volume de dinheiro (fig. \ref{fig:revenue}), porém, a limitação de operarem apenas com dinheiro fiduciário, além das restrições que são impostas por agentes centrais, impedem que essas plataformas sejam utilizadas em ambientes, que com menos regulação, se beneficiariam de produtos mais baratos e uma maior variedade de oferta. Além disso, são plataformas que só conseguem operar em um país a partir do momento em que cumprem com todas as obrigações legais e fiscais do país.
 
@@ -681,7 +681,7 @@ Outras plataformas que implementam conceitos de *dApps*, além de raras, sofrem 
 
 Por isso, o presente projeto  mostra-se com o diferencial de prover uma plataforma de fato descentralização, e que se propõe a utilizar criptomoedas já consolidadas, bem como incorporar tecnologias que se mostrem viáveis, sem a ambição de criar modelos de negócios que jamais foram validados.
 
-## Escopo do Projeto
+## Escopo do projeto
 
 Devido a limitação de tempo para desenvolver o projeto, apenas um conjunto essencial do projeto será desenvolvido inicialmente. O escopo aqui delimitado será entendido como uma prova de conceito para determinar a viabilidade técnica da solução, bem como para validar a ideia e verificar se há demanda pela solução.
 
@@ -697,7 +697,7 @@ As principais funcionalidades que a plataforma deve prover na prova de conceito 
 
 É importante salientar que as funcionalidades acima descritas serão implementadas utilizando contratos inteligentes e tecnologias *peer-to-peer*.
 
-# Discussões Finais
+# Discussões finais
 
 O presente trabalho apresentou a fundamentação por trás do livre mercado e porque ele é importante nas relações sociais; como as criptomoedas surgiram e como podem contribuir para a criação de um livre mercado; qual a tecnologia por trás das criptomoedas, a *Blockchain*, e como a descentralização trazida por ela possibilitou o surgimento de um novo tipo de aplicação, as aplicações descentralizadas.
 
