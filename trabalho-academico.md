@@ -710,3 +710,13 @@ Com isso, alcançou-se o objetivo final do trabalho de descrever como as tecnolo
 Como objetivo para o próximo trabalho, planeja-se especificar os requisitos funcionais e não-funcionais da prova de conceito, utilizando-se da engenharia de requisitos; desenvolver a prova-de-conceito utilizando a tecnologia Holochain, e permitindo a utilização de criptomoedas como meio de transação dentro da plataforma; verificar a performance da prova-de-conceito; e fazer um relato sobre as peculiaridades de se desenvolver uma plataforma decentralizada, comparando com o desenvolvimento de plataformas tradicionais de *software* e como os métodos e ferramentas do campo da engenharia de *software* se aderem a esse tipo de desenvolvimento.
 
 ## Cronograma
+
+A figura \ref{fig:planning} mostra o planejamento inicial da prova de conceito. Assim, o projeto tem previsão de ínicio  para o dia 22 de julho de 2019 e previsão de término para 4 de dezembro de 2019, sendo particionado em 7 sprints de 14 dias cada.
+
+\begin{figure}[htbp]
+  \caption{\label{fig:planning}Cronograma da prova de conceito.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/planning.png}
+  \end{center}
+  \legend{Fonte: Autor.}
+\end{figure}
