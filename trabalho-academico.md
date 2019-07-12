@@ -651,13 +651,7 @@ A plataforma será operada utilizando contratos inteligentes, de forma a garanti
 
 A príncipio a plataforma será desenvolvida para ser acessada por qualquer dispositivo conectado a internet que possua um navegador moderno, porém, o intuito é que sejam disponibilizadas versões para dispositivos móveis, que utilizem os sistemas operacionais iOS e Android.
 
-## Escopo do Projeto
-
-Devido a limitação de tempo para desenvolver o projeto, apenas um conjunto essencial do projeto será desenvolvido inicialmente. O escopo aqui delimitado será entendido como uma prova de conceito para determinar a viabilidade técnica da solução, bem como para validar a ideia e verificar se há demanda pela solução.
-
-O prazo estipulado de desenvolvimento da prova de conceito compreende a um período de 4 meses. Para determinar o produto mínimo a ser entregue neste prazo, levou-se em conta o diferencial dessa solução. Como já existem soluções consolidadas de plataformas de comércio eletrônico, é preciso destacar os diferencias da solução aqui proposta:
-
-### Decentralização
+### Diferença em Relação a Concorrentes
 
 As plataformas de comércio eletrônico atuais movimentam um grande volume de dinheiro (fig. \ref{fig:revenue}), porém, a limitação de operarem apenas com dinheiro fiduciário, além das restrições que são impostas por agentes centrais, impedem que essas plataformas sejam utilizadas em ambientes, que com menos regulação, se beneficiariam de produtos mais baratos e uma maior variedade de oferta. Além disso, são plataformas que só conseguem operar em um país a partir do momento em que cumprem com todas as obrigações legais e fiscais do país.
 
@@ -679,3 +673,40 @@ A população da Venezuela, que segundo o \citeauthor{fmireport2019} teve uma in
 
 Já é comum que os venezuelano, por não confiarem mais na moeda de seu país, convertam o dinheiro que ganham em moeda local para criptomoedas, e que as usem como reserva de valor, trocando-as quando necessário \cite{venezuela}. Já é possível viajar para a Venezuela, e passar vários dias lá, pagando desde a passagem do avião até hospedagem, comida, e transporte utilizando criptomoedas, como relatado em primeira mão pelo documentário produzido por \citeauthor{doc}.
 
+Tudo isso demonstra que há a oportunidade de oferecer uma plataforma que seja acessível para esses mercados e que respeite as características únicas de cada país, em que os próprios indivíduos sejam autônomos ao decidirem com quem comercializam, como comercializam, e utilizando moedas que não possam ser manipuladas por governos locais. Há tanto uma oportunidade tecnológica de prover uma melhoria nas relações de comércio, como uma oportunidade de oferecer uma alternativa a meios tradicionais de comércio.
+
+Não obstante, a crescente popularização de plataformas como OLX, Mercado Livre, eBay, AliExpress, dentre outras, mostra que há uma forte aceitação dos consumidores em comercializarem produtos sem a utilização de intermediários, sendo a plataforma eletrônica apenas um facilitador que conecta compradores com vendedores. Mesmo assim, essas plataformas ignoram a utilização de criptomoedas, e o seu potencial em prover uma forma global de pagamento.
+
+Outras plataformas que implementam conceitos de *dApps*, além de raras, sofrem com a ambição de criarem um sistema de governança restritivo, que geralmente inclui a criação de um novo *token*, com intenção de financiar seus custos operacionais e potencialmente enriquecer os fundadores. Embora essa estratégia pareça vantajosa, ela possui um contrapeso nocivo, em que o sucesso da plataforma fica atrelado a adoção de um *token* recém criado que concorre com criptomoedas consolidadas, o que geralmente culmina na falência do negócio e desconfiança no ecossistema dos aplicativos decentralizados.
+
+Por isso, o presente projeto  mostra-se com o diferencial de prover uma plataforma de fato decentralização, e que se propõe a utilizar criptomoedas já consolidadas, bem como incorporar tecnologias que se mostrem viáveis, sem a ambição de criar modelos de negócios que jamais foram validados.
+
+## Escopo do Projeto
+
+Devido a limitação de tempo para desenvolver o projeto, apenas um conjunto essencial do projeto será desenvolvido inicialmente. O escopo aqui delimitado será entendido como uma prova de conceito para determinar a viabilidade técnica da solução, bem como para validar a ideia e verificar se há demanda pela solução.
+
+O prazo estipulado de desenvolvimento da prova de conceito compreende a um período de 4 meses. Para determinar o produto mínimo a ser entregue neste prazo, levou-se em conta o diferencial dessa solução, tentando extrair o mínimo viável para ínicio de testes com usuários reais.
+
+As principais funcionalidades que a plataforma deve prover na prova de conceito são:
+
+1. Gerenciamento da rede *peer-to-peer*: conexão e comunicação entre nós;
+1. Gerenciamento de usuário: cadastro, login, perfil;
+1. Gerenciamento de serviço digital: criar, editar, exibir, avaliar;
+1. Gerenciamento de pagamento: prover métodos de pagamento baseado em Bitcoin, e possíveis outras moedas;
+1. Exibição e filtro de serviços digitais: exibição de lista de serviços com filtros para categoria, proximidade, faixa de preço, e pesquisa por título de serviço e autor.
+
+É importante salientar que as funcionalidades acima descritas serão implementadas utilizando contratos inteligentes e tecnologias *peer-to-peer*.
+
+# Discussões Finais
+
+O presente trabalho apresentou a fundamentação por trás do livre mercado e porque ele é importante nas relações sociais; como as criptomoedas surgiram e como podem contribuir para a criação de um livre mercado; qual a tecnologia por trás das criptomoedas, a *Blockchain*, e como a decentralização trazida por ela possibilitou o surgimento de um novo tipo de aplicação, as aplicações decentralizadas.
+
+A partir da contextualização do que é uma aplicação decentralizada, foi explicado o que é a rede *Ethereum* e como ela pode ser utilizada para a criação de contratos inteligentes; quais são suas desvantagens em termo de performance; e como a *Holochain* surgiu como proposta de rede decentralizada com capacidade de ser utilizada em alta escala na construção de aplicações robustas.
+
+De posse desse conhecimento, foi explicado as razões para a proposta de uma plataforma decentralizada baseada nas tecnologias estudadas, como essa solução se difere das atuais soluções existentes, e quais funcionalidades foram planejadas para serem entregues nos próximos 4 meses de desenvolvimento do projeto.
+
+Com isso, alcançou-se o objetivo final do trabalho de descrever como as tecnologias decentralizadas podem ser utilizadas para construir uma plataforma de livre comércio livre de agentes centrais.
+
+Como objetivo para o próximo trabalho, planeja-se especificar os requisitos funcionais e não-funcionais da prova de conceito, utilizando-se da engenharia de requisitos; desenvolver a prova-de-conceito utilizando a tecnologia Holochain, e permitindo a utilização de criptomoedas como meio de transação dentro da plataforma; verificar a performance da prova-de-conceito; e fazer um relato sobre as peculiaridades de se desenvolver uma plataforma decentralizada, comparando com o desenvolvimento de plataformas tradicionais de *software* e como os métodos e ferramentas do campo da engenharia de *software* se aderem a esse tipo de desenvolvimento.
+
+## Cronograma
