@@ -1,7 +1,5 @@
 # Introdução
 
-## Contexto com Justificativa
-
 A era digital tem transformado importantes aspectos da nossa sociedade. A computação em conjunto com a internet tem melhorado progressivamente a sociedade, transformando sistemas físicos, burocráticos, e restritos por fronteiras geopolíticas em sistemas virtuais, que não se limitam a fronteiras físicas e que conseguem realizar processos complexos em milissegundos.
 
 Em menos de cinquenta anos, a transformação digital tem trazido revoluções na forma como trocamos informações, nos comunicamos e realizamos tarefas cotidianas e dentre essas inúmeras transformações digitais, o comércio eletrônico tem se destacado pela seu crescimento e por sua participação cada vez maior na econômica. Segundo \apudonline[pp. 9]{emarketer}{webshoppers2019}
@@ -634,3 +632,22 @@ Diferentemente da aplicações decentralizadas construídas utilizando tecnologi
 \end{tabular}
 \legend{Fonte: \citeauthor{holo3}}
 \end{table}
+
+# Proposta
+
+Neste capítulo será apresentado detalhes da proposta de plataforma de comércio eletrônico decentralizada, cujo objetivo é oferecer um ambiente de livre comércio que não dependa de um agente central e que possa ser utilizado globalmente. Para a solução proposta serão apresentados os requísitos de alto nível da solução, bem como um cronograma de execução do projeto.
+
+## Escopo do Projeto
+
+O projeto trata-se de uma plataforma de comércio  eletrônica onde poderão ser ofertados produtos ou serviços sem que haja intermediários entre ofertante e pagador e se baseará em um sistema de reputação para qualificar os usuários e coibir maus usuários. Por se tratar de uma plataforma baseada no livre mercado, os mecanismos de reputação de usuário deixarão claro os riscos envolvidos em cada transação, bem como recomendações, mas jamais se sobreporá a vontade dos usuários em relação a quem eles desejam transacionar, baseando-se nos princípios de livre-associação e escolha, nas liberdades indivíduais, e na responsabilidade de cada indivíduo quanto as suas ações.
+
+Toda a plataforma será disponibilizada livre de direitos autorais ou propriedade intelectual, com código livre e aberto, sendo desenvolvida com tecnologias *peer-to-peer* de forma a não possuir um ponto único de falha, e podendo ser operada enquanto houver nós conectados na rede, garantindo assim que seja uma plataforma decentralizada e livre para ser aperfeiçoada.
+
+Embora a plataforma tenha o objetivo de ser livre, aberta, distribuída, e decentralizada, a solução desenvolvida pelo autor contará com um sistema de comissão em cada transação, de forma a contribuir com o desenvolvimento do projeto. Porém, é importante ressaltar, que por ser um código livre e aberto, nada impede que seja utilizado uma versão da plataforma que não possua essa comissão, porém, o autor acredita que a livre concorrência de ideias é benéfica e que uma versão original tem vantagem sobre versões não-oficiais, sendo que a concorrência de versões serve tanto como incentivo para evolução da plataforma como forma de garantir que a ideia do projeto não seja corrompida por uma visão centralizada que difira da visão da comunidade.
+
+Para possibilitar o uso da plataforma por qualquer usuário, localizado em qualquer país do mundo, todos os produtos ou serviços da plataforma serão precificados em Bitcoin ou outras criptomoedas, e haverá um sistema de depósito de segurança para coibir fraudes, em que uma porcentagem do valor do produto ou serviço ficará em custódia até que o processo de pagamento e recebimento do produto ou serviço seja validado por ambas as partes.
+
+A plataforma será operada utilizando contratos inteligentes, de forma a garantir que todo o processo de cadastramento de usuário, depósito de segurança, oferta e pagamento de produto ou serviço, reputação dos usuários, e todas as regras de negócios, serão implementadas em forma de contrato inteligente, a fim de prover uma forma automatizada, segura, auditável e que não dependa de terceiros para funcionar.
+
+A príncipio a plataforma será desenvolvida para ser acessada por qualquer dispositivo conectado a internet que possua um navegador moderno, porém, o intuito é que sejam disponibilizadas versões para dispositivos móveis, que utilizem os sistemas operacionais iOS e Android.
+
