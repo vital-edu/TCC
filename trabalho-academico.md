@@ -195,7 +195,7 @@ A solução de \citeauthoronline{timestamp} foi concebida para funcionar com qua
 \begin{figure}[htbp]
   \caption{\label{fig:hash}Exemplo de \emph{função hash}.}
   \begin{center}
-    \includegraphics[width=0.35\textwidth]{imagens/hash.png}
+    \includegraphics[width=0.5\textwidth]{imagens/hash.png}
   \end{center}
   \legend{Fonte: \citeauthor{hashimage}.}
 \end{figure}
@@ -384,9 +384,17 @@ Para que seja permitido o registro de transações com frações de *Bitcoin*, c
 \begin{figure}[htbp]
   \caption{\label{fig:transaction-fraction}Composição de uma transação na \emph{blockchain}.}
   \begin{center}
-  \includegraphics[width=0.5\textwidth]{imagens/transaction-fraction.png}
+  \includegraphics[width=0.85\textwidth]{imagens/transaction-fraction.png}
   \end{center}
   \legend{Fonte: \citeauthor{bitcoin}.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \caption{\label{fig:transaction-ex}Exemplo de sequência de transações.}
+  \begin{center}
+  \includegraphics[width=1.0\textwidth]{imagens/transaction-ex.png}
+  \end{center}
+  \legend{Fonte: \citeauthor{blockchain-guide}.}
 \end{figure}
 
 A figura \ref{fig:transaction-ex} mostra um exemplo de uma sequência de seis transações:
@@ -414,14 +422,6 @@ A figura \ref{fig:transaction-ex} mostra um exemplo de uma sequência de seis tr
 - Fernando e Gustavo gastam cada um 10 mil *satoshis* na transação 6;
   - Hélio recebe 10 mil *satoshis*, 5 mil oriundos de Fernando e 5 mil oriundos de Gustavo. Hélio não gasta os 10 mil *satoshis* que recebeu;
   - 10 mil *satoshis* ficam com o minerador como taxa de transação.
-
-\begin{figure}[htbp]
-  \caption{\label{fig:transaction-ex}Exemplo de sequência de transações.}
-  \begin{center}
-  \includegraphics[width=1.0\textwidth]{imagens/transaction-ex.png}
-  \end{center}
-  \legend{Fonte: \citeauthor{blockchain-guide}.}
-\end{figure}
 
 Cada *output* (saída) de uma transação é oriundo de um *input* (entrada) de uma transação anterior e só pode ser utilizado em uma única transação, o que garante que não haja gasto duplo. Um *output* que não vira *input* para outra transação é, portanto, um valor não gasto, sendo denominado neste cenário um *UTXO* (*Unspent Transaction Output* - Saída de Transação não Gasta).
 
