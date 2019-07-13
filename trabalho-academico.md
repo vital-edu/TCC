@@ -653,7 +653,7 @@ A príncipio a plataforma será desenvolvida para ser acessada por qualquer disp
 
 ### Diferencial em relação a concorrentes
 
-As plataformas de comércio eletrônico atuais movimentam um grande volume de dinheiro (fig. \ref{fig:revenue}), porém, a limitação de operarem apenas com dinheiro fiduciário, além das restrições que são impostas por agentes centrais, impedem que essas plataformas sejam utilizadas em ambientes, que com menos regulação, se beneficiariam de produtos mais baratos e uma maior variedade de oferta. Além disso, são plataformas que só conseguem operar em um país a partir do momento em que cumprem com todas as obrigações legais e fiscais do país.
+As plataformas de comércio eletrônico atuais movimentam um grande volume de dinheiro, como pode ser visto na figura \ref{fig:revenue} que mostra o aumento no faturamento de grandes empresas de comércio eletrônico no ano de 2017 em relação ao ano de 2016, mostrando que a área de comércio eletrônico possui ainda muito potencial de expansão e oportunidade de neǵocio, porém, as empresas líderes de mercado mostram-se resistentes a adotarem criptomoedas como meio de pagamento, além de sofrerem com restrições impostas por agências regulatórias e legislações governamentais, impedindo que operem de forma livre em ambientes que, com menos regulação, se beneficiariam de produtos mais baratos e uma maior variedade de oferta. Portanto, são plataformas que operam apenas por meio da autorização do governo do país e seguindo as regras impostas por agentes centrais, o que limita sua operação.
 
 \begin{figure}[htbp]
   \caption{\label{fig:revenue}Aumento da receita de empresas de comércio eletrônico em 2017.}
