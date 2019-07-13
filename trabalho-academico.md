@@ -11,7 +11,7 @@ Em situações como essa, em que há uma alta insegurança econômica, e em que 
 
 A interferência de agentes centrais na vida dos indivíduos é dito como um mal necessário para evitar males maiores, porém, como Juvenal, poeta romano do final do Século I e início do Século II escreveu em uma de suas sátiras "*Quis custodiet ipsos custodes?*" \cite{juvenal} (Quem vigiará os próprios vigilantes?).
 
-Para resolver esse problema, o presente trabalho apresenta um estudo sobre tecnologias decentralizadas com o potêncial de permitir a criação de um verdadeiro livre mercado, capaz de resistir ao poder coercitivo de estados, e de garantir que os indivíduos sejam livres para praticar o comércio de forma pacífica, voluntária, mutualmente benéfica e que iniba o uso da força por terceiros. Somente assim, poder-se-á criar um comércio entre indivíduos duradouro, que ultrapasse fronteiras, gerações e jurisdições arbitrárias.
+Para resolver esse problema, o presente trabalho apresenta um estudo sobre tecnologias descentralizadas com o potêncial de permitir a criação de um verdadeiro livre mercado, capaz de resistir ao poder coercitivo de estados, e de garantir que os indivíduos sejam livres para praticar o comércio de forma pacífica, voluntária, mutualmente benéfica e que iniba o uso da força por terceiros. Somente assim, poder-se-á criar um comércio entre indivíduos duradouro, que ultrapasse fronteiras, gerações e jurisdições arbitrárias.
 
 ## Objetivos
 
@@ -29,9 +29,9 @@ Para alcançar o objetivo geral, os objetivos específicos abaixo foram definido
 
 ## Estrutura do trabalho
 
-O trabalho está estruturado em três capítulos. O primeiro, aborda o *referencial teórico* necessário para cumprir com os objetivos 1 e 2 do trabalho, sendo estudado os fundamentos do *livre mercado*, o surgimento e funcionamento de *criptomoedas*, em especial o *Bitcoin*, e como o conceito de contratos inteligentes e blockchain foram interligados para a criação de *aplicações decentralizadas*.
+O trabalho está estruturado em três capítulos. O primeiro, aborda o *referencial teórico* necessário para cumprir com os objetivos 1 e 2 do trabalho, sendo estudado os fundamentos do *livre mercado*, o surgimento e funcionamento de *criptomoedas*, em especial o *Bitcoin*, e como o conceito de contratos inteligentes e blockchain foram interligados para a criação de *aplicações descentralizadas*.
 
-O segundo capítulo, cumpre com o objetivo 3 do trabalho ao trazer a visão de um projeto de comércio eletrônico decentralizado, definindo suas características, diferenciais, e escopo de uma prova de conceito.
+O segundo capítulo, cumpre com o objetivo 3 do trabalho ao trazer a visão de um projeto de comércio eletrônico descentralizado, definindo suas características, diferenciais, e escopo de uma prova de conceito.
 
 Finalmente, no último capítulo é exposto as *considerações finais* sobre o trabalho, e o que será feito em um trabalho futuro, apresentando um cronograma a ser executado.
 
@@ -642,7 +642,7 @@ Diferentemente da aplicações descentralizadas construídas utilizando tecnolog
 
 # Proposta
 
-A partir do que foi estudado no capítulo anterior e de posse do conhecimento adquirido sobre o livre mercado e tecnologias decentralizada, este capítulo, visando atender o objetivo específico 3 deste trabalho, apresenta as características e detalhes da proposta de plataforma de comércio eletrônico descentralizada, o que por fim conclui o objetivo geral do trabalho em descrever como tecnologias decentralizadas podem ser utilizadas para promover um ambiente de livre mercado que não dependa de um agente central.
+A partir do que foi estudado no capítulo anterior e de posse do conhecimento adquirido sobre o livre mercado e tecnologias descentralizada, este capítulo, visando atender o objetivo específico 3 deste trabalho, apresenta as características e detalhes da proposta de plataforma de comércio eletrônico descentralizada, o que por fim conclui o objetivo geral do trabalho em descrever como tecnologias descentralizadas podem ser utilizadas para promover um ambiente de livre mercado que não dependa de um agente central.
 
 ## Visão do projeto
 
