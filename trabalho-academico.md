@@ -19,7 +19,7 @@ Portanto, esse trabalho apresenta o estudo de tecnologias descentralizadas capaz
 
 ### Objetivo geral
 
-O presente trabalho tem como objetivo descrever como tecnologias descentralizadas podem ser utilizadas para a criação de uma plataforma de comércio eletrônico que possa sobreviver livre de interferências de agentes centrais, tais como governos estatais ou qualquer outra instituição centralizadora de poder que por quaisquer motivos queira regular ou impedir o livre comércio voluntário e pacífico entre indivíduos.
+O presente trabalho tem como objetivo descrever como tecnologias descentralizadas podem ser utilizadas para a criação de um ambiente de livre mercado que possa resistir a interferências de agentes centrais, tais como governos estatais ou qualquer outra instituição centralizadora de poder que por quaisquer motivos queira regular ou impedir o livre comércio voluntário e pacífico entre indivíduos.
 
 ### Objetivos específicos
 
@@ -579,7 +579,9 @@ O desenvolvimento de aplicações descentralizadas permitiu o surgimento de um n
 
 Embora, aplicações descentralizadas sejam interessantes em contextos que envolvem a desconfiança em agentes centrais, é importante salientar que existem problemas intrínsecos relacionados ao uso de *blockchain* na construção de aplicações. Como \citeauthor{safesmart} constataram, o desenvolvimento de contratos inteligentes embora se assemelhe ao desenvolvimento tradicional, possui preocupações muito maiores quanto a segurança, além de não ser nem um pouco trivial.
 
-De forma simplista, um código de contrato inteligente é invocado sempre que recebe uma mensagem, podendo haver vários pontos de entrada, sendo cada ponto de entrada uma função do código a ser executada. Ou seja, uma mensagem recebida é como a chamada de uma função, que deve retornar um resultado para quem enviou a mensagem após a mensagem ser processada pela função do contrato (fig. \ref{fig:ethcode}).
+De forma simplista, um código de contrato inteligente é invocado sempre que recebe uma mensagem, podendo haver vários pontos de entrada, sendo cada ponto de entrada uma função do código a ser executada. Ou seja, uma mensagem recebida é como a chamada de uma função, que deve retornar um resultado para quem enviou a mensagem após a mensagem ser processada pela função do contrato.
+
+A figura \ref{fig:ethcode} mostra um exemplo simplório de contrato inteligente feito para um jogo  de pedra, papel e tesoura. Nesse exemplo, o contrato inicia com nenhum jogador e espera que jogadores iniciem o contrato informando a jogada que desejam fazer. Assim que os jogadores informam suas jogadas, o contrato verifica o ganhador e envia a recompensa para ele.
 
 \begin{figure}[htbp]
   \caption{\label{fig:ethcode}Exemplo de contrato inteligente implementado na linguagem \emph{Serpent}.}
@@ -612,7 +614,7 @@ A abordagem *centrada no agente* abstrai muito mais o mundo real, ao reconhecer 
 
 De forma resumida, uma aplicação *Holochain* consiste de uma rede de agentes mantendo uma única *blockchain* que serve como fonte de suas transações, pareada com um espaço compartilhado que implementa uma *DHT* (*Distributed Hash Table* - tabela *hash* distribuída) validadora, *sharded*\footnote{Um \emph{shard} (fragmento) de banco de dados é uma partição horizontal de dados que ocorre com a criação de diversas instâncias fisicamente separadas e distribuídas do banco de dados. Um particionamento horizontal é a separação das informações de um banco de dados em linhas, permitindo que cada instância tenha apenas um subconjunto de todos os elementos guardados na base de dados \cite{shard}.}(fragmentada), monotônica\footnote{\emph{dedução monotônica} é a propriedade que vários sistemas lógicos possuem de a partir de uma hipótese, poder ser livremente adicionadas novas suposições, sem que haja uma violação da hipótese original. De forma simplificada, significa dizer que a incorporação de um novo conhecimento não pode reduzir o conjunto do que é conhecido}, em que vários nós garantam que os dados armazenados na *DHT* obedeceram as regras de validação, além de fornecer a informação sobre a origem do dado \cite{holo2}.
 
-Incluir um novo registro na *DHT* envolve encontrar um nó responsável por cuidar daquele registro, que ao receber o dado do estado de transição, informa aos seus nós vizinhos. Cada um dos nós vizinhos ao receber essa informação do nó responsável pelo dado, deve validá-lo utilizando a lógica da aplicação. Assim, há diversas cópias, igualmente validadas e como a rede é criada para ter os dados uniformemente distribuídos, há a garantia de que o dado seja rapidamente encontrado\footnote{A \meph{DHT} utilizada pela \emph{Holochain} é baseada na \emph{Kademlia}\cite{kademlia}, e o processo de encontrar um nó vizinho é exemplificado pela figura \ref{fig:kademlia}, em que um nó consegue encontrar qualquer outro nó, perguntando para os nós que conhece, até encontrar o nó desejado.}, mesmo quando o nó original do dado estiver indisponível \cite{holo2}.
+Incluir um novo registro na *DHT* envolve encontrar um nó responsável por cuidar daquele registro, que ao receber o dado do estado de transição, informa aos seus nós vizinhos. Cada um dos nós vizinhos ao receber essa informação do nó responsável pelo dado, deve validá-lo utilizando a lógica da aplicação. Assim, há diversas cópias, igualmente validadas e como a rede é criada para ter os dados uniformemente distribuídos, há a garantia de que o dado seja rapidamente encontrado\footnote{A \meph{DHT} utilizada pela \emph{Holochain} é baseada na \emph{Kademlia}\cite{kademlia}, e o processo de encontrar um nó vizinho é exemplificado pela figura \ref{fig:kademlia}, em que cada nó armazena um subconjunto limitado de nós, chamados de nós vizinhos, e quando precisam encontrar um nó que não seja seu vizinho, é feito uma busca de vizinhos de vizinhos. A parte superior da figura mostra a quantidade de vizinhos que foram perguntados antes de se encontrar o nó desejado.}, mesmo quando o nó original do dado estiver indisponível \cite{holo2}.
 
 \begin{figure}[htbp]
   \caption{\label{fig:kademlia}Processo de procura de um nó na \emph{DHT Kademlia}.}
@@ -642,7 +644,7 @@ Diferentemente da aplicações descentralizadas construídas utilizando tecnolog
 
 # Proposta
 
-Neste capítulo é apresentado detalhes da proposta de plataforma de comércio eletrônico descentralizada, cujo objetivo é oferecer um ambiente de livre comércio que não dependa de um agente central e que possa ser utilizado globalmente. Para a solução proposta são apresentados os requisitos de alto nível da solução, bem como um cronograma de execução do projeto.
+A partir do que foi estudado no capítulo anterior e de posse do conhecimento adquirido sobre o livre mercado e tecnologias decentralizada, este capítulo, visando atender o objetivo específico 3 deste trabalho, apresenta as características e detalhes da proposta de plataforma de comércio eletrônico descentralizada, o que por fim conclui o objetivo geral do trabalho em descrever como tecnologias decentralizadas podem ser utilizadas para promover um ambiente de livre mercado que não dependa de um agente central.
 
 ## Visão do projeto
 
