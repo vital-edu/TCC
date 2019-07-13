@@ -25,10 +25,17 @@ O presente trabalho tem como objetivo descrever como tecnologias descentralizada
 
 Para alcançar o objetivo geral, os objetivos específicos abaixo foram definidos:
 
-- Estudar o que caracteriza um livre mercado e sua importância nas relações sociais;
-- Estudar como tecnologias descentralizadoras funcionam;
-- Identificar características essenciais para que um comércio eletrônico descentralizado seja viável;
-- Propor uma solução de comércio eletrônico baseado em tecnologias descentralizadas.
+1. Estudar o que caracteriza um livre mercado e sua importância nas relações sociais;
+2. Estudar como tecnologias descentralizadoras surgiram e seus princípios tecnológicos;
+3. Propor uma solução de comércio eletrônico baseado em tecnologias descentralizadas.
+
+## Estrutura do trabalho
+
+O trabalho está estruturado em três capítulos. O primeiro, aborda o *referencial teórico* necessário para cumprir com os objetivos 1 e 2 do trabalho, sendo estudado os fundamentos do *livre mercado*, o surgimento e funcionamento de *criptomoedas*, em especial o *Bitcoin*, e como o conceito de contratos inteligentes e blockchain foram interligados para a criação de *aplicações decentralizadas*.
+
+O segundo capítulo, cumpre com o objetivo 3 do trabalho ao trazer a visão de um projeto de comércio eletrônico decentralizado, definindo suas características, diferenciais, e escopo de uma prova de conceito.
+
+Finalmente, no último capítulo é exposto as *considerações finais* sobre o trabalho, e o que será feito em um trabalho futuro, apresentando um cronograma a ser executado.
 
 # Referencial teórico
 
