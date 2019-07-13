@@ -477,7 +477,7 @@ O *Merkle Tree Root Hash* (fig. \ref{fig:hashtree}) é uma estrutura de dados em
 
 No caso do protocolo do *Bitcoin*, o processo de formação do \emph{Merkle Tree Root Hash} segue os seguintes passos (fig. \ref{fig:merkle}) \cite{dev-ref}:
 
-1. As transações são ordenadas seguindo algumas regras aqui não discutidas;
+1. As transações são ordenadas seguindo algumas regras\footnote{a transação \emph{coinbase}, transação responsável por criar bitcoin e recompensar o minerador, é sempre a primeira transação, e as demais transações devem ser ordenadas de forma a garantir que as transações de saída (\emph{UTXO}), transações não gastas, sejam posicionadas antes de outras transações no mesmo bloco em que essa mesma transação seja gasta como entrada (\emph{UTID}) de uma transação.};
 2. É gerado o *hash* de cada transação a partir do *id* da mesma e utilizando o algoritmo *SHA256*;
 3. Os *hashes* são agrupadas em pares, caso sobre um *hash* sem um par, ele é duplicado;
 4. Os *hashes* dos pares são concatenados e novamente é aplicado o algoritmo *SHA256* para gerar um novo *hash*;
