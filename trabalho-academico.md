@@ -13,7 +13,7 @@ A interferência de agentes centrais na vida dos indivíduos é dito como um mal
 
 Para resolver esse problema, o presente trabalho apresenta uma solução de plataforma de comércio eletrônico descentralizada, capaz de resistir ao poder coercitivo de estados, e de garantir que os indivíduos sejam livres para praticar o verdadeiro livre comércio, de forma pacífica, voluntária, mutualmente benéfica e que iniba o uso da força por terceiros. Somente assim, poder-se-á criar uma verdadeira economia de livre mercado, que ultrapassa fronteiras, gerações e jurisdições arbitrárias.
 
-Portanto, esse trabalho apresenta o estudo de tecnologias descentralizadas capazes de prover um ambiente descentralizado de livre mercado e idealiza uma pĺataforma de comércio eletrônico baseada em criptomoedas e que opera de forma distribuída.
+Portanto, esse trabalho apresenta o estudo de tecnologias descentralizadas capazes de prover um ambiente descentralizado de livre mercado e idealiza uma plataforma de comércio eletrônico baseada em criptomoedas e que opera de forma distribuída.
 
 ## Objetivos
 
@@ -36,30 +36,30 @@ Este capítulo explica o que é um livre mercado e qual a sua importância para 
 
 ## Livre mercado
 
-Para entender o que é o livre mercado é preciso entender a natureza humana e um pouco sobre o estudo da economia. Ludwig von Mises usa da praxeologia, o estudo das ações humanas, para construir os princípios que regem a economia \cite[pp. 11--12]{mises}. Mises define a ação humana como o uso dos meios para se realizar um fim \cite[pp. 13]{mises}. Porém, é importante ressaltar que os motivos das ações humanas não pertencem ao campo da praxeologia e sim ao campo da psicologia e psicanalise sendo do interesse da praxeologia apenas as consequências práticos das ações.
+Para entender o que é o livre mercado é preciso entender a natureza humana e um pouco sobre o estudo da economia. Ludwig von Mises usa da praxeologia, o estudo das ações humanas, para construir os princípios que regem a economia \cite[pp. 11--12]{mises}. Mises define a ação humana como o uso dos meios para se realizar um fim \cite[pp. 13]{mises}. Porém, é importante ressaltar que os motivos das ações humanas não pertencem ao campo da praxeologia e sim ao campo da psicologia e psicanálise sendo do interesse da praxeologia apenas as consequências práticos das ações.
 
 Para que haja a ação humana é preciso haver um descontentamento, uma inquietude em relação ao estado atual do indivíduo, caso contrário nada precisaria ser feito, já que se estaria em um estado de perfeição que jamais precisaria ser alterado.
 
-A inquietude com o estado atual acarreta em um desejo por mudança, uma idealização de algo que possa ser feito para alterar o estado atual. Essa idealização, em outras palavras, nada mais é do que o pensamento, as ideias, o raciocínio, a cognição sendo utilizadas para construir um plano de ação.
+A inquietude com o estado atual acarreta um desejo por mudança, uma idealização de algo que possa ser feito para alterar o estado atual. Essa idealização, em outras palavras, nada mais é do que o pensamento, as ideias, o raciocínio, a cognição sendo utilizadas para construir um plano de ação.
 
-Mas apenas a inquietude e o pensamento de mudança não seriam suficientes para gerar uma ação, afinal, para que se aja é necessário um terceiro ingrediente, a expectativa de que a ação traga um mínimo de alívio ou diminuição da inquietação do indíviduo. Apenas havendo esses três elementos, a ação humana se torna factível.
+Mas apenas a inquietude e o pensamento de mudança não seriam suficientes para gerar uma ação, afinal, para que se aja é necessário um terceiro ingrediente, a expectativa de que a ação traga um mínimo de alívio ou diminuição da inquietação do indivíduo. Apenas havendo esses três elementos, a ação humana se torna factível.
 
-Embora a palavra ação possa ser entendida como uma atitude ativa é importante salientar que ela também pode ser uma atitude passiva, ou seja, a decisão de não agir. A ação passiva portanto ocorre quando o indíviduo, conscientemente e diante das informações que possui, decide que ao fazer nada obterá o resultado que lhe trará a maior satisfação dentre todos os resultados que ele considerou.
+Embora a palavra ação possa ser entendida como uma atitude ativa é importante salientar que ela também pode ser uma atitude passiva, ou seja, a decisão de não agir. A ação passiva portanto ocorre quando o indivíduo, conscientemente e diante das informações que possui, decide que ao fazer nada obterá o resultado que lhe trará a maior satisfação dentre todos os resultados que ele considerou.
 
-A partir da definição da ação humana entende-se que um indíviduo sempre buscará um estado de melhor satisfação ou menor inquietude, porém, isso não significa que suas ações se concretizarão da forma que foi esperada, já que pode haver informações desconhecidas ao indivíduo, fatores externos a seu controle, ou alterações significativas no ambiente que o faça avaliar as ações realizadas de forma diferente, o que pode lhe provocar arrependimento.
+A partir da definição da ação humana entende-se que um indivíduo sempre buscará um estado de melhor satisfação ou menor inquietude, porém, isso não significa que suas ações se concretizarão da forma que foi esperada, já que pode haver informações desconhecidas ao indivíduo, fatores externos a seu controle, ou alterações significativas no ambiente que o faça avaliar as ações realizadas de forma diferente, o que pode lhe provocar arrependimento.
 
-Caso não houvesse o desconhecido, ou a possibilidade de erro nas ações tomadas pelo índividuo, poderia-se concluir que não haveria escolhas a serem feitas, já que uma escolha implica em uma tomada de risco, em uma balanceamento entre vantagens e desvantagens.
+Caso não houvesse o desconhecido, ou a possibilidade de erro nas ações tomadas pelo índividuo, poderia se concluir que não haveria escolhas a serem feitas, já que uma escolha implica uma tomada de risco, em um balanceamento entre vantagens e desvantagens.
 
 Todas as coisas que estão casualmente conectadas com a satisfação das necessidades humanas são definidas como *coisa útil*, e quando essas coisas são utilizadas para satisfazerem as necessidades humanas as chamamos de *bens* \cite[pp. 52]{menger}. Segundo \citeauthoronline{menger} para uma coisa adquirir as características de um bem deve-se ser preenchido simultaneamente os seguintes pré-requisitos:
 
-1. haver uma necessidade humana;
-2. haver propriedades que tornem a coisa capaz de ser empenhada em uma conexão causal com a satisfação dessa necessidade;
-3. haver o conhecimento humano dessa causalidade;
-4. haver controle suficiente sobre a coisa para usa-la para a satisfação dessa necessidade.
+1. Haver uma necessidade humana;
+2. Haver propriedades que tornem a coisa capaz de ser empenhada em uma conexão causal com a satisfação dessa necessidade;
+3. Haver o conhecimento humano dessa causalidade;
+4. Haver controle suficiente sobre a coisa para usá-la para a satisfação dessa necessidade.
 
-Os bens que podem ser utilizados para satisfazer diretamente as necessidades humanas, como por exemplo uma pizza pronta para ser devorada, são classificados de *bem de primeira ordem* ou *bens de consumo*, já os bens que apenas servirão para consumo em algum ponto do futuro são classificados como *bens de ordem superior*, *fatores de produção* ou *bens de produção* \cite[pp. 8]{rothbard}.
+Os bens que podem ser utilizados para satisfazer diretamente as necessidades humanas, como, por exemplo, uma pizza pronta para ser devorada, são classificados de *bem de primeira ordem* ou *bens de consumo*, já os bens que apenas servirão para consumo em algum ponto do futuro são classificados como *bens de ordem superior*, *fatores de produção* ou *bens de produção* \cite[pp. 8]{rothbard}.
 
-Pelo fato de os bens de consumo serem escassos (se não o fossem, não seriam objetos da ação humana), é necessário que o indivíduo rearranje os elementos disponíveis em seu ambiente para produzir os bens de consumo que deseja. Esse processo de utilização de meios indiretos em cooperação com fatores de produção para gerar um bem de consumo que alcance o fim desejado pelo indíviduo é definido como *produção* \cite[pp. 9]{rothbard}.
+Pelo fato de os bens de consumo serem escassos (se não o fossem, não seriam objetos da ação humana), é necessário que o indivíduo rearranje os elementos disponíveis em seu ambiente para produzir os bens de consumo que deseja. Esse processo de utilização de meios indiretos em cooperação com fatores de produção para gerar um bem de consumo que alcance o fim desejado pelo indivíduo é definido como *produção* \cite[pp. 9]{rothbard}.
 
 Todo o processo de produção necessita de tempo (um bem escasso) e fatores de produção que podem ser divididos em duas categorias
 
@@ -71,9 +71,9 @@ Todo o processo de produção necessita de tempo (um bem escasso) e fatores de p
 Ao unir esses fatores de produção é possível produzir bens de maior ordem, ou seja, de maior valor agregado. E como
 \citeauthoronline{bastiat} já havia observado, o homem, ao viver em sociedade, tem suas necessidades superadas pelas capacidades produtivas e suas necessidades elementares gradualmente dão lugar a desejos de ordem superior, levando sempre a um estado mais próximo da condição perfeita. Se isso não fosse verdade, ou seríamos criaturas retrógradas, ou seríamos irremediavelmente estáticos \cite[pp. 61--65]{bastiat}.
 
-Pelo fato de toda ação humana ser uma tentativa de troca de um estado de menor satisfação para um estado de maior satisfação, fica evidente que as coisas são valorizadas como meios de acordo com a sua capacidade de contribuir para um fim desejado, sendo esse fim desejado, mais ou menos urgente de acordo com a preferência temporal do indíviduo.
+Pelo fato de toda ação humana ser uma tentativa de troca de um estado de menor satisfação para um estado de maior satisfação, fica evidente que as coisas são valorizadas como meios de acordo com a sua capacidade de contribuir para um fim desejado, sendo esse fim desejado, mais ou menos urgente de acordo com a preferência temporal do indivíduo.
 
-Como o tempo é um bem escasso, sempre que um indivíduo escolher uma ação, ele necessariamente estará abrindo mão de qualquer outra ação que poderia ser executada naquele mesmo tempo. Devido a isso, pode-se concluir que cada unidade de um meio, seja ele direto ou indireto, e que é incorporado a ação humana é valorizado separadamente. \cite[pp. 21]{rothbard}.
+Como o tempo é um bem escasso, sempre que um indivíduo escolher uma ação, ele necessariamente abrirá mão de qualquer outra ação que poderia ser executada naquele mesmo tempo. Devido a isso, pode-se concluir que cada unidade de um meio, seja ele direto ou indireto, e que é incorporado a ação humana é valorizado separadamente. \cite[pp. 21]{rothbard}.
 
 Uma importante constatação é que o valor ou utilidade de um bem não pode ser medido, e portanto não pode ser aplicado as operações de soma, subtração, multiplicação ou divisão. Em outras palavras qualquer bem tem seu valor estimado de forma subjetiva por cada indivíduo.
 
@@ -83,7 +83,7 @@ Assim, o primeiro cavalo terá um valor maior que o segundo, que terá um valor 
 
 Por mais que seja impossível dizer o quão mais valorosa uma unidade de um mesmo bem é perante outra unidade do mesmo bem, ainda assim há uma relação ordinal entre cada unidade, o que pode ser ilustrado em um diagrama de escala de valores (fig \ref{fig:value-scale-diagram}), em que o eixo X representa um item de um mesmo bem, e o eixo Y mostra a ordem de importância de um fim ao qual esse bem é empregado.
 
-Quando analisamos o estoque (definido com a quantidade de um mesmo bem quando um item pode ser intercambiável com outro item do mesmo bem) de um bem X com o estoque de um bem Y, podemos novamente criar uma escala de valores (fig. \ref{fig:value-scale-rank}), sendo que a regra se mantem: a necessidade mais urgente será satisfeita com determinada unidade de um bem, e suscetivamente as necessidade mais urgente remanescentes serão satisfeitas de acordo com as unidades recentes de cada bem, conforme eles satisfaçam essa necessidade.
+Quando analisamos o estoque (definido com a quantidade de um mesmo bem quando um item pode ser intercambiável com outro item do mesmo bem) de um bem X com o estoque de um bem Y, podemos novamente criar uma escala de valores (fig. \ref{fig:value-scale-rank}), sendo que a regra se mantém: a necessidade mais urgente será satisfeita com determinada unidade de um bem, e suscetivamente as necessidade mais urgente remanescentes serão satisfeitas de acordo com as unidades recentes de cada bem, conforme eles satisfaçam essa necessidade.
 
 \begin{figure}[h!]
   \centering
@@ -102,9 +102,9 @@ Quando analisamos o estoque (definido com a quantidade de um mesmo bem quando um
 
 Em uma escala de valores, a unidade de bem que está na última posição da escala é denominada *unidade marginal*, e o fim a qual essa unidade é empenhada denomina-se de *utilidade da unidade marginal*. Em termos gerais, quanto maior for o suprimento de um bem, menor será a utilidade marginal e em contrapartida, quanto menor for o suprimento de um bem, maior será a utilidade marginal. Esse fato praxeológico é conhecido como *lei de utilidade marginal*.
 
-A escala de valores pode ser aplicada a quantos bens forem necessários, sendo o item em última posição o bem a qual o usuário irá abrir mão primeiro caso seja necessário. Porém é importante salientar que essa escala não é estática e representa apenas uma fotografia da preferência temporal de um indivíduo sobre determinadas condições.
+A escala de valores pode ser aplicada a quantos bens forem necessários, sendo o item em última posição o bem a qual o usuário abrirá mão primeiro caso seja necessário. Porém é importante salientar que essa escala não é estática e representa apenas uma fotografia da preferência temporal de um indivíduo sobre determinadas condições.
 
-Assim que as condições, as necessidades, os desejos, ou a percepção do indivíduo forem alterados, a escala também poderá será alterada. E é a partir desse entendimento que passamos a compreender como um indivíduo decide o que irá trocar em uma transação comercial.
+Assim que as condições, as necessidades, os desejos, ou a percepção do indivíduo forem alterados, a escala também poderá será alterada. E é a partir desse entendimento que passamos a compreender como um indivíduo decide o que trocará em uma transação comercial.
 
 E observando a lei da utilidade marginal chegamos a mesma conclusão que \citeauthoronline{condillac} \cite[pp. 85]{condillac} que disse que é falsa a afirmação de que em uma transação comercial um ator troca um bem por outro de igual valor, pelo contrário, cada um dos envolvidos na transação comercial troca um bem de menor valor por outro bem de maior valor. Se os bens possuíssem o mesmo valor, não haveria necessidade de realizar a troca, e uma troca de um bem de maior valor por um de menor valor é injustificável quando feita de forma voluntária.
 
@@ -112,13 +112,13 @@ Mesmo quando um bem é dado gratuitamente ocorre uma troca de valores em que o i
 
 Mas por que indivíduos se empenham em uma troca comercial?
 
-Caso o ser humano vivesse isoladamente, ele estaria limitado a usufruir apenas dos bens naturais que ele encontrasse e dos bens que ele fosse capaz de produzir. Como o indíviduo sempre vai procurar satisfazer o máximo de fins possíveis no mínimo de tempo possível \cite[pp. 42]{rothbard}, torna-se fundamental que o indivíduo colabore com outros indivíduos que possam lhe oferecer bens que ele não teria ou que ele teria que empregar mais tempo, trabalho e fatores de produção para produzir.
+Caso o ser humano vivesse isoladamente, ele estaria limitado a usufruir apenas dos bens naturais que ele encontrasse e dos bens que ele fosse capaz de produzir. Como o indivíduo sempre vai procurar satisfazer o máximo de fins possíveis no mínimo de tempo possível \cite[pp. 42]{rothbard}, torna-se fundamental que o indivíduo colabore com outros indivíduos que possam lhe oferecer bens que ele não teria ou que ele teria que empregar mais tempo, trabalho e fatores de produção para produzir.
 
-E para que haja o interesse de realizar uma troca, cada um dos indivíduos deve possuir um bem ao qual o outro não possua e deseja. Segundo \citeauthoronline{rothbard} \cite[pp. 95]{rothbard} há três diferentes razões para que um indivíduo possua bens diferentes de outro indíviduo:
+E para que haja o interesse de realizar uma troca, cada um dos indivíduos deve possuir um bem ao qual o outro não possua e deseja. Segundo \citeauthoronline{rothbard} \cite[pp. 95]{rothbard} há três diferentes razões para que um indivíduo possua bens diferentes de outro indivíduo:
 
-1. diferenças na adequação e rendimento dos fatores providos pela natureza;
-2. diferenças de capital e de bens de consumo duráveis;
-3. diferenças na habilidade e no desejo de realizar diferentes tipos de trabalho.
+1. Diferenças na adequação e rendimento dos fatores providos pela natureza;
+2. Diferenças de capital e de bens de consumo duráveis;
+3. Diferenças na habilidade e no desejo de realizar diferentes tipos de trabalho.
 
 Essas diferenças colaboram para que seja criado uma *divisão do trabalho* em que cada indivíduo se especialize mais em um tipo de produção, empregando fatores de produção, capital e receitas (processos produtivos) diversos. Isso ocorre sobretudo por conta da individualidade de cada ser humano, que possui características e interesses únicos, bem como a diversidade da própria natureza e dos bens naturais que ela provê.
 
@@ -130,7 +130,7 @@ Porém, vale destacar que o desejo por se ter o que não tem pode resultar tamb�
 
 O trabalho sob regime de coerção (escravidão) é denominado *trabalho compulsório* e é qualitativamente diferente do *trabalho voluntário*. Além das razões éticas que demonstram que o emprego da violência é errado existem ainda as consequências a longo prazo que superam os ganhos econômicos de curto prazo do emprego da violência para obter bens \cite[pp. 81]{rothbard}.
 
-Sendo assim, a troca é a única forma ética de se obter bens de outrem e além disso permite que um indivíduo obtenha um bem ao qual não tinha acesso ou ao qual não valia o seu esforço de produzí-lo. A troca potencializa as capacidades de cada indivíduo deixando-lhe concentrar suas ações no que lhe trará maior contentamento e ainda lhe dando a oportunidade de adquirir o que não consegue ou não deseja produzir.
+Sendo assim, a troca é a única forma ética de se obter bens de outrem e além disso permite que um indivíduo obtenha um bem ao qual não tinha acesso ou ao qual não valia o seu esforço de produzi-lo. A troca potencializa as capacidades de cada indivíduo deixando-lhe concentrar suas ações no que lhe trará maior contentamento e ainda lhe dando a oportunidade de adquirir o que não consegue ou não deseja produzir.
 
 As trocas comerciais podem ocorrer de forma direta, através do escambo, ou de forma indireta através do emprego de dinheiro, porém esse assunto será abordado na próxima seção.
 
@@ -139,7 +139,7 @@ As transações econômicas que ocorrem sem intervenção, constituem portanto u
 
 A intervenção usa da força para provocar uma ação que não ocorreria de outra forma, e é portanto uma ação que fere as liberdades individuais das pessoas, impedindo-as de empregar seus esforços no que elas consideram ter maior valor para elas.
 
-Qualquer intervenção no livre-mercado, portanto, é uma tirania e causa um estado de menor conforto aos indivíduos que sofrem a coerção, caso contrário, não seria necessária o emprego da força. Portanto, é importante garantir meios que impeçam a intervenção de terceiros e garantam que trocas comerciais ocorram somente através da livre associação e de forma voluntária. e que consequentemente beneficie os participantes.
+Qualquer intervenção no livre mercado, portanto, é uma tirania e causa um estado de menor conforto aos indivíduos que sofrem a coerção, caso contrário, não seria necessária o emprego da força. Portanto, é importante garantir meios que impeçam a intervenção de terceiros e garantam que trocas comerciais ocorram somente através da livre associação e de forma voluntária. e que consequentemente beneficie os participantes.
 
 ## Criptomoedas
 
@@ -223,7 +223,7 @@ Através do uso do par de chaves *E* e *D*, \citeauthoronline{encdenc} propôs q
 
 A mensagem *D\textsubscript{A}(M)* deverá ser guardada para servir como prova de que Alice foi a autora da mensagem, já que qualquer pessoa que desconfie da autoria da mensagem apenas teria que usar a chave pública de Alice (*E\textsubscript{Alice}*) para produzir a mensagem *M*. Qualquer outra chave pública utilizada em *D\textsubscript{A}(M)* resultaria em um resultado completamente diferente de *M*.
 
-Utilizando essa técnica consegue-se averiguar a qualquer momento se um indivíduo assinou ou não um documento digital.
+Utilizando essa técnica se consegue averiguar a qualquer momento se um indivíduo assinou ou não um documento digital.
 
 Além de identificar a autoria do documento também é importante armazenar a data e horário de criação ou modificação do documento, e \citeauthoronline{timestamp} para resolver esse problema sugeriram que o *hash* do arquivo deveria ser concatenado com o horário e data do registro e só então ser assinado com a chave *D* do autor do registro. Com isso, apenas com um *hash* pequeno poderia se registrar um documento com as informações de quando ele foi criado ou modificado e quem é o autor do documento.
 
@@ -255,15 +255,15 @@ Este grupo se auto nomeou *Cypherpunks* e em \citeyear{cyphermanifesto} lançou 
 
 \begin{displayquote}[\citeauthor{cyphermanifesto} - tradução do autor]
 
-Nõs, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. Nós estamos defendendo nossa privacidade através da criptografia, com sistemas de encaminhamento de e-mails anônimos, com assinaturas digitais, e com dinheiro digital.
+Nós, os \emph{Cypherpunks}, estamos dedicados a construir sistemas anônimos. Nós estamos defendendo nossa privacidade através da criptografia, com sistemas de encaminhamento de e-mails anônimos, com assinaturas digitais, e com dinheiro digital.
 
 \end{displayquote}
 
-Em \citeyear{junkmail}, \citeauthor{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de SPAMs (e-mails indesejados).
+Em \citeyear{junkmail}, \citeauthor{junkmail} propuseram uma técnica que poderia ser utilizada por provedores de e-mail em que seria requerida a computação de uma função moderadamente difícil para quem decidisse enviar um e-mail, dificultando o envio de grandes quantidades de e-mails, o que tinha como intenção reduzir o número de *SPAMs* (e-mails indesejados).
 
-\citeauthoronline{junkmail} chamaram essa função de *função de precificação*, e foi apresentada como uma alternativa as soluções que estavam sendo propostas na época, que incluíam a criação de uma lei que caracterizava o envío de e-mails não autorizados como contravenção penal; e a cobrança de impostos para cada e-mail enviado ou a partir de certo número de e-mails enviados por dia.
+\citeauthoronline{junkmail} chamaram essa função de *função de precificação*, e foi apresentada como uma alternativa as soluções que estavam sendo propostas na época, que incluíam a criação de uma lei que caracterizava o envio de e-mails não autorizados como contravenção penal; e a cobrança de impostos para cada e-mail enviado ou a partir de certo número de e-mails enviados por dia.
 
-\citeauthor{hashcash} propôs uma solução semelhante, e segundo o autor, sem ter o conhecimento do trabalho de \citeauthoronline{junkmail}. Essa solução foi denominada *Hashcash* e também foi idealizada para reduzir o número de SPAMs, além de ser uma forma de prevenir ataques DDoS (*Distributed Denial of Service* - Ataque Distribuído de Negação de Serviço).
+\citeauthor{hashcash} propôs uma solução semelhante, e segundo o autor, sem ter o conhecimento do trabalho de \citeauthoronline{junkmail}. Essa solução foi denominada *Hashcash* e também foi idealizada para reduzir o número de *SPAMs*, além de ser uma forma de prevenir ataques DDoS (*Distributed Denial of Service* - Ataque Distribuído de Negação de Serviço).
 
 Para \citeauthoronline{hashcash}, as funções de custo deveriam ser eficientemente verificáveis e não proverem vantagem para o servidor responsável por criar os desafios, já que caso contrário, o servidor teria um conflito de interesses e teria a possibilidade de utilizar essa vantagem para ganhos próprios.
 
@@ -271,9 +271,9 @@ Alguns dos diferenciais da função de custo *Hashcash* eram as alterações dos
 
 O *Hashcash* veio a ser conhecido como sendo um algoritmo *PoW* (*Proof-of-Work* - Prova de Trabalho) e foi aprimorado por \citeauthor{rpow} em \citeyear{rpow}.
 
-O algoritmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo token.
+O algoritmo de \citeauthoronline{rpow}, o RPOW (*Reusable Proof-of-Work* - Prova de Trabalho Reutilizável), recebia um *hashcash* e o trocava por um *token* *RPOW* que poderia então ser gasto para produzir um novo *token RPOW*. Cada *token RPOW* poderia ser utilizado apenas uma vez e gerava um novo *token*.
 
-Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo token que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algoritmos criptográficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
+Como o *RPOW* garante o conceito de gasto único, é sempre criado inicialmente a partir de uma prova de trabalho, e dá origem a um novo *token* que pode ser novamente trocado, pode-se considerá-lo como o primeiro bem digital que utiliza algoritmos criptográficos com capacidade de servir como meio de troca, um grande passo para a criação de uma moeda digital.
 
 Em \citeyear{bitgold}, \citeauthoronline{bitgold} expressou sua preocupação com o fato de o valor do dinheiro atualmente utilizado pela sociedade depender exclusivamente na confiança depositada em um agente centralizador e propôs a moeda *Bit Gold* que teria como características: uma dependência mínima em agentes centralizadores, armazenada de forma segura, transferível, e que pudessem ter sua autenticidade verificada \citeauthor{bitgold}. \citeauthoronline{bitgold} se inspirou nas propriedades dos metais preciosos, principalmente o ouro para conceber a ideia do *Bit Gold*.
 
@@ -511,7 +511,7 @@ Sempre que 2016 blocos são adicionados à *blockchain*, a rede de nós cálcula
 
 Essa característica de alterar o *nBits* para garantir que a quantidade de blocos gerados em duas semanas seja, em média, sempre igual, permite que o protocolo possa ser utilizado mesmo com o aumento da capacidade de processamento da rede. Quanto mais poder computacional for inserido na rede, mais difícil se tornará de calcular a prova de trabalho, sendo o inverso também verdade.
 
-O primeiro bloco de *Bitcoin*, o Bloco Gênesis, foi minerado em 2009 pelo próprio \citeauthoronline{bitcoin}, sendo incorporado na *transação coinbase*\footnote{\emph{transação coinbase} é o nome dado a primeira transação de cada bloco que, como já discutido no texto, serve como recompensa para quem minerou o bloco. A \emph{transação coinbase} possui um campo de 100 bytes denominado *coinbase script* que pode ser utilizados arbitrariamente pelo minerador sem que o protocolo *Bitcoin* seja violado.} do bloco, o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks**\cite{genesis} em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia. A figura \ref{fig:times} mostra uma foto da edição do jornal da qual a frase foi retirada.
+O primeiro bloco de *Bitcoin*, o Bloco Gênesis, foi minerado em 2009 pelo próprio \citeauthoronline{bitcoin}, sendo incorporado na *transação coinbase*\footnote{\emph{transação coinbase} é o nome dado a primeira transação de cada bloco que, como já discutido no texto, serve como recompensa para quem minerou o bloco. A \emph{transação coinbase} possui um campo de 100 bytes denominado \emph{coinbase script} que pode ser utilizados arbitrariamente pelo minerador sem que o protocolo \emph{Bitcoin} seja violado.} do bloco, o texto **The Times 03/Jan/2009 Chancellor on brink of second bailout for banks**\cite{genesis} em referência a uma manchete do jornal londrino Times sobre a falha do governo britânico de estimular a economia. A figura \ref{fig:times} mostra uma foto da edição do jornal da qual a frase foi retirada.
 
 \begin{figure}[htbp]
   \caption{\label{fig:times}Foto da Edição de 03 de janeiro de 2009 do Jornal \emph{The Times}.}
@@ -548,7 +548,7 @@ Para se proteger dessa centralização de poder, \citeauthor{raval} propôs que 
 3. Usar um algoritmo de consenso descentralizado: é o algoritmo de consenso descentralizado (que resolva o *Problemas dos Generais Bizantinos*) que permitirá que nós independentes com resultados conflitantes consigam convergir para um único resultado e assim possa-se garantir que a rede funcione sem chegar nunca a um estado permanente de impasse (*deadlock*).
 4. Não possuir ponto central de falha: aplicações descentralizadas, em teoria, não podem ser removidas ou derrubadas, pois não possuem um único ponto de falha. Por funcionar em um sistema *peer-to-peer*, todos os participantes da rede teriam que ser desligados simultaneâmente para que a aplicação parasse de funcionar. E ainda assim, é facilmente possível que novos nós entrem na rede em uma situação dessa, evitando o seu desligamento. Na prática, porém, isso só é possível quando há o interesse constante de vários e diversos agentes em manter a rede funcionando.
 
-A própria *internet* surgiu como uma rede descentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantem-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (\emph{internet} profunda) é o termo usado para designar a parte da \emph{internet} que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a \emph{internet} de superfície, nome dado a \emph{internet} prontamente acessível por buscadores.}.
+A própria *internet* surgiu como uma rede descentralizada, em que cada computador se conecta a outro computador, dando origem ao termo *World Wide Web* (Rede Mundial de Computadores), e por isso, desde o princípio até hoje, mantém-se como uma estrutura praticamente impossível de ser derrubada, e mesmo páginas *web* consideradas ilegais ou atividades que constantemente são vigiadas ou proibidas por governos, continuam a funcionarem e a estarem disponíveis, no que denominou-se *deep web*\footnote{\emph{deep web} (\emph{internet} profunda) é o termo usado para designar a parte da \emph{internet} que não está acessível por meios tradicionais, tais como ferramentas de pesquisa. Segundo \citeauthor{deep}, estima-se que a \emph{deep web} seja 500 vezes maior do que a \emph{internet} de superfície, nome dado a \emph{internet} prontamente acessível por buscadores.}.
 
 Para que uma aplicação descentralizada seja possível, é necessário que haja regras, ou contratos, que formalizem a operação da aplicação. \citeauthor{smartcontract} criou a definição de *smart contract* (contrato inteligente), que, segundo ele, é a incorporação de cláusulas contratuais no *hardware* e/ou *software* que utilizamos, que tornem a violação do contrato onerosa, e, no melhor dos casos, proibitiva.
 
