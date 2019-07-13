@@ -635,11 +635,11 @@ Diferentemente da aplicações descentralizadas construídas utilizando tecnolog
 
 # Proposta
 
-Neste capítulo será apresentado detalhes da proposta de plataforma de comércio eletrônico descentralizada, cujo objetivo é oferecer um ambiente de livre comércio que não dependa de um agente central e que possa ser utilizado globalmente. Para a solução proposta serão apresentados os requisitos de alto nível da solução, bem como um cronograma de execução do projeto.
+Neste capítulo é apresentado detalhes da proposta de plataforma de comércio eletrônico descentralizada, cujo objetivo é oferecer um ambiente de livre comércio que não dependa de um agente central e que possa ser utilizado globalmente. Para a solução proposta são apresentados os requisitos de alto nível da solução, bem como um cronograma de execução do projeto.
 
 ## Visão do projeto
 
-O projeto trata-se de uma plataforma de comércio eletrônico onde poderão ser ofertados produtos ou serviços sem que haja intermediários entre ofertante e pagador e se baseará em um sistema de reputação para qualificar os usuários e coibir maus usuários. Por se tratar de uma plataforma baseada no livre mercado, os mecanismos de reputação de usuário deixarão claro os riscos envolvidos em cada transação, bem como recomendações, mas jamais se sobreporá a vontade dos usuários em relação a quem eles desejam transacionar, baseando-se nos princípios de livre associação e escolha, nas liberdades individuais, e na responsabilidade de cada indivíduo quanto as suas ações.
+O projeto é uma plataforma de comércio eletrônico onde poderão ser ofertados produtos ou serviços sem que haja intermediários entre ofertante e pagador e se baseará em um sistema de reputação para qualificar os usuários e coibir maus usuários. Por se tratar de uma plataforma baseada no livre mercado, os mecanismos de reputação de usuário deixarão claro os riscos envolvidos em cada transação, bem como recomendações, mas jamais se sobreporá a vontade dos usuários em relação a quem eles desejam transacionar, baseando-se nos princípios de livre associação e escolha, nas liberdades individuais, e na responsabilidade de cada indivíduo quanto as suas ações.
 
 Toda a plataforma será disponibilizada livre de direitos autorais ou propriedade intelectual, com código livre e aberto, sendo desenvolvida com tecnologias *peer-to-peer* de forma a não possuir um ponto único de falha, e podendo ser operada enquanto houver nós conectados na rede, garantindo assim que seja uma plataforma descentralizada e livre para ser aperfeiçoada.
 
